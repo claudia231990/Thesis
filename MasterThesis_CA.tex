@@ -1,4 +1,4 @@
-\documentclass[12pt,titlepage]{report}
+\documentclass[12pt,titlepage]{article}
 \usepackage[ngerman]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{color}
@@ -7,19 +7,16 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{graphicx}
-
 \input{Makros}
 
 \begin{document}
-
-\title{DevOps meets FOSS: Automatisierte Integration von FOSS in die DevOps-Produktentwicklung\\}
-
+\title{DevOps meets OSS: Automatisierte Integration von OSS in die DevOps-Produktentwicklung\\}
 \author{Claudia Arnold}
 
 \maketitle
 
 \begin{abstract}
-   Unter dem Begriff FOSS bekannt, bietet die Free Open Source Software eine Reihe an Möglichkeiten im Bereich der Softwareentwicklung. Durch die sinkenden Nutzungesbescchränkungen im Vergleich zur konventioneller Software gilt FOSS als ein Instrument zur schnellen Integration von Software in die eigene Entwicklung.  
+   Unter dem Begriff OSS bekannt, bietet die Open Source Software eine Reihe an Möglichkeiten im Bereich der Softwareentwicklung. Durch die sinkenden Nutzungesbescchränkungen im Vergleich zur konventioneller Software gilt OSS als ein Instrument zur schnellen Integration von Software in die eigene Entwicklung.  
 \end{abstract}
 
 \newpage  
@@ -33,61 +30,42 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 
 \newpage
 \section{Einleitung}
-
 \input{Einleitung.tex}
 
 \subsection{Problemstellung}
-
 \input{Problemstellung.tex}
 
 \subsection{Ziel und Fragestellung}
-
 \input{ZielundFragestellung.tex}
 
 \subsection{Aufbau dieser Arbeit}
-
 \input{AufbaudieserArbeit.tex}
 
 \section{Fachlicher Rahmen}
-
-In diesem Abschnitt werden grundlegende Prinzipien zu DevOps und FOSS dargetellt, um damit das Verständnis der Leser zu stärken.\\
-
-\begin{figure}[h]
-    \centering
-    \includegraphics[scale=0.7]{Bilder/what-is-foss}
-    \caption{Ein Beispiel}
-\end{figure}
+\input{FachlicherRahmen}
 
 \subsection{DevOps}
-
 \input{GrundlagenDevOps.tex}
 
 \subsubsection{DevOps-Kultur}
-
 \input{DevOpsKultur.tex}
 
 \subsubsection{DevOps-Lifecycle}
-
 \input{DevOpsLifecycle.tex}
 
 \subsubsection{DevOps-Methoden/Softwareauslieferungsprozesses}
-
 \input{DevOpsMethoden.tex}
 
 \subsubsection{DevOps-Toolchain}
-
 \input{DevOpsToolchain.tex}
 
 \subsubsection{Automatisierung und IaC}
-
 \input{AutomatisierungIaC.tex}
 
 \subsubsection{Herausforderungen/Nachteile}
-
 \input{DevOpsNachteile.tex}
 
 \subsection{FOSS}
-
 \input{GrundlagenFOSS.tex}
 
 \subsubsection{Entwicklungen und Unterscheidungen von Software}
@@ -121,4 +99,10 @@ Welche Konstellationen/ welche Vertragsbedinungen müssen angegeben sein (zwisch
 \end{document}
 
 
+%Bilder einfügen
+%\begin{figure}[h]
+    %\centering
+    %\includegraphics[scale=0.7]{Bilder/what-is-foss}
+    %\caption{Ein Beispiel}
+%\end{figure}
 
