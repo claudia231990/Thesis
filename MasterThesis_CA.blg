@@ -5,48 +5,49 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Database file #1: Literatur.bib
+Warning--I didn't find a database entry for "sujecki__2005"
 Warning--empty school in allmann_open_2019
 Warning--empty year in bitkom_ev_open_nodate
 Warning--empty institution in bitkom_ev_open_nodate
-You've used 9 entries,
+You've used 22 entries,
             1935 wiz_defined-function locations,
-            523 strings with 5174 characters,
-and the built_in function-call counts, 3266 in all, are:
-= -- 331
-> -- 108
-< -- 8
-+ -- 34
-- -- 34
-* -- 263
-:= -- 580
-add.period$ -- 30
-call.type$ -- 9
-change.case$ -- 60
-chr.to.int$ -- 9
-cite$ -- 12
-duplicate$ -- 128
-empty$ -- 232
-format.name$ -- 49
-if$ -- 635
+            591 strings with 6654 characters,
+and the built_in function-call counts, 7330 in all, are:
+= -- 747
+> -- 227
+< -- 20
++ -- 72
+- -- 70
+* -- 568
+:= -- 1313
+add.period$ -- 65
+call.type$ -- 22
+change.case$ -- 142
+chr.to.int$ -- 22
+cite$ -- 25
+duplicate$ -- 301
+empty$ -- 529
+format.name$ -- 100
+if$ -- 1425
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 9
-newline$ -- 50
-num.names$ -- 27
-pop$ -- 49
+missing$ -- 18
+newline$ -- 109
+num.names$ -- 66
+pop$ -- 114
 preamble$ -- 1
-purify$ -- 62
+purify$ -- 145
 quote$ -- 0
-skip$ -- 100
+skip$ -- 234
 stack$ -- 0
-substring$ -- 226
-swap$ -- 15
-text.length$ -- 1
+substring$ -- 493
+swap$ -- 29
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 50
+type$ -- 124
 warning$ -- 3
-while$ -- 29
+while$ -- 66
 width$ -- 0
-write$ -- 121
-(There were 3 warnings)
+write$ -- 277
+(There were 4 warnings)

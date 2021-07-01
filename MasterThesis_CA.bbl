@@ -13,6 +13,12 @@ Alt, R., Auth, G., and Kögler, C. (2017).
 \newblock Essentials. Springer Gabler, Wiesbaden.
 \newblock OCLC: 992991783.
 
+\bibitem[Dyck et~al., 2015]{dyck_towards_2015}
+Dyck, A., Penners, R., and Lichter, H. (2015).
+\newblock Towards {Definitions} for {Release} {Engineering} and {DevOps}.
+\newblock In {\em 2015 {IEEE}/{ACM} 3rd {International} {Workshop} on {Release}
+  {Engineering}}, pages 3--3, Florence, Italy. IEEE.
+
 \bibitem[e.V., ]{bitkom_ev_open_nodate}
 e.V., B.
 \newblock Open {Source} {Monitor} – {Studienbericht} 2019.
@@ -29,11 +35,53 @@ Hemon, A., Lyonnet, B., Rowe, F., and Fitzgerald, B. (2020).
 \newblock From {Agile} to {DevOps}: {Smart} {Skills} and {Collaborations}.
 \newblock {\em Information Systems Frontiers}, 22(4):927--945.
 
+\bibitem[Hüttermann, 2012]{huttermann_devops_2012}
+Hüttermann, M. (2012).
+\newblock {\em {DevOps} for {Developers}}.
+\newblock Apress, Berkeley, CA.
+
+\bibitem[Humble, 2012]{humble_theres_2012}
+Humble, J. (2012).
+\newblock There´s {No} {Such} {Thing} as a "{Devops} {Team}".
+
+\bibitem[Humble, 2014]{humble_state_2014}
+Humble, J. (2014).
+\newblock The {State} of {DevOps}.
+
+\bibitem[Humble and Molesky, 2011]{humble_why_2011}
+Humble, J. and Molesky, J. (2011).
+\newblock Why {Enterprises} {Must} {Adopt} {Devops} to {Enable} {Continuous}
+  {Delivery}.
+\newblock {\em Cutter IT Journal}, 24(8):6--12.
+
+\bibitem[Jones, 2012]{jones_how_2012}
+Jones, R. (2012).
+\newblock How to {Hire} {DevOps}.
+
 \bibitem[Keßler, 2013]{kesler_anpassung_2013}
 Keßler, S. (2013).
 \newblock {\em Anpassung von {Open}-{Source}-{Software} in
   {Anwenderunternehmen}}.
 \newblock Springer Fachmedien Wiesbaden, Wiesbaden.
+
+\bibitem[König and Kugel, 2019]{konig_devopswelcome_2019}
+König, G. and Kugel, R. (2019).
+\newblock {DevOps}—{Welcome} to the {Jungle}.
+\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
+
+\bibitem[Müller, 2010]{muller_whats_2010}
+Müller, E. (2010).
+\newblock What´s a "{DevOp}?".
+
+\bibitem[Puppet, 2021]{puppet_inc_2020_2021}
+Puppet, I. (2021).
+\newblock 2020 {STATE} {OF} {DEVOPS} {REPORT}.
+
+\bibitem[Roche, 2011]{roche_roche_2011}
+Roche, J. (2011).
+\newblock Roche, {J}. (2013). {Adopting} {DevOps} practices in quality
+  assurance.
+\newblock {\em Communications of the ACM}, 56(11):38--43.
 
 \bibitem[Samulat, 2017]{samulat_raus_2017}
 Samulat, P. (2017).
@@ -41,11 +89,27 @@ Samulat, P. (2017).
   {Der} {Weg} zur {Plattform} „{Lean} {IT}“.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):205--215.
 
-\bibitem[Sujecki and {Makrolog}, 2005]{sujecki__2005}
-Sujecki, B. and {Makrolog} (2005).
-\newblock : {Vertrags}- und urheberrechtliche {Aspekte} von {Open} {Source}
-  {Software} im deutschen {Recht}.
-\newblock {\em JurPC}, pages 13--13.
+\bibitem[Söllner, 2017]{sollner_devops_2017}
+Söllner, D. (2017).
+\newblock {DevOps} in der {Praxis} – {Handlungsfelder} für eine erfolgreiche
+  {Zusammenarbeit} von {Entwicklung} und {Betrieb}.
+\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):189--204.
+
+\bibitem[Smeds et~al., 2015]{smeds_devops_2015}
+Smeds, J., Nybom, K., and Porres, I. (2015).
+\newblock {DevOps}: {A} {Definition} and {Perceived} {Adoption} {Impediments}.
+\newblock In {\em Agile {Processes} in {Software} {Engineering} and {Extreme}
+  {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
+  Publishing.
+
+\bibitem[Walls, 2013]{walls_building_2013}
+Walls, M. (2013).
+\newblock {\em Building a {DevOps} {Culture}}.
+\newblock O’Reilly Media, Inc., Sebastopol, CA, 1. auflage edition.
+
+\bibitem[Willis, 2010]{willis_what_2010}
+Willis, J. (2010).
+\newblock What {Devops} {Means} to {Me}.
 
 \bibitem[Wilmer, 2021]{wilmer_rechtliche_2021}
 Wilmer, T. (2021).
