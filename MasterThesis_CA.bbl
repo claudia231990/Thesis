@@ -1,5 +1,14 @@
 \begin{thebibliography}{}
 
+\bibitem[Abrahamsson et~al., 2016]{abrahamsson_product-focused_2016}
+Abrahamsson, P., Jedlitschka, A., Nguyen~Duc, A., Felderer, M., Amasaki, S.,
+  and Mikkonen, T., editors (2016).
+\newblock {\em Product-{Focused} {Software} {Process} {Improvement}: 17th
+  {International} {Conference}, {PROFES} 2016, {Trondheim}, {Norway},
+  {November} 22-24, 2016, {Proceedings}}, volume 10027 of {\em Lecture {Notes}
+  in {Computer} {Science}}.
+\newblock Springer International Publishing, Cham.
+
 \bibitem[Allmann and {Nomos Verlagsgesellschaft}, 2019]{allmann_open_2019}
 Allmann, I. and {Nomos Verlagsgesellschaft} (2019).
 \newblock {\em Open {Source} {Compliance}}.
@@ -13,16 +22,42 @@ Alt, R., Auth, G., and Kögler, C. (2017).
 \newblock Essentials. Springer Gabler, Wiesbaden.
 \newblock OCLC: 992991783.
 
+\bibitem[Bakaji and Murugaiyan, 2012]{bakaji_waterfall_2012}
+Bakaji, S. and Murugaiyan, S. (2012).
+\newblock Waterfall vs. {V}-{Model} vs. {Agile}: a comparative study on {SDLC}.
+\newblock {\em International Journal of Information Technology and Business
+  Management}, 2(1):26--30.
+
+\bibitem[Cohen et~al., 2004]{cohen_introduction_2004}
+Cohen, D., Lindvall, M., and Costa, P. (2004).
+\newblock An {Introduction} to {Agile} {Methods}.
+\newblock In {\em Advances in {Computers}}, volume~62, pages 1--66. Elsevier.
+
 \bibitem[Dyck et~al., 2015]{dyck_towards_2015}
 Dyck, A., Penners, R., and Lichter, H. (2015).
 \newblock Towards {Definitions} for {Release} {Engineering} and {DevOps}.
 \newblock In {\em 2015 {IEEE}/{ACM} 3rd {International} {Workshop} on {Release}
   {Engineering}}, pages 3--3, Florence, Italy. IEEE.
 
+\bibitem[Ebert et~al., 2016]{ebert_devops_2016}
+Ebert, C., Gallardo, G., Hernantes, J., and Serrano, N. (2016).
+\newblock {DevOps}.
+\newblock {\em IEEE Software}, 33(3):94--100.
+
 \bibitem[e.V., ]{bitkom_ev_open_nodate}
 e.V., B.
 \newblock Open {Source} {Monitor} – {Studienbericht} 2019.
 \newblock Technical report.
+
+\bibitem[Haffke et~al., 2017]{haffke_transformative_2017}
+Haffke, I., Kalgovas, B., and Benlian, A. (2017).
+\newblock The {Transformative} {Role} of {Bimodal} {IT} in an {Era} of
+  {Digital} {Business}.
+
+\bibitem[Halstenberg et~al., 2020]{halstenberg_devops_2020}
+Halstenberg, J., Pfitzinger, B., and Jestädt, T. (2020).
+\newblock {\em {DevOps}: {Ein} Überblick}.
+\newblock essentials. Springer Fachmedien Wiesbaden, Wiesbaden.
 
 \bibitem[Helmreich and Riehle, 2012]{helmreich_geschaftsrisiken_2012}
 Helmreich, M. and Riehle, D. (2012).
@@ -64,18 +99,50 @@ Keßler, S. (2013).
   {Anwenderunternehmen}}.
 \newblock Springer Fachmedien Wiesbaden, Wiesbaden.
 
+\bibitem[Kim, 2012]{kim_three_2012}
+Kim, G. (2012).
+\newblock The {Three} {Ways}: the {Pinciples} {Underplinning} {DevOps}.
+
+\bibitem[Kim et~al., 2017]{kim_devops-handbuch_2017}
+Kim, G., Humble, J., Debois, P., and Willis, J. (2017).
+\newblock {\em Das {DevOps}-{Handbuch}: {Teams}, {Tools} und {Infrastrukturen}
+  erfolgreich umgestalten}.
+\newblock O'Reilly, Heidelberg, 1. auflage edition.
+\newblock OCLC: 979555777.
+
+\bibitem[Kneuper, 2017]{kneuper_sixty_2017}
+Kneuper, R. (2017).
+\newblock Sixty {Years} of {Software} {Development} {Life} {Cycle} {Models}.
+\newblock {\em IEEE Annals of the History of Computing}, 39(3):41--54.
+
 \bibitem[König and Kugel, 2019]{konig_devopswelcome_2019}
 König, G. and Kugel, R. (2019).
 \newblock {DevOps}—{Welcome} to the {Jungle}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
 
+\bibitem[Lwakatare et~al., 2019]{lwakatare_devops_2019}
+Lwakatare, L.~E., Kilamo, T., Karvonen, T., Sauvola, T., Heikkilä, V.,
+  Itkonen, J., Kuvaja, P., Mikkonen, T., Oivo, M., and Lassenius, C. (2019).
+\newblock {DevOps} in practice: {A} multiple case study of five companies.
+\newblock {\em Information and Software Technology}, 114:217--230.
+
 \bibitem[Müller, 2010]{muller_whats_2010}
 Müller, E. (2010).
 \newblock What´s a "{DevOp}?".
 
+\bibitem[Nelson, 2016]{nelson_devops_2016}
+Nelson, J. (2016).
+\newblock {DevOps} as a {Lean} {Strategy}.
+\newblock In {\em Becoming a {Lean} {Library}}, pages 123--130. Elsevier.
+
 \bibitem[Puppet, 2021]{puppet_inc_2020_2021}
 Puppet, I. (2021).
 \newblock 2020 {STATE} {OF} {DEVOPS} {REPORT}.
+
+\bibitem[Ravichandran et~al., 2016]{ravichandran_devops_2016}
+Ravichandran, A., Taylor, K., and Waterhouse, P. (2016).
+\newblock {\em {DevOps} for {Digital} {Leaders}}.
+\newblock Apress, Berkeley, CA.
 
 \bibitem[Roche, 2011]{roche_roche_2011}
 Roche, J. (2011).
@@ -88,6 +155,13 @@ Samulat, P. (2017).
 \newblock Raus aus den {Silos} – mit {DevOps} zum {Lean} {Manufacturing}:
   {Der} {Weg} zur {Plattform} „{Lean} {IT}“.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):205--215.
+
+\bibitem[Sharma, 2017]{sharma_devops_2017}
+Sharma, S. (2017).
+\newblock {\em The {DevOps} adoption playbook: a guide to adopting {DevOps} in
+  a multi-speed {IT} enterprise}.
+\newblock Wiley, Indianapolis, IN.
+\newblock OCLC: ocn953222693.
 
 \bibitem[Söllner, 2017]{sollner_devops_2017}
 Söllner, D. (2017).
@@ -102,10 +176,28 @@ Smeds, J., Nybom, K., and Porres, I. (2015).
   {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
   Publishing.
 
+\bibitem[Verona, 2016]{verona_practical_2016}
+Verona, J. (2016).
+\newblock {\em Practical {DevOps}: harness the power of {DevOps} to boost your
+  skill set and make your {IT} organization perform better}.
+\newblock Open source community experience distilled. Packt Publishing,
+  Birmingham Mumbai.
+
 \bibitem[Walls, 2013]{walls_building_2013}
 Walls, M. (2013).
 \newblock {\em Building a {DevOps} {Culture}}.
 \newblock O’Reilly Media, Inc., Sebastopol, CA, 1. auflage edition.
+
+\bibitem[Wettinger et~al., 2016]{wettinger_streamlining_2016}
+Wettinger, J., Breitenbücher, U., Kopp, O., and Leymann, F. (2016).
+\newblock Streamlining {DevOps} automation for {Cloud} applications using
+  {TOSCA} as standardized metamodel.
+\newblock {\em Future Generation Computer Systems}, 56:317--332.
+
+\bibitem[Wiedemann et~al., 2019]{wiedemann_research_2019}
+Wiedemann, A., Forsgren, N., Wiesche, M., Gewald, H., and Krcmar, H. (2019).
+\newblock Research for practice: the {DevOps} phenomenon.
+\newblock {\em Communications of the ACM}, 62(8):44--49.
 
 \bibitem[Willis, 2010]{willis_what_2010}
 Willis, J. (2010).

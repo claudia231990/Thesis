@@ -9,45 +9,46 @@ Warning--I didn't find a database entry for "sujecki__2005"
 Warning--empty school in allmann_open_2019
 Warning--empty year in bitkom_ev_open_nodate
 Warning--empty institution in bitkom_ev_open_nodate
-You've used 22 entries,
+Warning--empty booktitle in haffke_transformative_2017
+You've used 38 entries,
             1935 wiz_defined-function locations,
-            591 strings with 6654 characters,
-and the built_in function-call counts, 7330 in all, are:
-= -- 747
-> -- 227
-< -- 20
-+ -- 72
-- -- 70
-* -- 568
-:= -- 1313
-add.period$ -- 65
-call.type$ -- 22
-change.case$ -- 142
-chr.to.int$ -- 22
-cite$ -- 25
-duplicate$ -- 301
-empty$ -- 529
-format.name$ -- 100
-if$ -- 1425
+            675 strings with 9603 characters,
+and the built_in function-call counts, 13831 in all, are:
+= -- 1374
+> -- 531
+< -- 30
++ -- 184
+- -- 174
+* -- 1120
+:= -- 2456
+add.period$ -- 117
+call.type$ -- 38
+change.case$ -- 269
+chr.to.int$ -- 38
+cite$ -- 42
+duplicate$ -- 549
+empty$ -- 968
+format.name$ -- 222
+if$ -- 2691
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 18
-newline$ -- 109
-num.names$ -- 66
-pop$ -- 114
+missing$ -- 38
+newline$ -- 189
+num.names$ -- 115
+pop$ -- 242
 preamble$ -- 1
-purify$ -- 145
+purify$ -- 277
 quote$ -- 0
-skip$ -- 234
+skip$ -- 408
 stack$ -- 0
-substring$ -- 493
-swap$ -- 29
-text.length$ -- 2
+substring$ -- 873
+swap$ -- 60
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 124
-warning$ -- 3
-while$ -- 66
+type$ -- 208
+warning$ -- 4
+while$ -- 116
 width$ -- 0
-write$ -- 277
-(There were 4 warnings)
+write$ -- 490
+(There were 5 warnings)
