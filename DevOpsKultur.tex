@@ -4,19 +4,27 @@ In diesem Abschnitt wird zunächst auf die wesentlichen Bestandteile und die Zie
 
 In diesem Rahmen baut DevOps auf den Hauptprinzipien, als das Model der \textit{'The Three Ways'} auf, die von dem Autor und Erfinder des DevOps-Ansatzes Gene Kim \cite{kim_devops-handbuch_2017} definiert wurden. 
 
-Dieses Model der drei Wege bilden die zugrunde liegenden Prinzipien von DevOps ab, indem das Verhalten und die Muster von DevOps näher beschrieben werden. \cite[S. 9 - 11]{kim_devops-handbuch_2017}, \cite{kim_three_2012}  
+Dieses Model der drei Wege bilden die zugrunde liegenden Prinzipien von DevOps ab, indem das Verhalten und die Muster von DevOps näher beschrieben werden. \cite[S. 9 - 44]{kim_devops-handbuch_2017}, \cite{kim_three_2012}  
 
 Zunächst bildet der erste Weg die Grundlage für DevOps ab und betont die Leistung des gesamten Systems, im Gegensatz zur Leistung eines einzelnen Teams, Silos oder Abteilungen. 
 
 Der Fokus liegt hierbei auf einem schnellen Arbeitsfluss des gesamten Systems, der durch die IT ermöglicht wird. 
 
+In diesem Sinne müssen sich Opimierungen auf das gesamte System auswirken und sich nicht auf einen bestimmten Bestandteil beziehen. 
+
+Das Ergebnis einer lokalen Veränderung zeigt meist keine Wirkung und würde im schlechteren Fall eine Verschlimmerung der Gesamtsituation herbeiführen. \cite[S. 252]{tiemeyer_handbuch_2021} 
+
+Zudem sollte eine Veränderung, die ausschließlich stromab eine Verbesserung innerhalb des Wertestroms zeigt und stromab stark erschwert, kann nicht förderlich für das gesamte System sein. \cite[S. 252]{tiemeyer_handbuch_2021}
+
 Den Anfang stellt der Kunde dar, über die Entwicklung bis hin zu den Operations.
 
-Dabei wird das Produkt, basierend auf den identifizierten Anforderungen, von der Entwicklung erstellt und in den Betrieb übergeben, wo dies dem Kunden ausgeliefert wird. 
+Dabei wird das Produkt, basierend auf den identifizierten Anforderungen des Kundenanforderungen, von der Entwicklung erstellt und in den Betrieb übergeben, wo das Ergebnis dem Kunden ausgeliefert wird.\cite[S. 12]{halstenberg_devops_2020} 
 
-Während dieses Schrittes sind alle Arbeiten sichtbar und in kleinen Aufgaben aufgeteilt, die in bestimmten Intervallen ausgeführt werden. 
+Der erste Schritt greift zudem den Grundgedanken des Lean-Ansatzes auf, indem ein Fehler nicht an nachfolgede Arbeitseinheiten weitergegeben werden darf um damit einen verbesserter Arbeitsfluss aufrecht gehalten werden kann. \cite[S. 252]{tiemeyer_handbuch_2021}  
 
-Zu den Zielen des Ersten Weges gehört, dass bekannte Fehler an nachfolgende Arbeitsplätze nicht weitergegeben werden, dass eine lokale Optimierung niemals zu einer globalen Verschlechterung führt und dass versucht wird, ein tiefes Verständnis des gesamten Systems zu erlangen. 
+Daher sind alle Arbeiten während dieses Schrittes sichtbar und in kleinen Aufgaben aufgeteilt, die in bestimmten Intervallen ausgeführt werden. 
+
+Zu den Zielen des Ersten Weges gehört, dass bekannte Fehler an nachfolgende Arbeitsplätze nicht weitergegeben werden, dass eine lokale Optimierung niemals zu einer globalen Verschlechterung führt und dass versucht wird, ein tiefes Verständnis des gesamten Systems zu erlangen. \cite{kim_three_2012}  
 
 \begin{figure}[h]
     \centering
@@ -24,15 +32,21 @@ Zu den Zielen des Ersten Weges gehört, dass bekannte Fehler an nachfolgende Arb
     \caption{Der erste Weg: Systemdenken \cite{kim_three_2012}}
 \end{figure}
 
-Der zweite Weg beschreibt das Gestalten von effizienten Feedbackschleifen, um Fehler schnell und frühzeitig zu erkennen und zu beheben.
+Der zweite Weg beschreibt das Gestalten von effizienten Feedbackschleifen, um einerseits Fehler schnell und frühzeitig zu erkennen und zu beheben und andererseits den Prozess durchgängig im Auge zu behalten.
 
-Dies sollte sowohl auf Seiten von einzelnen Teams untereinander als auch zwischen Entwicklung und Betrieb eingebettet werden.
+Der zweite Schritt stellt den eigentlichen zentralen Ansatzes von DevOps dar, wobei das Feedback von verschiedener Natur sein kann. \cite[S. 254]{tiemeyer_handbuch_2021} 
 
-Damit soll verhindert werden, dass Probleme kein zweites Mal auftreten, sich Kontniuierlich aufbauen können und sich möglicherweise auf neue Aufgaben auswirken. 
+Dies sollte sowohl auf Seiten von einzelnen Teams untereinander als auch zwischen Entwicklung und Betrieb eingebettet werden. \cite[S. 94]{ravichandran_devops_2016}
+
+Denn je schneller Probleme oder Auswirkungen kommuniziert werden, desto besser kann eine Vorgehensweise festgelegt werden. 
+
+Damit soll verhindert werden, dass Fehler kein zweites Mal auftreten, sich kontinuierlich aufbauen können und sich möglicherweise auf neue Aufgaben auswirken. 
+
+Durch die erleicherte Kommunikation zwischen den einzelnen Teamitgliedern als Basis von Feedbackschleifen, führt dies zu einer erhöhten Effizienz des gesamten Teams. 
 
 Zudem können neue oder geänderte Kundenanforderungen mittels schneller Feedbackschleifen an die Entwicklung weitergegeben werden, um möglichst zeitnah die geeigneten Maßnahmen treffen zu können.
 
-Entscheidend ist, dass das Hinzufügen weiterer Kontrollschritte und schwerfällige Genehmigungsprozesse innerhalb großer Arbeitssyssteme die Wahrscheinlichkeit für zukünftige Fehler maßgeblich erhöht. 
+Entscheidend ist, dass das Hinzufügen weiterer Kontrollschritte und schwerfällige Genehmigungsprozesse innerhalb großer Arbeitssyssteme die Wahrscheinlichkeit für zukünftige Fehler maßgeblich erhöht. \cite[S. 31]{kim_devops-handbuch_2017} 
 
 Daher müssen DevOps-Teams die Freiheit haben, schnell Fehler zu beseitigen und ihre Arbeitsweise ohne organisatorische Hürden durchführen zu können.   
 
@@ -44,7 +58,7 @@ Die Ergebnisse des zweiten Wegs sind einerseits die Sicherstellung einer verbess
     \caption{Der zweite Weg: Feedback-Schleifen verstärken \cite{kim_three_2012}}
 \end{figure}
 
-Während sich der erste Weg technische und der zweite Weg organisatorische Aspekte beinhaltet, zielt der dritte Weg auf die Etablierung kultureller Änderungen ab. 
+Während sich der erste Weg technische und der zweite Weg organisatorische Aspekte beinhaltet, zielt der dritte Weg auf die Etablierung kultureller Änderungen ab um Innovationen weiter voranzutreiben. 
 
 Dieser beschreibt die Schaffung einer Kultur die einen dynamischen Ansatz zum kontniuierlichen Experimentieren und firmenweites Lernen ermöglicht. 
 
@@ -56,11 +70,11 @@ Dieser beschreibt die Schaffung einer Kultur die einen dynamischen Ansatz zum ko
 
 Mittels dieses Ansatzes kann tiefer in die Materie und damit Risiken eingegangen werden, um schwierige oder versteckte Probleme identifizieren zu können. 
 
-Imfolgedessen können die Fähigkeiten des DevOps-Teams insgesamt und jedes Teammitgliedes maßgeblich verbessert werden.
+Infolgedessen sollen Fehler nicht nur aktiv beseitigt, sondern proaktiv danach gesucht und verbessert werden. \cite[S. 255]{tiemeyer_handbuch_2021}
 
 Für eine erfolgreiche Durchführung des dritten Weges, sollte die etablierte Kultur auf Vertrauen beruhen. 
 
-Je höher der Grad des Vertrauens jedes Mitarbeiters, desto wahrscheinlicher und schneller ist die Weitergabe von gewonnenen Erkenntnissen.
+Je höher der Grad des Vertrauens jedes Mitarbeiters, desto wahrscheinlicher und schneller ist die Weitergabe von gewonnenen Erkenntnissen. \cite[S. 357]{kim_phoenix_2014}
 
 Gemäß der DevOps-Kultur entfällt insbesondere die Bewertung von entdeckten Fehlern, sondern die Möglichkeit von diesen zu lernen und sich zu verbessern, rückt in den Vordergrund. 
 

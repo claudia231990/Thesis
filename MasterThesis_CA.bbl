@@ -103,6 +103,12 @@ Keßler, S. (2013).
 Kim, G. (2012).
 \newblock The {Three} {Ways}: the {Pinciples} {Underplinning} {DevOps}.
 
+\bibitem[Kim et~al., 2014]{kim_phoenix_2014}
+Kim, G., Behr, K., and Spafford, G. (2014).
+\newblock {\em The {Phoenix} project: a novel about it, {DevOps}, and helping
+  your business win; [revised with new resource guide]}.
+\newblock IT Revolution Press, Portland, Or.
+
 \bibitem[Kim et~al., 2017]{kim_devops-handbuch_2017}
 Kim, G., Humble, J., Debois, P., and Willis, J. (2017).
 \newblock {\em Das {DevOps}-{Handbuch}: {Teams}, {Tools} und {Infrastrukturen}
@@ -175,6 +181,13 @@ Smeds, J., Nybom, K., and Porres, I. (2015).
 \newblock In {\em Agile {Processes} in {Software} {Engineering} and {Extreme}
   {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
   Publishing.
+
+\bibitem[Tiemeyer, 2021]{tiemeyer_handbuch_2021}
+Tiemeyer, E., editor (2021).
+\newblock {\em Handbuch {IT}-{System}- und {Plattformmanagement}:
+  {Handlungsfelder}, {Technologien}, {Managementinstrumente},
+  {Good}-{Practices}}.
+\newblock Hanser, München, 2. auflage edition.
 
 \bibitem[Verona, 2016]{verona_practical_2016}
 Verona, J. (2016).
