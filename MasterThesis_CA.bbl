@@ -28,6 +28,12 @@ Bakaji, S. and Murugaiyan, S. (2012).
 \newblock {\em International Journal of Information Technology and Business
   Management}, 2(1):26--30.
 
+\bibitem[Bass et~al., 2015]{bass_devops_2015}
+Bass, L., Weber, I.~M., and Zhu, L. (2015).
+\newblock {\em {DevOps}: a software architect's perspective}.
+\newblock The {SEI} series in software engineering. Addison-Wesley
+  Professional, New York.
+
 \bibitem[Cohen et~al., 2004]{cohen_introduction_2004}
 Cohen, D., Lindvall, M., and Costa, P. (2004).
 \newblock An {Introduction} to {Agile} {Methods}.
@@ -48,6 +54,22 @@ Ebert, C., Gallardo, G., Hernantes, J., and Serrano, N. (2016).
 e.V., B.
 \newblock Open {Source} {Monitor} – {Studienbericht} 2019.
 \newblock Technical report.
+
+\bibitem[Fitzgerald and Stol, 2014]{fitzgerald_continuous_2014}
+Fitzgerald, B. and Stol, K.-J. (2014).
+\newblock Continuous software engineering and beyond: trends and challenges.
+\newblock In {\em Proceedings of the 1st {International} {Workshop} on {Rapid}
+  {Continuous} {Software} {Engineering} - {RCoSE} 2014}, pages 1--9, Hyderabad,
+  India. ACM Press.
+
+\bibitem[Gotel and Leip, 2007]{concas_agile_2007}
+Gotel, O. and Leip, D. (2007).
+\newblock Agile {Software} {Development} {Meets} {Corporate} {Deployment}
+  {Procedures}: {Stretching} the {Agile} {Envelope}.
+\newblock In Concas, G., Damiani, E., Scotto, M., and Succi, G., editors, {\em
+  Agile {Processes} in {Software} {Engineering} and {Extreme} {Programming}},
+  volume 4536, pages 24--27. Springer Berlin Heidelberg, Berlin, Heidelberg.
+\newblock Series Title: Lecture Notes in Computer Science.
 
 \bibitem[Haffke et~al., 2017]{haffke_transformative_2017}
 Haffke, I., Kalgovas, B., and Benlian, A. (2017).
@@ -82,6 +104,13 @@ Humble, J. (2012).
 \bibitem[Humble, 2014]{humble_state_2014}
 Humble, J. (2014).
 \newblock The {State} of {DevOps}.
+
+\bibitem[Humble and Farley, 2011]{humble_continuous_2011}
+Humble, J. and Farley, D. (2011).
+\newblock {\em Continuous delivery: reliable software releases through build,
+  test, and deployment automation}.
+\newblock A {Martin} {Fowler} {Signature} {Book}. Addison-Wesley, Upper Saddle
+  River, NJ, 7th printing 2013 edition.
 
 \bibitem[Humble and Molesky, 2011]{humble_why_2011}
 Humble, J. and Molesky, J. (2011).
@@ -162,6 +191,11 @@ Samulat, P. (2017).
   {Der} {Weg} zur {Plattform} „{Lean} {IT}“.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):205--215.
 
+\bibitem[Schaefer and Söllner, 2017]{schaefer_devops_2017}
+Schaefer, P. and Söllner, D. (2017).
+\newblock {DevOps} by {Scrumban}.
+\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):251--260.
+
 \bibitem[Sharma, 2017]{sharma_devops_2017}
 Sharma, S. (2017).
 \newblock {\em The {DevOps} adoption playbook: a guide to adopting {DevOps} in
@@ -182,12 +216,28 @@ Smeds, J., Nybom, K., and Porres, I. (2015).
   {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
   Publishing.
 
+\bibitem[Sturm et~al., 2017]{sturm_devops_2017}
+Sturm, R., Pollard, C., and Craig, J. (2017).
+\newblock {DevOps} and {Continuous} {Delivery}.
+\newblock In {\em Application {Performance} {Management} ({APM}) in the
+  {Digital} {Enterprise}}, pages 121--135. Elsevier.
+
+\bibitem[TheDev, 2019]{thedev_eight_2019}
+TheDev, J. (2019).
+\newblock The {Eight} {Phases} of a {DevOps} {Pipeline}.
+
 \bibitem[Tiemeyer, 2021]{tiemeyer_handbuch_2021}
 Tiemeyer, E., editor (2021).
 \newblock {\em Handbuch {IT}-{System}- und {Plattformmanagement}:
   {Handlungsfelder}, {Technologien}, {Managementinstrumente},
   {Good}-{Practices}}.
 \newblock Hanser, München, 2. auflage edition.
+
+\bibitem[Tokarski et~al., 2018]{tokarski_strategische_2018}
+Tokarski, K.~O., Schellinger, J., and Berchtold, P., editors (2018).
+\newblock {\em Strategische {Organisation}: {Aktuelle} {Grundfragen} der
+  {Organisationsgestaltung}}.
+\newblock Springer Fachmedien Wiesbaden, Wiesbaden.
 
 \bibitem[Verona, 2016]{verona_practical_2016}
 Verona, J. (2016).
@@ -221,5 +271,11 @@ Wilmer, T. (2021).
 \newblock Rechtliche {Fallstricke} des {Einsatzes} von {Open} {Source}
   {Software} und freier {Software} – {Hinweise} für die {Praxis}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 58(2):271--287.
+
+\bibitem[Yarlagadda, 2021]{yarlagadda_devops_2021}
+Yarlagadda, R.~T. (2021).
+\newblock {DevOps} and {Its} {Practices}.
+\newblock {\em International Journal of Creative Research Thoughts (IJCRT)},
+  Volume 9(3):111 -- 119.
 
 \end{thebibliography}
