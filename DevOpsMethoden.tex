@@ -32,7 +32,7 @@ Die Methode des Continous Integration (dt. kontinuierliche Integration, kurz: CI
 
 Ziel ist es, die Qualität der Software sicherzustellen und schnelles Feedback über die Integrierbarkeit vor der Auslieferung zum Kunden zu erhalten. \cite[S. 266]{tokarski_strategische_2018} 
 
-Kernelement stellt ein Versionsverwaltungssystem (auch: Repository) dar, dessen wesentliche Aufgabe es ist, den DevOps-Teams dabei zu helfen, den Code zu organisieren, Änderungen zu verfolgen und automasierte Tests zu ermöglichen. 
+Kernelement stellt ein Versionsverwaltungssystem (auch: Repository) dar, dessen wesentliche Aufgabe es ist, den DevOps-Teams dabei zu helfen, den Code von mehreren Entwickeln zu organisieren, Änderungen zu verfolgen und automasierte Tests zu ermöglichen. 
 
 Zunächst werden neuer oder geänderter Code nach der Entwicklung und Prüfung regelmäßig und in möglichst kurzen Abständen in einem gemeinsamen Repository gemergt (dt. zusammengeführt). \cite[S. 13-16]{sharma_devops_2017}
 
@@ -54,86 +54,83 @@ Insgesamt umfasst CI Schritte wie die Codekompilierung, die Durchführung von Un
 
 \paragraph{Continuous Delivery}
 
-Bei dem Ansatz des Continuous Delivery handelt es sich um die nächste Stufe des Continuous Integration. 
+Da regelmäßig Builds durch die Continuous Integration erzeugt werden, müssen diese zeitnah in andere Umgebungen weitergeleitet werden. \cite[S. 16 - 18]{sharma_devops_2017}  
 
-Dabei werden die fehlerfreien Builds automatisch in produktionsähnlichen Testumgebungen bereitgestellt, in denen funktionale Tests, Integrationstests, Leistungstests und Sicherheitstests durchgeführt werden können, um zu bewerten, wie sich diese verhalten.
+Bei dem Ansatz des Continuous Delivery (dt. kontinuierliches Ausliefern, kurz: CD) handelt es sich um die nächste Stufe des Continuous Integration. 
 
-Zunächst werden die entstehenden Builds auf ihre Funktionalität, Stabilität und andere nicht-funktionale Anforderungen getestet, indem diese in einen produktionsähnlichen Staging- oder Testbereich bereitgestellt werden.
+Die Methode des Continuous Delivery baut auf einer regelmäßigen und automatisierten Bereitstellung des Builds an den Testbereich, zur anschließenden Bewertung und zu einer potentiellen Freigabe an die Kunden, auf. \cite[S. 16 - 18]{sharma_devops_2017}  
 
-Die Vorgehensweise der regelmäßigen Übergabe der entwickelten Funktionalität in den Testbereich und in den Betrieb zur Validierung und potenziellen Freigabe an den Kunden wird letztlich als Continuous Delivery
+Voraussetzung ist der Aufbau einer Continuous-Delivery-Pipeline, zum Ziel das Ausrollen der Software möglichst automatisiert für die Bereitstellung neuer Releases durchzuführen. \cite[S. 10]{wolff_continuous_2016}
 
-Der Ansatz des Continuous Delivery erfordert die Erstellung einer Delivery-Pipeline. 
+Sobald ein neues Artefakt innerhalb des Repositorys übertragen wurde, wird die Continuous-Delivery-Pipeline ausgelöst. \cite[S. 14]{verona_practical_2016} 
 
-Da die Continuous Integration regelmäßig Builds erzeugt, müssen diese zeitnah in andere Umgebungen in der Delivery-Pipeline weitergeleitet werden.
+In diesem Rahmen werden die fehlerfreien Builds automasiert innerhalb eines produktionsähnlichen Staging- oder Testbereich bereitgestellt, um nach dem Testen zu bewerten, wie sich die Builds produktionsnah verhalten und letztlich in die Produktion verlagert werden können. \cite[S. 16]{sharma_devops_2017}
 
-Builds müssen in der Testumgebung bereitgestellt werden, um Tests durchzuführen, in der Integrationsumgebung für Integrations-Builds und Integrationstests, und so weiter, bis hin zur Produktion.
+Falls das Testen in der Pipeline fehlschlägt, werden die Entwickler informiert und haben dmait die Gelegenheit kurzfristig Anpassungen an dem jeweiligen Build vorzunehmen oder diesen zu verwerfen. 
 
-Continuous Delivery erleichtert die Bereitstellung von Anwendungen von einer Umgebung zur nächsten, je nach Bedarf.
+Insgesamt soll sichergestellt werden, dass die neu entstandene Version für den Einsatz im Produktivbetrieb geeignet ist. \cite{thedev_eight_2019}
 
-Continuous Delivery erfordert die Orchestrierung der Bereitstellung von Code, Inhalten, Anwendungen, Middleware- und Umgebungskonfigurationen sowie Prozessänderungen. 
+Das Versionieren in Releases und das Ausliefern der Software wird bei Continuous Delivery möglichst vollständig durch geeignete Tools automatisiert. 
 
+Die Methode des Continuous Delivery beinhaltet mehrere Vorteile für das gesamte DevOps-Team. 
 
-Nach der Verschiebung in eine Staging-Umgebung muss entschieden werden, ob das Build in die Produktion verlagert werden kann oder nochmal bewertet werden muss. 
+So wird aufgrund des hohen Grades an Automatisierung der Release-Prozess maßgeblich verbessert, indem Risiken und Engpässe durch die häufige Auslieferung von kleinen Features vermieden werden können und damit ein kontinuierlicher Integrationsfluss sichergestellt werden kann. \cite[S. 18]{wolff_continuous_2016}
 
-Durch die Codefreigabe in kleinen Artefakten können Engpässe vermieden und ein kontinuierlicher Fluss sichergestellt werden. 
-
-
-%Wolff
-Grundlage für CD ist der Aufbau einer Continuous-Delivery-Pipeline, die das Ausrollen der Software weitgehend automatisiert und so einen reproduzierbaren Prozess für die Bereitstellung neuer Releases darstellt. 
-
-
-%Bloomberg
-Dabei werden die fehlerfreien Builds automatisch in produktionsähnlichen Testumgebungen bereitgestellt, in denen funktionale Tests, Integrationstests, Leistungstests und Sicherheitstests durchgeführt werden können.
-
-Die CD-Pipeline wird durch jedes neue Build-Artefakt ausgelöst, das im Repository veröffentlicht wird. Im Idealfall stellt die CD-Pipeline die Arbeit auch automatisch in die Produktionsumgebung bereit, wenn alle Tests bestanden sind. 
-
-Falls ein Test in der Pipeline fehlschlägt, wird das Deployment gestoppt und das Team wird darüber informiert, dass mit diesem Build etwas nicht stimmt. 
-
-Die Anwendung von Continuous Delivery verändert den Release-Management-Prozess rund um die Anwendung radikal. 
-
-Die CD-Pipeline reduziert die Komplexität der Release-Prozesse, indem sie die Lieferrisiken verringert und die Geschwindigkeit der Lieferung und des Feedbacks erhöht. 
-
-Die Änderungen, die an die Produktion geliefert werden, sind so klein wie möglich, gründlich getestet und werden so oft und so automatisch wie möglich bereitgestellt.
-
-Die technische Umsetzung von automatisiertem CD ist jedoch nicht einfach. So kann es beispielsweise einige Zeit dauern, bis der Grad der Testautomatisierung erreicht ist, der es dem Team ermöglicht, sich darauf zu verlassen, dass die Bereitstellung sicher ist. Daher ist in einigen Fällen ein menschliches Eingreifen in der letzten Phase erforderlich, in der die Änderung in die Produktion übernommen wird. (Verona 2016, 16-17.) 
-
-
-
-
-
-
-
-
-
-
-Continuous Delivery ist eine Erweiterung von Continuous Integration, die den Prozess der BEreitstellung eiens neues Builds in der Produktion automatisiert.
-
-Ziele sind: 
-1. Automatisierte Tests für jeden neuen Build durchzuführen, um zu überprüfen, ob die Builds für die Produktion bereit sind, und diejenigen, die es nicht sind, zu verwerfen.
-2.Die automatische Bereitstellung und Konfiguration von Bereitstellungsumgebungen sowie das Testen dieser Umgebungen auf Stabilität, Leistung und Sicherheitskonformität zu verwalten. 
-3. Bereitstellung einer neuen Version für die Produktion, wenn diese von der Organisation genehmigt und manuell ausgelöst wurde.
-
-
-Continuous Delivery ist auf die Test- und Release-Phasen der Pipeline abgestimmt und ermöglicht es Unternehmen, die Freigabe neuer Builds in beliebigen Abständen manuell auszulösen.
-
-
-
-
-Continuous Delivery (CD) ist der nächste logische Schritt von CI. Codeänderungen werden automatisch erstellt, getestet und für die Freigabe in die Produktion verpackt. Ziel ist es, Aktualisierungen schnell und nachhaltig an die Benutzer weiterzugeben.
-
-
-Nach den CI-Schritten wird automatisiert sichergestellt, dass die neu entstandene Version dafür bereit ist, im Produktivbetrieb eingesetzt zu werden. Der CI-Prozess wird um den
-Schritt Akzeptanztest / Staging / Performancetests erweitert. In diesem wird die neue Version
-unter anderem in einer der Produktivumgebung so nahe wie möglich nachempfundenen
-Testumgebung (Staging-Umgebung) auf Herz und Nieren getestet 
-
+Zudem sind die Test- und Release-Phasen der Pipeline abgestimmt und ermöglicht es Unternehmen, das Release neuer Builds in beliebigen Abständen manuell auszulösen. \cite{thedev_eight_2019}
 
 \paragraph{Continuous Deployment}
 
+Die letzte Phase der Delivery-Pipeline ist das Continuous Deployment (dt. kontinuierliche Bereitstellung, kurz: CD).
+
+Kernaufgabe des Continuous Deployments ist die voll automatisierte Überführung des Codes in die Produktivumgebung mithilfe der Delivery-Pipeline. \cite[S. 29]{alt_innovationsorientiertes_2017} 
+
+Sowohl Continuous Delivery als auch Continuous Deployment werden in der Literatur oftmals synonym verwendet, da beide auf analoge Konzepte basieren. 
+
+Der Unterschied zwischen beiden Methoden besteht darin, dass Continuous Deployment ein automatisiertes Ausliefern der neuen Version auf die Produktivumgebung beinhaltet, während Continuous Delivery die Auslieferung auf nicht-produktive Umgebungen abzielt. 
+
+Demnach kann das Deployment auf die Produktivumgebung im Rahmen des Continuous Delivery manuell entschieden werden, die widerrum von den fachlichen Erfordernissen des Kunden abhängt. \cite[S. 29 - 30]{alt_innovationsorientiertes_2017} 
+
+Aufgrund der automatisierten Freigabe des Releases, muss sowohl die Qualität als auch die Lauffähigkeit der Pipeline besonders gesichert sein, was wiederrum in der Phase des Continuous Delivery gewährleistet sein muss. \cite[S. 269]{tiemeyer_handbuch_2021} 
+
+Continuous Deployment entspricht demnach dem höchsten Reifegrad einer Delivery-Pipeline, was den DevOps-Teams ermöglicht, kleinste Features und Änderungen für den Anwender ausliefern zu können und wäre theoretisch das höchste Ziel der modernen Softwareentwicklung. \cite{humble_why_2011}  
+
+Durch den höchsten Grad der Automatisierung können die Vorlaufzeiten niedrig gehalten und folglich schnelles Feedback erhalten werden. \cite{humble_why_2011}   
+
+Das Ziel ist es demnach, die Zeit bis zur Markteinführung von der Software zu verkürzen, indem jeder Commit in die Produktivumgebung bereitgestellt wird. 
+
+Viele Entwickler und Unternehmen lehnen die Methode des Continuous Deployments jedoch ab, da es ein Risiko darstellt, wenn eingecheckter Code durch das Testing fehlgeschlagen ist, automasiert in die Produktivumgebung bereitgestellt wird. \cite[S. 269]{tiemeyer_handbuch_2021}  
+
+Um dieses Risiko möglichst gering zu halten, müssen einerseits nahezu produktionsreife Codes und robuste Test-Frameworks vorhanden sein und andererseits alle DevOps-Mechanismen zuverlässig arbeiten. \cite[S. 269]{tiemeyer_handbuch_2021}  
+
+Darüber hinaus verlangt der Continuous-Deployment-Ansatz eine starke Architekturaufsicht und Teamdisziplin, damit das Release nicht die Qualität oder den von den Kunden realisierten Nutzen in Mitleidenschaft zieht.\cite[S. 119 - 120]{erder_continuous_2016} 
+
+An diesem Punkt ist es wichtig, eine Kultur des Vertrauens aufzubauen, die die Zusammenarbeit aller Teamsmitglieder fördert. \cite{humble_why_2011} 
+
 \paragraph{Continuous Monitoring}
+
+Die Vorgehensweise des Continuous Monitoring umfasst die durchgängige Überwachung, der zugrunde liegenden Infrastruktur und des im Betrieb befindlichen Quellcodes. \cite{van_hoorn_continuous_2012} 
+
+Dabei stellt das Ops-Team sicher, dass die Anwendung in der Produktion funktioniert wie gewünscht und die Umgebung stabil läuft. 
+
+Hierfür haben die Ops-Teams eigene Tools zur Überwachung ihrer Umgebung und laufenden Systeme und zwar von der Prozessebene bis hinunter zu Ebenen, die niedriger sind, als es die Systemüberwachungstools erlauben würden. \cite[S. 26]{sharma_devops_2017}
+
+Oftmals werden Selbstüberwachungs- und Analysefunktionen direkt in die zu entwickelnden Anwendungen eingebaut, um eine kontinuierliche End-to-End-Überwachung zu gewährleisten. \cite[S. 26]{sharma_devops_2017}
+
+Neben der Anwendungs- und Systemleistung muss das Benutzerverhalten der Anwendung und die Benutzerzufriedenheit ebenfalls überwacht werden, um ein detalliertes Feedback zu erhalten. \cite[S. 112 - 113]{erder_continuous_2016}
+
+Dieses Feedback kann schnell in die Phase der Entwicklung zurückfließen, um bessere Entscheidungen bei der Entwicklung der nächsten Änderung treffen zu können. 
+
+Auf diese Weise können zusätzliche und neue Anforderungen und Funktionen berücksicht, Probleme behoben und das weitere Vorgehen angepasst werden. 
+
+Sowohl das Feedback als auch Fehler, Probleme oder Ausfälle werden anhand einer Feedbackschleife zurück an die Entwicklung kommuniziert und im besten Fall möglichst zeitnah behoben. \cite[S. 112 - 113]{erder_continuous_2016} 
+
+Im Ergebnis bildet diese Feedbackschleife ein Instrument, zur kontinuierlichen Gestaltung und Orientierung für das Softwareprodukt.   
 
 \paragraph{Infrastructur-as-a-Code}
 
+Obwohl die Vorgehensweise des \textit{Infrastructur-as-a-Code} (kurz: IaC) keine 'Continuous'-Bezeichnung besitzt, ist diese Praktik wesentlicher Bestandteil der gängigen DevOps-Methoden. 
+
+Enstanden ist der IaC-Ansatz zunächst im Bereich des Cloud Computing, als eine Vorraussetzung für automasierte Delivery-Modelle wie IaaS (Infrastructure as a Service). 
 
 
 
@@ -146,16 +143,54 @@ Testumgebung (Staging-Umgebung) auf Herz und Nieren getestet
 
 
 
-Unter Continuous Integration versteht man im Wesentlichen den Build-Prozess und die darauffolgenden automatisierten Tests, die durch das Einchecken von neuen Code Changes in das Software Repository ausgelöst werden. Dies sorgt dafür, dass schnell klar ist, ob neue Codeänderungen einer Komponente im Gesamtkontext der Anwendung lauffähig sind. Durch das häufige Testen ist außerdem die Zuordnung des Fehlers zur verursachenden Änderung leichter herzustellen.\\
+Infrastruktur-as-Code steht für Test und Produktionsumgebungen, die komplett automatisiert bereitgestellt und aktualisiert werden
+können. Metriken liefern technische und fachliche Informationen zu der in Produktion laufenden
+Software: Sie ermöglichen A/B-Tests, um den alten
+Prozess parallel zum neuen Prozess zu betreiben und
+so aussagekräftige Vergleiche anstellen zu können.
+Automatisierung kann dabei Kopfmonopole
+verringern und Liegezeiten reduzieren. Allerdings
+wird sie nur dann die notwendige Akzeptanz finden, wenn sie zuverlässig und schnell ist – sei es
+bei der Installation der Software als auch bei der
+Ausführung der Tests.
+Übergaben werden mit einer produktzentrierten Organisationsstruktur minimiert: Verschiedene
+Produktteams verantworten für ihre jeweiligen Teile
+alle Phasen wie fachliches und technisches Design,
+Umsetzung, Test, Installation und Betrieb (Abb. 1).
+Durch räumliche Nähe und personelle Verflechtung
+berücksichtigten sie Erkenntnisse in einer Phase
+direkt in anderen Phasen
 
-Der Continuous Integration-Prozess ist nach den Änderungen am Source Code und der Ausführung der Tests abgeschlossen und beginnt daraufhin wieder von vorn. Continuous Delivery setzt an dieser Stelle an und erweitert den Feedback-Zyklus bis in die Produktion. Erst wenn die Anwendung in die Produktion deployt wurde und dem Kunden zur Verfügung steht, ist die "Definition of Done" erfüllt. Vor diesem Hintergrund wird Continuous Delivery auch als finale Stage oder "letzte Meile" von Continuous Integration bezeichnet.\\
-
-Continuous Deployment (das andere „CD“) kann sich auf die automatische Freigabe von Entwickleränderungen vom Repository zur Produktivphase beziehen, wo sie direkt vom Kunden genutzt werden können. Dieser Vorgang soll der Überlastung von Operations-Teams bei manuellen Prozessen entgegenwirken, die die Anwendungsbereitstellung verlangsamen. Continuous Development baut die Vorteile der Continuous Delivery aus, indem auch noch die nächste Phase der Pipeline automatisiert wird.\\
-
-Unter Deployment Pipeline versteht man einen Prozess, der die Schritte Build, Test und Deployment des Softwareauslieferungsprozesses über mehrere Stages hinweg automatisiert durchläuft.\\
 
 
-Nachfolgend werden verschiedene Testarten und Begriffe erläutert: Staging-Umgebung, Unit Test, Acceptance Test, Integration Test, Smoke Test:
+
+
+IaC verfolgt das Ziel einer regelbasierten 
+Automatisierung der Installation und Konfguration von virtuellen und physischen Infrastrukturkomponenten wie etwa Server durch Softwareskripte (Spinellis 2012). Im Sinne einer programmierbaren Infrastruktur wird diese zunächst in 
+Form von Programmcode abgebildet, um bei der Konfguration ähnliche Tools 
+und Mechanismen verwenden zu können, wie beim Deployment von Software. 
+Durch Automatisierung lassen sich Konfgurationsprozesse beschleunigen, sie 
+gewinnen an Flexibilität, das Fehlerrisiko sinkt im Vergleich zum manuellen Konfgurieren und schließlich dient der Code auch als Dokumentation (Hüttermann 
+2012; Ramos 2015). Dazu erfordert IaC die frühzeitige Einbeziehung von Systemadministratoren in den Softwareentwicklungsprozess sowie ein tieferes Verständnis der Entwickler für die Basis-Infrastruktur. Es leistet somit einen Beitrag 
+zur engeren Zusammenarbeit von Dev und Ops. Aus Betriebsperspektive besteht 
+eine direkte Verwandtschaft zu den Ausprägungen von „Software-defned“-Konzepten, wie etwa Storage, Network oder Datacenter. Für die Realisierung von IaC 
+sind mittlerweile leistungsfähige System Confguration Management Toolsets 
+wie Puppet oder Chef verfügbar. Ferner unterstützen Cloudanbieter wie Amazon 
+(AWS) oder Microsoft (Azure) IaC mit ihren APIs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

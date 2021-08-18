@@ -50,6 +50,12 @@ Ebert, C., Gallardo, G., Hernantes, J., and Serrano, N. (2016).
 \newblock {DevOps}.
 \newblock {\em IEEE Software}, 33(3):94--100.
 
+\bibitem[Erder and Pureur, 2016]{erder_continuous_2016}
+Erder, M. and Pureur, P. (2016).
+\newblock {\em Continuous {Architecture} - {Sustainable} {Architecture} in an
+  {Agile} {andCloud}-{Centric} {World}}.
+\newblock Elsevier, Waltham, MA, 1. auflage edition.
+
 \bibitem[e.V., ]{bitkom_ev_open_nodate}
 e.V., B.
 \newblock Open {Source} {Monitor} – {Studienbericht} 2019.
@@ -239,6 +245,13 @@ Tokarski, K.~O., Schellinger, J., and Berchtold, P., editors (2018).
   {Organisationsgestaltung}}.
 \newblock Springer Fachmedien Wiesbaden, Wiesbaden.
 
+\bibitem[Van~Hoorn et~al., 2012]{van_hoorn_continuous_2012}
+Van~Hoorn, A., Rohr, M., Hasselbring, W., Waller, J., Ehlers, J., and Frey, S.
+  (2012).
+\newblock Continuous {Monitoring} of {Software} {Services}: {Design} and
+  {Application} of the {Kieker} {Framework}.
+\newblock Technical report, Kiel University, Germany.
+
 \bibitem[Verona, 2016]{verona_practical_2016}
 Verona, J. (2016).
 \newblock {\em Practical {DevOps}: harness the power of {DevOps} to boost your
@@ -271,6 +284,12 @@ Wilmer, T. (2021).
 \newblock Rechtliche {Fallstricke} des {Einsatzes} von {Open} {Source}
   {Software} und freier {Software} – {Hinweise} für die {Praxis}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 58(2):271--287.
+
+\bibitem[Wolff, 2016]{wolff_continuous_2016}
+Wolff, E. (2016).
+\newblock {\em Continuous {Delivery}: der pragmatische {Einstieg}}.
+\newblock dpunkt.verlag, Heidelberg, 2., aktualisierte und erweiterte auflage
+  edition.
 
 \bibitem[Yarlagadda, 2021]{yarlagadda_devops_2021}
 Yarlagadda, R.~T. (2021).
