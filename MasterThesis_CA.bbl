@@ -28,6 +28,10 @@ Bakaji, S. and Murugaiyan, S. (2012).
 \newblock {\em International Journal of Information Technology and Business
   Management}, 2(1):26--30.
 
+\bibitem[Balajee, 2020]{balajee_what_2020}
+Balajee, N. (2020).
+\newblock What is {CI}/{CD} {Pipeline}?
+
 \bibitem[Bass et~al., 2015]{bass_devops_2015}
 Bass, L., Weber, I.~M., and Zhu, L. (2015).
 \newblock {\em {DevOps}: a software architect's perspective}.
@@ -68,6 +72,13 @@ Fitzgerald, B. and Stol, K.-J. (2014).
   {Continuous} {Software} {Engineering} - {RCoSE} 2014}, pages 1--9, Hyderabad,
   India. ACM Press.
 
+\bibitem[Forsgren et~al., 2019]{forsgren_mindset_2019}
+Forsgren, N., Humble, J., and Kim, G. (2019).
+\newblock {\em Das {Mindset} von {DevOps}: {Accelerate}: 24
+  {Schlüsselkompetenzen}, um leistungsstarke {Technologieunternehmen} zu
+  entwickeln und zu skalieren}.
+\newblock Vahlen, München.
+
 \bibitem[Gotel and Leip, 2007]{concas_agile_2007}
 Gotel, O. and Leip, D. (2007).
 \newblock Agile {Software} {Development} {Meets} {Corporate} {Deployment}
@@ -98,6 +109,13 @@ Hemon, A., Lyonnet, B., Rowe, F., and Fitzgerald, B. (2020).
 \newblock From {Agile} to {DevOps}: {Smart} {Skills} and {Collaborations}.
 \newblock {\em Information Systems Frontiers}, 22(4):927--945.
 
+\bibitem[Hering, 2018]{hering_devops_2018}
+Hering, M. (2018).
+\newblock {\em {DevOps} for the modern enterprise : winning practices to
+  transform legacy {IT} organizations}.
+\newblock IT REVOLUTION PR, Portland, Or, 1. auflage edition.
+\newblock OCLC: 1053995231.
+
 \bibitem[Hüttermann, 2012]{huttermann_devops_2012}
 Hüttermann, M. (2012).
 \newblock {\em {DevOps} for {Developers}}.
@@ -127,6 +145,22 @@ Humble, J. and Molesky, J. (2011).
 \bibitem[Jones, 2012]{jones_how_2012}
 Jones, R. (2012).
 \newblock How to {Hire} {DevOps}.
+
+\bibitem[Juner and Benlian, 2017]{juner_praxisbasierte_2017}
+Juner, C. and Benlian, A. (2017).
+\newblock Praxisbasierte {Capability}-{Modelle} für {DevOps}-{Einsätze} in
+  {Unternehmen}.
+\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):230--243.
+
+\bibitem[Kasteleiner and Schwartz, 2019]{kasteleiner_devops_2019}
+Kasteleiner, B. and Schwartz, A. (2019).
+\newblock {DevOps}: {Schnell}, zuverlässig und sicher von der {Idee} zur
+  {Realisierung}.
+\newblock {\em Informatik Spektrum}, 42(3):211--214.
+
+\bibitem[Kawaguchi, 2020]{kawaguchi_wall_2020}
+Kawaguchi, S. (2020).
+\newblock The {Wall} of {Confusion}.
 
 \bibitem[Keßler, 2013]{kesler_anpassung_2013}
 Keßler, S. (2013).
@@ -161,11 +195,20 @@ König, G. and Kugel, R. (2019).
 \newblock {DevOps}—{Welcome} to the {Jungle}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
 
+\bibitem[Luber and Karlstetter, 2020]{luber_was_2020}
+Luber, S. and Karlstetter, F. (2020).
+\newblock Was ist {Infrastructure} ({IaC})?
+
 \bibitem[Lwakatare et~al., 2019]{lwakatare_devops_2019}
 Lwakatare, L.~E., Kilamo, T., Karvonen, T., Sauvola, T., Heikkilä, V.,
   Itkonen, J., Kuvaja, P., Mikkonen, T., Oivo, M., and Lassenius, C. (2019).
 \newblock {DevOps} in practice: {A} multiple case study of five companies.
 \newblock {\em Information and Software Technology}, 114:217--230.
+
+\bibitem[Meyer, 2014]{meyer_continuous_2014}
+Meyer, M. (2014).
+\newblock Continuous {Integration} and {Its} {Tools}.
+\newblock {\em IEEE Software}, 31(3):14--16.
 
 \bibitem[Müller, 2010]{muller_whats_2010}
 Müller, E. (2010).

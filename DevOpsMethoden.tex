@@ -92,7 +92,7 @@ Demnach kann das Deployment auf die Produktivumgebung im Rahmen des Continuous D
 
 Aufgrund der automatisierten Freigabe des Releases, muss sowohl die Qualität als auch die Lauffähigkeit der Pipeline besonders gesichert sein, was wiederrum in der Phase des Continuous Delivery gewährleistet sein muss. \cite[S. 269]{tiemeyer_handbuch_2021} 
 
-Continuous Deployment entspricht demnach dem höchsten Reifegrad einer Delivery-Pipeline, was den DevOps-Teams ermöglicht, kleinste Features und Änderungen für den Anwender ausliefern zu können und wäre theoretisch das höchste Ziel der modernen Softwareentwicklung. \cite{humble_why_2011}  
+Continuous Deployment entspricht demnach der höchsten Stufe einer Delivery-Pipeline, was den DevOps-Teams ermöglicht, kleinste Features und Änderungen für den Anwender ausliefern zu können und wäre theoretisch das höchste Ziel der modernen Softwareentwicklung. \cite{humble_why_2011}  
 
 Durch den höchsten Grad der Automatisierung können die Vorlaufzeiten niedrig gehalten und folglich schnelles Feedback erhalten werden. \cite{humble_why_2011}   
 
@@ -128,134 +128,24 @@ Im Ergebnis bildet diese Feedbackschleife ein Instrument, zur kontinuierlichen G
 
 \paragraph{Infrastructur-as-a-Code}
 
-Obwohl die Vorgehensweise des \textit{Infrastructur-as-a-Code} (kurz: IaC) keine 'Continuous'-Bezeichnung besitzt, ist diese Praktik wesentlicher Bestandteil der gängigen DevOps-Methoden. 
+Automatisierung gilt als eine Grundvoraussetzung innerhalb der Devops-Umgebung und erstreckt sich nicht nur auf die Bereiche der Entwicklung und Bereitstellung, sondern auch auf die zugrundeliegende Infrastruktur. \cite[S. 272]{tiemeyer_handbuch_2021} 
 
-Enstanden ist der IaC-Ansatz zunächst im Bereich des Cloud Computing, als eine Vorraussetzung für automasierte Delivery-Modelle wie IaaS (Infrastructure as a Service). 
+Insbesondere durch die Verwendung von Continuous Integration, ist die Anzahl der Umgebungen und ihrer Instanzen stark angestiegen, da täglich Builds getestet, validiert und bei Konfigurationsänderungen angepasst werden müssen. \cite[S. 19]{sharma_devops_2017}
 
+Obwohl die Vorgehensweise des \textit{Infrastructur-as-a-Code} (kurz: IaC) keine 'Continuous'-Bezeichnung besitzt, ist diese Praktik wesentlicher Bestandteil der gängigen DevOps-Methoden. \cite[S. 30]{alt_innovationsorientiertes_2017} 
 
+Anstatt manuelle Änderungen durch einen Administrator, welcher schrittweise ein neues System einrichtet oder umkonfiguriert, werden Ressourcen, Netzwerkeinstellungen, Parameter und weitere Konfigurationen als Code in einer Konfigurationsdatei beschrieben. \cite{juner_praxisbasierte_2017} \cite{luber_was_2020}
 
+Genau wie bei dem Quellcode für die Software, wird der Code für die Infrastruktur innerhalb eines Versionsverwaltungssystem registriert und in einem Repository zur Verfügung gestellt.
 
+Damit kann der Aufbau einer Infrastrukturumgebung automatisiert aufgebaut und bereits bei der Entwicklung miteinbezogen werden.
 
+Durch die entstehende Versionierung sind alle Änderungen überprüfbar, reproduzierbar und bei Fehlern können Rollbacks auf die frühere Version durchgeführt werden.\cite[S. 272]{tiemeyer_handbuch_2021}   
 
+\textit{Dadurch kann jeder produktivähnliche Umgebungen in Minuten erhalten, ohne ein Ticket aufmachen oder gar Wochen warten zu müssen.} \cite[S. 107]{kim_devops-handbuch_2017}
 
+Voraussetzung für IaC ist es, Systemadministratoren frühzeitig innerhalb des Softwareentwicklungsprozesses einzubeziehen und das Verständnis der Entwickler für die auf dem Produkt basierende Infrastructur zu schärfen, wodurch die Zusammenarbeit der Bereiche Dev und Ops verbessert wird. \cite[S. 30]{alt_innovationsorientiertes_2017}
 
+Mittels IaC würde die alleinige Verantwortung für alle Phasen wie das Design, Umsetzung, Test, Installation und Betrieb bei einem DevOps liegen. \cite{kasteleiner_devops_2019}
 
-
-
-
-Infrastruktur-as-Code steht für Test und Produktionsumgebungen, die komplett automatisiert bereitgestellt und aktualisiert werden
-können. Metriken liefern technische und fachliche Informationen zu der in Produktion laufenden
-Software: Sie ermöglichen A/B-Tests, um den alten
-Prozess parallel zum neuen Prozess zu betreiben und
-so aussagekräftige Vergleiche anstellen zu können.
-Automatisierung kann dabei Kopfmonopole
-verringern und Liegezeiten reduzieren. Allerdings
-wird sie nur dann die notwendige Akzeptanz finden, wenn sie zuverlässig und schnell ist – sei es
-bei der Installation der Software als auch bei der
-Ausführung der Tests.
-Übergaben werden mit einer produktzentrierten Organisationsstruktur minimiert: Verschiedene
-Produktteams verantworten für ihre jeweiligen Teile
-alle Phasen wie fachliches und technisches Design,
-Umsetzung, Test, Installation und Betrieb (Abb. 1).
-Durch räumliche Nähe und personelle Verflechtung
-berücksichtigten sie Erkenntnisse in einer Phase
-direkt in anderen Phasen
-
-
-
-
-
-IaC verfolgt das Ziel einer regelbasierten 
-Automatisierung der Installation und Konfguration von virtuellen und physischen Infrastrukturkomponenten wie etwa Server durch Softwareskripte (Spinellis 2012). Im Sinne einer programmierbaren Infrastruktur wird diese zunächst in 
-Form von Programmcode abgebildet, um bei der Konfguration ähnliche Tools 
-und Mechanismen verwenden zu können, wie beim Deployment von Software. 
-Durch Automatisierung lassen sich Konfgurationsprozesse beschleunigen, sie 
-gewinnen an Flexibilität, das Fehlerrisiko sinkt im Vergleich zum manuellen Konfgurieren und schließlich dient der Code auch als Dokumentation (Hüttermann 
-2012; Ramos 2015). Dazu erfordert IaC die frühzeitige Einbeziehung von Systemadministratoren in den Softwareentwicklungsprozess sowie ein tieferes Verständnis der Entwickler für die Basis-Infrastruktur. Es leistet somit einen Beitrag 
-zur engeren Zusammenarbeit von Dev und Ops. Aus Betriebsperspektive besteht 
-eine direkte Verwandtschaft zu den Ausprägungen von „Software-defned“-Konzepten, wie etwa Storage, Network oder Datacenter. Für die Realisierung von IaC 
-sind mittlerweile leistungsfähige System Confguration Management Toolsets 
-wie Puppet oder Chef verfügbar. Ferner unterstützen Cloudanbieter wie Amazon 
-(AWS) oder Microsoft (Azure) IaC mit ihren APIs
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Gemäß des DevOps-Konzepts werden die Grundsätze des DevOps-Ansatzes durch den Aufbau einer Bereitstellungspipeline (engl. Deployment Pipeline) durchgesetzt. 
-
-Die Deployment-Pipeline besteht im Wesentlichen aus mehreren Continuous Integration und Continuous Delivery-Pipelines und kann als eine automatisierte Implementierung der Build-, Test-, Deploymment- und Release-Prozesse einer Anwendung definiert werden. 
-
-Mit der Deployment-Pipeline werden drei Ziele verfolgt. \cite[S. 3 - 4]{humble_continuous_2011} 
-
-Zunächst ist jeder Schritt des Prozesses angefangen bei der Erstellung, des Einsatzes, des Testens und der Softwarefreigabe (End-to-End-Prozess) für alle sichtbar, wodurch die gesamte Zusammenarbeit gefördert wird. 
-
-Weiterhin wird das Feedback verbessert, indem die Probleme sehr zeitnah im Prozess erkannt und behoben werden können. 
-
-Darüber hinaus ist es jedem DevOps-Team möglich, alle Softwareversionen in jeder beliebigen Umgebung durch einen vollständig automatisierten Prozess bereitzustellen und freizugeben.
-
-
-
-
-
-
-Wie bereits beschrieben ist ein wesentlicher Baustein des DevOps-Konzepts die Automatisierung. 
-
-Oftmals bergen manuelle Arbeiten die Gefahr einer hohen Fehleranfälligkeit, zeitliche Unberechenbarkeit und schwerer Reproduzierung, wodurch insbesondere im Softwarebereitsstellungsprozess wenig Zeit für priorisierte Aufgaben bleiben. 
-
-Um die Rolle der Automatisierung voranzutreiben und zu etablieren, sollten möglichst viele vollautomatisierte Deployments auf die Produktivumgebung aufgesetzt werden.   
-
-In diesem Rahmen müssen DevOps-Teams Deployments. bzw Build-Pipelines aufbauen, um alle Änderungen am System, am Code oder an der Infrastruktur, mittels Pipeline zu automatisieren. 
-
-
-
-
-
-
-
-
-
-
-Eine Deployment-Pipeline ist im Wesentlichen eine automatisierte Implementierung des Build-, Deployment-, Test- und Release-Prozesses Ihrer Anwendung. Jedes Unternehmen wird sich in der Implementierung seiner Deployment-Pipelines unterscheiden, je nach dem Wertstrom für die Freigabe von Software, aber die Prinzipien, die ihnen zugrunde liegen, unterscheiden sich nicht. Ein Beispiel für eine Bereitstellungspipeline ist in Abbildung 1.1 dargestellt.
-
-
-
-Die Funktionsweise der Deployment-Pipeline lässt sich wie folgt zusammenfassen. Jede Änderung, die an der Konfiguration, dem Quellcode, der Umgebung oder den Daten einer Anwendung vorgenommen wird, löst die Erstellung einer neuen Instanz der Pipeline aus. 
-
-Einer der ersten Schritte in der Pipeline ist die Erstellung von Binärdateien und Installationsprogrammen. Der Rest der Pipeline führt eine Reihe von Tests mit den Binärdateien durch, um zu beweisen, dass sie freigegeben werden können. 
-
-Jeder Test, den der Freigabekandidat besteht, gibt uns mehr Sicherheit, dass diese bestimmte Kombination aus Binärcode, Konfigurationsinformationen, Umgebung und Daten funktionieren wird. 
-
-Wenn der Freigabekandidat alle Tests besteht, kann er freigegeben werden. Die Deployment-Pipeline hat ihre Grundlage im Prozess der kontinuierlichen Integration und ist im Wesentlichen das Prinzip der kontinuierlichen Integration, das zu seinem logischen Abschluss gebracht wurde. 
-
-
-
+Aufgrund der steigenden Automatisierung der Pipeline als auch durch IaC werden die Umgebungen immer identischer, was widerrum dem Grundgedanken des Continuous Integration entspricht, da der Quellcode sehr früh auf eine produktionsnahe Umgebung integriert wird und dadurch Probleme schnell sichtbar werden. \cite[S. 111 - 113]{kim_devops-handbuch_2017} 
