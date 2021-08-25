@@ -41,6 +41,7 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \subsection{Aufbau dieser Arbeit}
 \input{AufbaudieserArbeit.tex}
 
+
 \section{Fachlicher Rahmen}
 \input{FachlicherRahmen}
 
@@ -68,8 +69,10 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \subsubsection{Integrierte Infrastruktur (Toolchain)}
 \input{DevOpsToolchain.tex}
 
-\subsection{FOSS}
-\input{GrundlagenFOSS.tex}
+
+%Working: Last step, tbd
+\subsection{OSS}
+\input{GrundlagenOSS.tex}
 
 \subsubsection{Entwicklungen und Unterscheidungen von Software}
 \subsubsection{Freiheiten als Merkmale von FOSS}
@@ -79,21 +82,48 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \subsubsection{Vertragrechtliche Aspekte}
 \subsubsection{Kritische Betrachtung bei der Verwendung von FOSS}
 
-\subsection{FOSS meets DevOps}
-\subsubsection{Hintergründe von der Einbindung von FOSS}
-\subsubsection{Einbindung von FOSS in die DevOps-Kultur}
-\subsubsection{Gängige Konstellationen auf vertraglicher Basis}
-Welche Konstellationen/ welche Vertragsbedinungen müssen angegeben sein (zwischen Entwickler und Auftraggeber), dait FOSS in einer DevOps-Umgebung verwendet werden kann (Haftungsbeschränkungen)
-\subsubsection{Vorteile der Integration}
-\subsubsection{Wesentliche Hindernisse}
-\subsubsection{Aktuelle Beispiele}
 
 
+\section{OSS meets DevOps}
+\input{OSSmeetsDevOps.tex}
+
+\subsection{Gründe für die Einbindung von OSS}
+\input{GründeEinbindungOSS.tex}
+
+\subsection{Integration von OSS in die DevOps-Produktentwicklung}
+\input{IntegrationOSSDevOpsProdukt.tex}
+
+\subsection{Umfang der Integration anhand festgelegter Szenarien}
+\input{UmfangSzenarien.tex}
+
+\subsection{Vorteile der Integration}
+\input{VorteileIntegration.tex}
+
+\subsection{Wesentliche Hindernisse}
+\input{HindernissIntegration.tex}
 
 
 \section{Proof of Concept}
-
 \input{ProofofConcept.tex}
+
+%Automatisierter OSS-Check
+%Möglichkeiten, die bestehen, zur automatisierten Einbindung 
+%--> Tool M.Haas(Schlecht bis sehr schlecht)
+%--> Fertiges Tool implementieren(Wo genau?Anforderungen?, Unterstützung von wem)
+%--> Eigene Entwicklung :'( )
+%--> Letzte aber unschöne Lösung: Theoretische Implementierung 
+%--------> Verbindung zwischen M.Haas Tools und gängigen Tools nicht ganz klar => 1. Excel-Format, 2. Verschiedenartig
+%Tool-Vergleich(Konzeption), Analyse des Tools, Validierung/Evaluation 
+%einbindung in den Prozess(Soll)
+%Sicherstellung der Transparenz des DevOps-Teams
+
+
+\section{Schlussfolgerung und Ausblick}
+\input{SchlussfolgerungUndAusblick.tex}
+
+
+
+
 
 \newpage
 \bibliography{Literatur}
