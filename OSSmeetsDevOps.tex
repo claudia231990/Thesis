@@ -1,25 +1,67 @@
-Wie bereits beschrieben, ist ein wesentliches Merkmal von Software die Wiederverwendung von Komponenten. 
-
-Die Folge der massiven Wiederverwendung insbesondere durch OSS-Kompo
-
-Die Verschachtelung hat in den letzten Jahren durch die massive Wiederverwendung von OSS-Komponenten zugenommen. 
-
-Die Entwicklung eines Softwareprodukts ohne den Einsatz von OSS-Software ist heutzutage fast unmöglich. 
-
-Wir befinden uns in einer neuen Software-Ära, in der es ohne den Einsatz von OSS-Komponenten nicht mehr möglich ist, die geforderte Time-to-Market zu erreichen und somit nicht mehr wettbewerbsfähig zu sein. 
-
-Die starke Verschachtelung von OSS-Komponenten durch die vielen transitiven Abhängigkeiten erhöht die Komplexität erheblich. 
-
-Jede dieser Komponenten hat eine oder mehrere Lizenzen, die die Nutzungsbedingungen der jeweiligen Komponente spezifizieren. Somit kann die Arbeit auch dem Bereich des Lizenzrechts zugeordnet werden.
-
-In kleinen Unternehmen (50-100 Mitarbeiter, ein Standort) lassen sich diese Herausforderungen noch durch persönliche Kommunikation bewältigen. 
-
-Mit zunehmender Anzahl von Mitarbeitern und verteilten Standorten wird die Bewältigung dieser Herausforderungen jedoch immer komplizierter. 
-
-Daher ist eine zentrale Unternehmensinformationsbasis ratsam, um die Lösung der genannten Herausforderungen in der Praxis zu unterstützen.
-
-Die Verantwortung für die Einhaltung der Lizenzbedingungen liegt bei den Nutzern selbst.
-
-
-
 Nachdem der theoretische Rahmen und die Funktionsweise beider Bereiche beschrieben worden ist, wird in diesem Kapitel näher auf die Integration der OSS innerhalb des Prozesses der DevOps-Produktentwicklung, eingegangen.
+
+In den letzten Jahren hat sich die Nutzung der OSS über die Jahre als ein Standard in der Softwareentwicklung innerhalb Unternehmen etabliert. 
+
+Die Gründe sind verschiedenartig und reichen von Innovationskraft, Flexibilität, Geschwindigkeit bis zur Reduzierung der Kosten.
+
+Zunächst können die Reduzierung der Gesamtkosten als ein essentieller Grund für die Verwendung von OSS-Komponeten angesehen werden. 
+
+Im Gegensatz zu proprietärer Software wird OSS kostenlos heruntergeladen und kann je nach Anforderungen angepasst werden. 
+
+Zwar fallen in der Regel auch mit Verwendung von OSS zusätzliche Kosten für Schulungen, Wartung und Support an, wobei diese als \emph{sunk costs}
+
+
+
+
+Der offensichtlichste Vorteil von Open-Source-Software ist, dass die Produkte in der Regel kostenlos heruntergeladen werden können, wobei sie mit Betriebskosten wie etwa für Speicher und Rechenleistung verbunden sind. Selbst die seltenen kostenpflichtigen Open-Source-Produkte sind in der Regel immer noch viel günstiger als Closed-Source-Alternativen.
+
+Die Einführung von Open-Source-Software hat in der Regel geringere Vorlaufkosten (da die Software oft kostenlos oder relativ kostengünstig ist) und verlagert die Kostenstelle von der Lizenzierung (Betriebskosten) auf die Anpassung und Implementierung (Investitionskosten). Zusätzliche Kosten wie Schulung, Wartung und Support sind „sunk costs“. Unternehmen zahlen dafür, unabhängig davon, ob es sich bei der Software um Open Source oder Closed Source handelt. Insgesamt stellt sich heraus, dass Open Source sicher und effizient genug ist sowie insgesamt kostengünstiger.
+
+
+
+
+
+
+In derselben Studie wurden auch die wichtigsten Vorteile untersucht. Am wichtigsten ist zumindest Unternehmen und Behörden in der Schweiz die Unterstützung von offenen Standards, wie sie der Europäische Interoperabilitätsrahmen für eGovernment
+definiert. An zweiter Stelle steht der Kontakt zur Community, die meist bei Fragen zur Software hilft und so
+einen Enterprise Support ersetzen kann. Erst an dritter Stelle liegen Einsparungen z.B. durch fehlende Lizenzkosten. Direkt danach folgt die Unabhängigkeit von proprietärer Software, die teilweise mit den genannten Einsparungen verknüpft sind.
+Die Studienautoren führen an, dass geschlossene Software mit “geschlossene[n] Datenformate[n], die technisch an Anwendungen gebunden sind; Lizenzvereinbarungen, die restriktiv wirken und die Flexibilität z.B. bei Wechseln einschränken und
+Upgrade-Druck auslösen können” [2] Eigenschaften hat, die vielen Organisationen ein Dorn im Auge sind. Viele Software-Unternehmen haben dies auch erkannt und veröffentlichen ihre Software unter einer Open Source-Lizenz, damit sie beispielsweise nicht mit Microsoft Windows ausgeliefert werden oder andere Monopole unterstützen müssen. Weitere Vorteile bestehen in der stetigen Weiterentwicklung der Software, die zu einer höheren Sicherheit, einer höheren Stabilität und stetiger Innovation führt.
+
+
+
+
+
+
+
+
+
+
+
+Allerdings fehlt in den meisten Unternehmen oftmals eine Strategie für die Nutzung und den Einsatz von OSS. 
+
+\textit{Beliebtheit und zunehmende Verwendung stehen nach wie vor in Kontrast zu
+einer grundsätzlichen Unkenntnis: So selbstverständlich die Verwendung ist, so verbreitet sind
+oft auch Wissenslücken über Grundanforderungen im Umgang mit OSS, sei es als Basis für einen
+erfolgreichen Einsatz im Alltag oder als Voraussetzung für die Verwendung für eigene Softwareprojekte.} \cite{bitkom_ev_open_2016}
+
+Insbesondere im DevOps-Umfeld ist Verwendung von OSS-Komponeten mit wenig Hürden verbunden, wobei die Konsequenzen von den damit verbundenen Lizenzmodellen nicht jedem bewusst sind. 
+
+Generell bedarf die Verwendung von OSS-Komponeten eine Schulung in Hinblick auf eine gewissenhafte Nutzung mit inkompatiblen Softwarelizenzen. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%In diesem Rahmen wird insbesondere auf drei Szenarien, die die Hauptanwendungsbereiche, der msg systems ag darstellen, näher beschrieben. 
