@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: MasterThesis_CA.aux
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+The style file: apalike.bst
+Database file #1: Literatur.bib
+Warning--I didn't find a database entry for "bitkom_ev_open_nodate"
+Warning--I didn't find a database entry for "sujecki__2005"
+Warning--empty school in allmann_open_2019
+Warning--empty institution in bitkom_ev_open_2016
+Warning--empty booktitle in haffke_transformative_2017
+You've used 61 entries,
+            1935 wiz_defined-function locations,
+            796 strings with 13415 characters,
+and the built_in function-call counts, 21994 in all, are:
+= -- 2189
+> -- 837
+< -- 51
++ -- 286
+- -- 270
+* -- 1763
+:= -- 3903
+add.period$ -- 188
+call.type$ -- 61
+change.case$ -- 427
+chr.to.int$ -- 61
+cite$ -- 64
+duplicate$ -- 885
+empty$ -- 1548
+format.name$ -- 357
+if$ -- 4305
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 62
+newline$ -- 301
+num.names$ -- 188
+pop$ -- 381
+preamble$ -- 1
+purify$ -- 438
+quote$ -- 0
+skip$ -- 661
+stack$ -- 0
+substring$ -- 1352
+swap$ -- 99
+text.length$ -- 10
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 328
+warning$ -- 3
+while$ -- 182
+width$ -- 0
+write$ -- 792
+(There were 5 warnings)
