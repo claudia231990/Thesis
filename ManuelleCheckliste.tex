@@ -1,0 +1,72 @@
+Wie bereits im Kapitel 3.1.2 beschrieben, muss durch die Verwendung von OSS der konkrete Prozess innerhalb des HAF-Projektes angepasst werden. 
+
+Die erste notwendige Anpassung erfolgt mittels einer Überprüfung der verwendeten Lizenzmodelle basierend auf einer manuellen Checkliste durch die entsprechenden Entwickler.  
+
+Durch das strukturierte und mehrmalige Arbeiten mit einer manuellen Checkliste entsteht eine Routine für das Entwicklerteam innerhalb des gesamten Softwareentwicklungsprozesses. 
+
+Der Einsatz schafft Effizenz und eine Zeitersparnis, da nur das Lizenzmodell betrachetet wird, was in diesem Moment verwendet werden möchte. 
+
+Dieser Schritt entspricht zwar nicht der gängigen DevOps-Kultur einen möglichst hohen Grad an Automatisierung zu erlangen, jedoch kann bereits durch einen kurzen manuellen Check 'gefährliche' und 'ungefährliche' Lizenzmodelle voneinander unterschieden werden bevor eine langwierige Entwicklung stattfindet. 
+
+Ferner ist an diesem anfänglichen Entwicklungszeitpunkt die Überprüfung mittels einer automatisierten Checkliste bedenklich, da mit der Software zunächst vorrangig expermentiert wird und eine vollständige Integration in die bestehende Anwendung somit nicht feststeht.
+
+Andernfalls müsste jede heruntergeladene OSS direkt in das Softwareentwicklungsprozess integriert werden, um diese anschließend automatisiert überprüfen zu lassen.
+
+Die Folgen wären ein Verlust von wichtigen Ressourcen, Effizenz und Zeit.
+
+Ziel des Einsatzes der manuellen Checkliste ist es, sowohl die technische als auch juristische Faktoren bei der Verwendung von OSS zu berücksichtigen und ein gemeinsames Verständnis zu erreichen.
+
+Innerhalb der kommerziellen Softwareentwicklung stellt dies eine große Herausforderung dar.
+
+Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtweise und wenig Affinität zu Lizenztexten. 
+
+Juristen hingegen haben ein Verständnis für Lizenzrecht, allerdings fällt es ihnen schwer, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich zu intepretieren. 
+
+\paragraph{Use Types}
+
+Zunächst werden die 'Use Types' also die unterschiedlichen Nutzungarten erläutert. 
+
+Diese geben Auskunft darüber, welche Bedinungen zu den jeweiligen Nutzungsarten erfüllt sein müssen. 
+
+So enthalten einige OSS-Lizenzen beispielsweise die Klausel, dass Modifikationen des Quellcodes nur gestattet sind, wenn diese 'unter derselben OSS-Lizenz wieder allen zur Verfügung gestellt werden.'
+
+Die vorgestellten Szenarien dienen als jeweilige Ausgangssituation, während die Nutzungsarten die jeweilige Verwendung detailliert beschreiben. 
+
+
+
+\subparagraph{Auflistung der Nutzungsarten}
+
+Insgesamt gibt es 14 zu beachtende Nutzungsarten.\\  
+
+\begin{tabular}[h]{l|c|c|c|c|c}
+    Use Types & Erklärung & Beispiel & Szenario 1 & Szeanrio 2 & Szenario 3 \\
+    \hline
+    format: source & Komponente wird im unverfälschten Quellformat geliefert & tricks & hallo & was & geht \\
+    format: compiled & tipps & tricks & hallo & was & geht \\
+    dependency: optional  & tipps & tricks & hallo & was & geht \\
+    dependency: mandatory & tipps & tricks & hallo & was & geht \\
+    delivery: internal & tipps & tricks & hallo & was & geht \\
+    delivery: distributed & tipps & tricks & hallo & was & geht \\
+    usage: local-call & tipps & tricks & hallo & was & geht \\
+    usage: remote-call & tipps & tricks & hallo & was & geht \\
+    communication: process & tipps & tricks & hallo & was & geht \\
+    communication: system & tipps & tricks & hallo & was & geht \\
+    bundling: standalone & tipps & tricks & hallo & was & geht \\
+    bundling: embedded & tipps & tricks & hallo & was & geht \\
+    artifact: pristine & tipps & tricks & hallo & was & geht \\
+    artifact: modified & tipps & tricks & hallo & was & geht \\
+
+\end{tabular}
+
+\paragraph{Umfang und Ausprägung der Verpflichtungen}
+
+
+\paragraph{Manuelle beispielhafte Überprüfung von Apache 2.0}
+
+
+
+
+
+
+
+% Diese Checkliste wurde mit einigen Kollegen der msg systems ag zusammengestellt und entwickelt. dh Ralf und Navina erwähnen 

@@ -1,30 +1,32 @@
-Um das Themenfeld der Verwendung von OSS in den DevOps-Prozess in einem festen Rahmen erfassen zu können, musste zunächst der Umfang dieser Problemstellung reduziert werden.  
+Um das Themenfeld der Verwendung von OSS in den Kontext des DevOps-Prozess innerhalb des HAF-Projektes in einem festen Rahmen erfassen zu können, musste zunächst der Umfang dieser Problemstellung reduziert werden.  
 
-In diesem Rahmen wurde der Umgang mit der Nutzung von OSS, insbesondere im Hinblick auf die Lizenzmodelle auf drei Szenarien beschränkt. 
+In diesem Rahmen wurde der Grad der Nutzung von OSS, insbesondere im Hinblick auf die Lizenzmodelle auf drei Szenarien beschränkt. 
 
-Diese stellen zunächst drei Ausgangssituationen dar, unter welchen Bedinungen OSS verwendet werden darf und welche Einschränkungen dabei getroffen werden müssen.   
+Diese stellen zunächst drei Ausgangssituationen dar, unter welchen Bedinungen OSS innerhalb des konkreten HAF-Projekes verwendet werden dürfen und welche Einschränkungen dabei getroffen werden müssen.   
 
 \paragraph{Szenario 1: Verwendung von OSS zur Testzwecken}
 
 Bei dem ersten Szenario beschränkt sich die Nutzung von OSS ausschließlich auf Unterstützung- oder Testzwecke wie bespielsweise Treiber. 
 
-Dementsprechend soll dieses Szenario verdeutlichen, dass die Verwendung von OSS ausschlißlich als Werkzeug fungiert und keine Abhängigkeit zwischen der Funktionalität und der verwendeten OSS-Komponente stattfindet. 
+Dementsprechend soll dieses Szenario verdeutlichen, dass die Verwendung von OSS ausschließlich als Werkzeug fungiert und keine Abhängigkeit zwischen der Funktionalität und der verwendeten OSS-Komponente stattfindet. 
 
-Würde die OSS wegfallen, wäre die Funktionalität des Projekts weiterhin gewährleistet. 
+Würde die OSS wegfallen, wäre die Funktionalität des HAF-Projekts weiterhin gewährleistet. 
 
 Ferner werden keine Kopien des Original-Quellcodes innerhalb eines Repositorys hochgeladen, sowohl manuell als auch mittels Skript. 
 
 Infolge der ausschließlichen Unterstützungsfunktion erfolgt innerhalb dieses Szenarios keine Auslieferung der Komponete an den Kunden. 
 
+Demzufolge muss bei der Konstellation dieses Vewendungszwecks keine Beachtung der Lizenzmodelle genommen werden. 
+
 \paragraph{Szenario 2: Verwendung von OSS-Bibliotheken als Referenz}
 
-Im Rahmen des zweiten Szenarios werden OSS-Bibliotheken über API-Aufrufe innerhalb des entwickelnden Quellcodes referenziert und blieben daher unverändert. 
+Im Rahmen des zweiten Szenarios wird der Quellcode der OSS während des Builds und Deployments heruntergeladen, um die ausführbare Datei zu erstellen. 
 
-Ferner wird der Quellcode der OSS-Bibliothek während des Builds und Deployments nur vorübergehend heruntergeladen, um die ausführbare Datei zu erstellen. 
+Damit können wiederverwendbare Software-Komponenten, welche generische Funktionalitäten des über festgelegte Schnittstellen bereitstellen, zeitnah eingebunden werden.
 
-Da die Bibliothek ausschließlich als Referenz verwendet wird, werden wie bei Szenario eins keine Kopien des originalen Quellcodes der Bibliothek innerhalb eines Repositorys hochgeladen.
+Zweck des zweiten Szenarios ist es, die OSS als reine Bibliothek zu verwenden und daher vollständig unverändert beizubehalten. 
 
-Da viele Systembibliotheken unter ein starkes Lizenzmodell fallen, kann das bestehende Projekt mit der entsprechenden Bibliothek durch die Referenzierung zu einem Programm zusammengeführt werden und fällt unter die Verbindung \textit{statisches Verlinken}. \cite[S. 211]{jorg_it-vertrage_2007}
+Obwohl die Bibliothek ausschließlich als Referenz verwendet wird, werden Kopien des originalen Quellcodes der Bibliothek innerhalb eines Repositorys hochgeladen.
 
 Es entsteht demnach eine direkte Verbindung zu einer lizensierten OSS. 
 
@@ -32,7 +34,7 @@ Aus diesem Grund sollten innerhalb dieses Szenarios weitgreifend auf OSS-Kompone
 
 \paragraph{Szenario 3: Verwendung von OSS als modifizierter Quellcode}
 
-Innerhalb des letzten Szenarios findet eine tatsächliche Integration der OSS innerhalb der Entwicklung des Projekts statt.
+Innerhalb des letzten Szenarios findet eine tatsächliche Integration und Modifikation der OSS innerhalb der Entwicklung des Projekts statt.
 
 In diesem Rahmen wird der Quellcode heruntergeladen, entsprechend den Anforderungen angepasst und letztlich in das Repository hochgeladen. 
 

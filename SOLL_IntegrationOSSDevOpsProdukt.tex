@@ -1,6 +1,8 @@
 Obwohl die Nutzung von OSS Folgen für das gesamte DevOps-Team hat, wird die Entscheidung über die Nutzung von der Rolle des Entwicklers getroffen, wodurch die Prozessanpassungen vorrangig im Bereich der Entwicklung vorgenommen werden müssen. 
 
-Daher wurde für ein besseres Verständnis, ausschließlich die Rolle des Entwicklerteams, mit einem entsprechenden Start und Endpunkt modelliert und die restlichen Rollen nicht weiter behandelt.
+Wie auch bei dem Prozessmodel des IST-Zustandes wurde der Gesamtprozess, zum besseren Verständnis in drei Teile aufgeteilt, die wiederrum einzeln (Abbildung 14 - 16) erläutert werden. 
+
+Auch wurde ausschließlich die Rolle des Entwicklerteams, mit einem entsprechenden Start und Endpunkt modelliert und die Rolle des Product Owners nicht weiter behandelt, da für die Verwendung von OSS in den DevOps-Produktentwicklungsprozess keine direkten Auswirkungen für den Product Owner bestehen.
 
 \begin{figure}[p]
     \centering
@@ -10,15 +12,15 @@ Daher wurde für ein besseres Verständnis, ausschließlich die Rolle des Entwic
 
 Da zu dem Zeitpunkt der Nutzung von OSS die Projektstruktur bereits besteht und das Product Backlog ebenfalls erstellt wurde, bildet den Anfang des DevOps-Prozesses nun die Anpassung des priorisierten Product Backlogs.
 
-Nachdem das Sprint Planning Meeting durchgeführt worden ist, kann die Iteration gestartet werden. 
+Nachdem das Sprint Planning Meeting durchgeführt worden ist, kann die Iteration basierend auf den Anforderungen aus dem Sprint Backlog, gestartet werden.\\ 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.8]{Bilder/SOLL-Prozess_first Part.png}
+    \includegraphics[scale=0.5]{Bilder/SOLL-Prozess_first Part.png}
     \caption{Erster Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
 \end{figure}
 
-Wie auch bei dem IST-Zustand muss sich zunächst die Frage gestellt werden, ob Codeänderungen durchgeführt werden müssen, unabhängig ob es auf Änderungen eines vorhandenen Codes oder auf eine Neuimplentierung bezieht. 
+Wie auch bei dem IST-Zustand muss sich zunächst die Frage gestellt werden, ob Codeänderungen durchgeführt werden müssen, unabhängig ob sich die Änderungen auf einen vorhandenen Code oder auf eine Neuimplentierung beziehen. 
 
 Sollten Codeänderungen vorgenommen werden, wird der Implementierungsvorgang für das Backlog Item gestartet. 
 
@@ -26,7 +28,7 @@ Ab diesem Zeitpunkt setzt die Nutzung von OSS die Prozessänderungen in Gang.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.8]{Bilder/SOLL-Prozess_second Part.png}
+    \includegraphics[scale=0.5]{Bilder/SOLL-Prozess_second Part.png}
     \caption{Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
 \end{figure}
 
@@ -34,7 +36,7 @@ Um präventiv maßgebliche Konsequenzen durch die Nutzung von OSS zu vermeiden, 
 
 Falls dies der Fall ist, muss zunächst ein initaler OSS-Check durchgeführt werden. 
 
-Dieser dient dazu, das Lizenzmodell der verwendeten OSS-Komponete zu überprüfen und diese mit den 'ungefährlichen' Lizenzmodellen zu vergleichen. 
+Dieser dient dazu, das Lizenzmodell der verwendeten OSS-Komponete manuell zu überprüfen und diese mit den 'ungefährlichen' Lizenzmodellen zu vergleichen. 
 
 Dies hat zum Vorteil, dass der Entwickler bereits vor einer langen Implementierung eine Aussage darüber treffen kann, ob sich aus Sicht der Lizenzmodelle eine Verwendung eignet oder ob ein Lizenzmodell vorliegt, welches zumindest ein beschränktes Copyleft aufweist. 
 
@@ -44,15 +46,15 @@ Wird die OSS-Kompoente letztlich verwendet, wird ein Pull-Request für ein Commi
 
 An diesem Punkt befindet sich der Entwickler ebenfalls, wenn keine neue OSS genutzt wird. 
 
-Anschließend hierzu werden wie im gängigen Prozess, Unit-Tests und Codeanalysen durchgeführt und diese  vom Reviewer bestätigen lassen.
+Anschließend hierzu werden wie im regelmäßigen Prozess, Unit-Tests und Codeanalysen durchgeführt und diese vom Reviewer bestätigen lassen.
 
 Gleichzeitig zu diesen Schritten muss eine neue Anpassung des Prozesses im Hinblick auf die Verwendung von OSS als ein automatisierten OSS-Check durchgeführt werden.
 
 Während bei einer Verwendung von neuer OSS die Lizenzmodelle zeitnah überprüft werden können, kann es Fälle geben, in denen Versionen einer bereits implementierten OSS-Komponete geändert werden und daraus eine Verschiebung der betreffenden Lizenzmodelle stattfinden kann. 
 
-Dies kann dazu führen, dass OSS-Komponeten ein starkes Copyleft aufweisen, obwohl diese mit einem schwachen oder keinen Copyleft implementiert worden sind. 
+Dies kann zur Folge haben, dass OSS-Komponeten ein starkes Copyleft aufweisen, obwohl diese mit einem schwachen oder keinen Copyleft anfänglich implementiert worden sind. 
 
-Ferner würde bei einer gängigen Entwicklung diese Situation nicht auffallen und bietet daher ein großes Risiko. 
+Ferner würde diese Situation bei einer gängigen Entwicklung nicht auffallen und bietet daher ein großes Risiko für das Unternehmen als auch für das entsprechende Entwicklerteam. 
 
 Durch einen automatisierten OSS-Check können die Lizenzmodelle der verwendeten OSS-Komponeten anhand ihrer Versionen dargestellt werden. 
 
@@ -80,7 +82,7 @@ Nach der Überarbeitung erfolgt eine erneute Bestätigung durch einen Reviewer, 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.8]{Bilder/SOLL-Prozess_third Part.png}
+    \includegraphics[scale=0.5]{Bilder/SOLL-Prozess_third Part.png}
     \caption{Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
 \end{figure}
 
@@ -92,7 +94,7 @@ Die Iteration endet mit der Vorstellung der Ergebnisse im Review.
 
 Basierend auf der Nachdokumentation muss anschließend analysiert werden, ob Auffälligkeiten innerhalb der Lizenzthematik festgestellt wurden.  
 
-Ergeben sich tatsächlich Auffälligkeiten, müssen diese zunächst definiert werden und werden in den Product Backlog übermittelt. 
+Ergeben sich tatsächlich Auffälligkeiten, müssen diese zunächst definiert und innerhalb des Product Backlog übermittelt werden. 
 
 Müssen keine Veränderungen vorgenommen werden, wird das Release bereitgestellt. 
 
