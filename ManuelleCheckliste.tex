@@ -22,7 +22,7 @@ Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtw
 
 Juristen hingegen haben ein Verständnis für Lizenzrecht, allerdings fällt es ihnen schwer, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich zu intepretieren. 
 
-Die unten stehende manuelle Checkliste war bereits innerhalb der msg systems ag erstellt worden und im Rahmen dieser Arbeit auf das Problemfeld erweitert und angepasst.
+Die unten stehende manuelle Checkliste und die zugrunde liegenden Elemente wurden bereits innerhalb der msg systems ag als OSS-Guide erstellt worden und im Rahmen dieser Arbeit auf das Problemfeld erweitert und angepasst.
 %Hier Fußzeile zu dem OSS-Guide von Ralf und Navina 
 
 \paragraph{Use Types}
@@ -43,40 +43,49 @@ Diese wurden in sieben verschiedene Kategorien unterteilt: Format (format), Abh�
 
 %Frage Daniel: kann ich die hauptsächlichen Überschriften auf englisch lassen,oder soll ich alles auf deutsch übersetzten ?????
 
+%Zweizeilig
+\newcommand\T{\rule{0pt}{4ex}}
+\newcommand\B{\rule[-3ex]{0pt}{0pt}}
+%Vierzeilig
+\newcommand\A{\rule{0pt}{7ex}}
+\newcommand\C{\rule[-6ex]{0pt}{0pt}}
+%Dreizeilig
+\newcommand\D{\rule{0pt}{5ex}}
+\newcommand\E{\rule[-4ex]{0pt}{0pt}}
+%Sechszeilig
+\newcommand\F{\rule{0pt}{9ex}}
+\newcommand\G{\rule[-8ex]{0pt}{0pt}}
+
 \begin{landscape}
 \begin{longtable}[h]{|l|c|c||c|c|c|}
-    Use Types & Erklärung & Beispiel & SZ 1 & SZ 2 & SZ 3 \\
+    \toprule
+    \textbf{Use Types} & \textbf{Erklärung} & \textbf{Beispiel} & \textit{SZ 1} & \textit{SZ 2} & \textit{SZ 3} \\
+    \midrule
     \hline
+    \T format: source & \parbox{7cm}{Komponente wird im unverfälschten Quellformat geliefert} & WEB-INF/jquery.js & - & - & \checkmark \B \\
     \hline
-    format: source & \parbox{6cm}{Komponente wird im unverfälschten Quellformat geliefert} & WEB-INF/jquery.js & \checkmark & \checkmark & \checkmark \\
+    \T format: compiled & \parbox{7cm}{Komponente wird in kompiliertem Format bereitgestellt} & com/example/foo.class & - & \checkmark & \checkmark \B \\
     \hline
-    format: compiled & \parbox{6cm}{Komponente wird in kompiliertem Format bereitgestellt} & com/example/foo.class & - & \checkmark & \checkmark \\
+    \A dependency: optional  & \parbox{7cm}{Komponente wird bei Bedarf geladen, und das Produkt würde vernünftigerweise ohne sie funktionieren} & JDBC driver & \checkmark & - & - \C \\
     \hline
-    dependency: optional  & \parbox{6cm}{Komponente wird bei Bedarf geladen, und das Produkt würde vernünftigerweise ohne sie funktionieren} & JDBC driver & \checkmark & - & - \\
+    \D dependency: mandatory & \parbox{7cm}{Komponente wird dynamisch/statisch geladen/verlinkt und das Produkt funktioniert nicht ohne sie} & Hibernate ORM & - & \checkmark & \checkmark \E \\
     \hline
-    dependency: mandatory & \parbox{6cm}{Komponente wird dynamisch/statisch geladen/verlinkt und das Produkt funktioniert nicht ohne sie} & Hibernate ORM & - & \checkmark & \checkmark \\
+    \A delivery: internal & \parbox{7cm}{Komponente wird intern verwendet, ohne dass sie an andere Rechtssubjekte weitergegeben wird (z. B. zeitlich begrenzte Komponenten)} & Gradle/Ant/Maven & \checkmark & - & - \C \\
     \hline
-    delivery: internal & \parbox{6cm}{Komponente wird intern verwendet, ohne dass sie an andere Rechtssubjekte weitergegeben wird (z. B. zeitlich begrenzte Komponenten)} & Gradle/Ant/Maven & \checkmark & - & - \\
+    \D delivery: distributed & \parbox{7cm}{Komponente wird an andere Rechtssubjekte verteilt (z.B. Laufzeitkomponenten)} & lib/example-1.2.3.jar & - & \checkmark & \checkmark \E \\
     \hline
-    delivery: distributed & \parbox{6cm}{Komponente wird an andere Rechtssubjekte verteilt (z.B. Laufzeitkomponenten)} & lib/example-1.2.3.jar & - & \checkmark & \checkmark \\
+    \T usage: local-call & \parbox{7cm}{Komponente (über Produkt) wird lokal zur Ausführung aufgerufen} & C:\textbackslash  Example\textbackslash example.jar & - & \checkmark & \checkmark \B \\
     \hline
-    usage: local-call & \parbox{6cm}{Komponente (über Produkt) wird lokal zur Ausführung aufgerufen} & C:\textbackslash Applications\textbackslash  Example\textbackslash example.jar & - & \checkmark & \checkmark \\
+    \A communication: process & \parbox{7cm}{Komponente wird aufgerufen von Produkt über direkten prozessinternen Mechanismus (Funktionsaufruf, Dispatch-Tabelle, usw.)} & component\_function() & \checkmark & \checkmark & \checkmark \C \\
     \hline
-    usage: remote-call & \parbox{6cm}{Komponente (über das Produkt) wird remote zur Ausführung aufgerufen (SaaS)} & service.beispiel.com:1234 & - & - & - \\
+    \D bundling: standalone & \parbox{7cm}{Komponenten-Artefakte, die noch völlig eigenständig und als solche erkennbar sind} & example-1.2.3.jar & \checkmark & \checkmark & \checkmark \E \\
     \hline
-    communication: process & \parbox{6cm}{Komponente wird aufgerufen von Produkt über direkten prozessinternen Mechanismus (Funktionsaufruf, Dispatch-Tabelle, usw.)} & component\_function() & \checkmark & \checkmark & \checkmark \\
+    \A artifact: pristine & \parbox{7cm}{Alle Komponenten-Artefakte sind unverändert, d.h. genau so, wie sie ursprünglich vom vorgelagerten Hersteller erhalten wurden} & example-1.2.3.jar!com/example/foo.class & \checkmark & \checkmark & - \C \\
     \hline
-    communication: system & \parbox{6cm}{Komponente wird vom Produkt über einen System-/Netzwerkdienst (Pipe, Socket, dlsym, execve usw.) aufgerufen} & /var/run/component.socket & - & - & - \\
+    \T artifact: modified & \parbox{7cm}{Komponenten-Artefakte wurden hinzugefügt/ersetzt/entfernt} & example-1.2.3.jar!com
+    /example/addon.class & - & - & \checkmark \B \\
     \hline
-    bundling: standalone & \parbox{6cm}{Komponenten-Artefakte, die noch völlig eigenständig und als solche erkennbar sind} & example-1.2.3.jar & \checkmark & \checkmark & \checkmark \\
-    \hline
-    bundling: embedded & \parbox{6cm}{Komponentenartefakte, die in das Produkt eingebettet und/oder nicht offensichtlich erkennbar sind } & product-1.2.3.ear/example-1.2.3.jar & - & - & - \\
-    \hline
-    artifact: pristine & \parbox{6cm}{alle Komponenten-Artefakte sind unverändert, d.h. genau so, wie sie ursprünglich vom vorgelagerten Hersteller erhalten wurden} & example-1.2.3.jar!com/example/foo.class & \checkmark & \checkmark & - \\
-    \hline
-    artifact: modified & \parbox{6cm}{Komponenten-Artefakte wurden hinzugefügt/ersetzt/entfernt} & example-1.2.3.jar!com
-    /example/addon.class & - & - & \checkmark \\
-    \hline\hline
+    \bottomrule
 \end{longtable}
 \end{landscape}
 
@@ -93,11 +102,11 @@ Aufgrund dessen kann der Umfang der Verplichtung sich um eine Last, die der Nutz
     \hline\hline
     Verpflichtungsumfang & Zweck & Erklärung \\
     \hline\hline
-    \parbox{4cm}{OBLIGATION (OBL)} & \parbox{5cm}{Eine Bedingung muss erfüllt werden, um die Lizenzbedingungen zu erfüllen} & \parbox{5cm}{Eine Lizenzvereinbarung enthält mehrere Bedingungen, die erfüllt werden müssen} \\
+    \A \parbox{4cm}{OBLIGATION (OBL)} & \parbox{5cm}{Eine Bedingung muss erfüllt werden, um die Lizenzbedingungen zu erfüllen} & \parbox{5cm}{Eine Lizenzvereinbarung enthält mehrere Bedingungen, die erfüllt werden müssen} \C \\
     \hline
-    \parbox{4cm}{NOT OBLIGATION SINGLE (NOS)} & \parbox{5cm}{Eine Bedingung ist aufgrund der Nutzung ausgeschlossen} & \parbox{5cm}{Wenn eine bestimmte Nutzung nicht eingeschränkt ist, muss die Verpflichtung nicht erfüllt werden, um die Lizenzbedingungen einzuhalten} \\
+    \F \parbox{4cm}{NOT OBLIGATION SINGLE (NOS)} & \parbox{5cm}{Eine Bedingung ist aufgrund der Nutzung ausgeschlossen} & \parbox{5cm}{Wenn eine bestimmte Nutzung nicht eingeschränkt ist, muss die Verpflichtung nicht erfüllt werden, um die Lizenzbedingungen einzuhalten} \G \\
     \hline
-    \parbox{4cm}{NOT OBLIGATION GLOBAL (NOG)} & \parbox{5cm}{Alle Lizenzbedingungen werden aufgrund einer bestimmten Nutzungsart ausgeschlossen} & \parbox{5cm}{Einige Lizenzvereinbarungen enthalten die Aussage, dass die Lizenzbedingungen nicht gelten, wenn die Komponente auf eine bestimmte Weise verwendet wird} \\
+    \F \parbox{4cm}{NOT OBLIGATION GLOBAL (NOG)} & \parbox{5cm}{Alle Lizenzbedingungen werden aufgrund einer bestimmten Nutzungsart ausgeschlossen} & \parbox{5cm}{Einige Lizenzvereinbarungen enthalten die Aussage, dass die Lizenzbedingungen nicht gelten, wenn die Komponente auf eine bestimmte Weise verwendet wird} \G \\
 
     \hline
 \end{tabular}
@@ -114,46 +123,64 @@ Ziel ist es, mittels der unterschiedlichen Ausprägungen der Verpflichtung im Zu
     \hline\hline
     Verpflichtungselemente & Kurzform & Erklärung \\
     \hline\hline
-    \parbox{4cm}{No Liability} & NO-LIABILITY & \parbox{6cm}{Der Urheber der Komponente kann nicht für Schäden haftbar gemacht werden, die er verursacht} \\
+    \D \parbox{4cm}{No Liability} & NO-LIABILITY & \parbox{6cm}{Der Urheber der Komponente kann nicht für Schäden haftbar gemacht werden, die er verursacht} \E \\
     \hline
-    \parbox{4cm}{Keep Copyright Information} & KEEP-COPYRIGHT & \parbox{6cm}{Die Copyright-Informationen des Autors der Komponente müssen beibehalten werden} \\
+    \D \parbox{4cm}{Keep Copyright Information} & KEEP-COPYRIGHT & \parbox{6cm}{Die Copyright-Informationen des Autors der Komponente müssen beibehalten werden} \E\\
     \hline
-    \parbox{4cm}{Provide License Text} & PROVIDE-LICENSE & \parbox{6cm}{Der Lizenztext der Komponete muss vollständig angegeben werden} \\
+    \D \parbox{4cm}{Provide License Text} & PROVIDE-LICENSE & \parbox{6cm}{Der Lizenztext der Komponete muss vollständig angegeben werden} \E \\
     \hline
-    \parbox{4cm}{Provide Source Code} & PROVIDE-SOURCE & \parbox{6cm}{Der Quellcode der Komponete muss vollständig angegeben werden} \\
+    \D \parbox{4cm}{Provide Source Code} & PROVIDE-SOURCE & \parbox{6cm}{Der Quellcode der Komponete muss vollständig angegeben werden} \E \\
     \hline
-    \parbox{4cm}{Advertizement Clause} & ADV-CLAUSE & \parbox{6cm}{Die Dokumentation und/oder Anwendung muss einen Hinweis auf die Komponente (und ihren Autor) enthalten} \\ 
+    \A \parbox{4cm}{Advertizement Clause} & ADV-CLAUSE & \parbox{6cm}{Die Dokumentation und/oder Anwendung muss einen Hinweis auf die Komponente (und ihren Autor) enthalten} \C \\ 
     \hline
-    \parbox{4cm}{Name Change Required} & RENAME & \parbox{6cm}{Der Name der Komponente muss geändert werden (im Falle von Änderungen und Weiterverbreitung)} \\
+    \A \parbox{4cm}{Name Change Required} & RENAME & \parbox{6cm}{Der Name der Komponente muss geändert werden (im Falle von Änderungen und Weiterverbreitung)} \C \\
     \hline
-    \parbox{4cm}{No Relicensing Allowed} & NO-RELICENSE & \parbox{6cm}{Die Komponente kann nicht unter einer anderen benutzerdefinierten Lizenz erneut lizenziert werden} \\
+    \D \parbox{4cm}{No Relicensing Allowed} & NO-RELICENSE & \parbox{6cm}{Die Komponente kann nicht unter einer anderen benutzerdefinierten Lizenz erneut lizenziert werden} \E \\
     \hline
-    \parbox{4cm}{Non-Military Use Only} & CTX-NON-MIL & \parbox{6cm}{Die Komponente darf nicht in militärischen oder nuklearen Kontexten verwendet werden} \\ 
+    \D \parbox{4cm}{Non-Military Use Only} & CTX-NON-MIL & \parbox{6cm}{Die Komponente darf nicht in militärischen oder nuklearen Kontexten verwendet werden} \E \\ 
     \hline
-    \parbox{4cm}{Non-Commercial Use Only} & CTX-NON-COM & \parbox{6cm}{Die Komponente darf nicht in kommerziellen Kontexten verwendet werden} \\
+    \D \parbox{4cm}{Non-Commercial Use Only} & CTX-NON-COM & \parbox{6cm}{Die Komponente darf nicht in kommerziellen Kontexten verwendet werden} \E \\
     \hline
-    \parbox{4cm}{Weak Copyleft Effect} & COPYLEFT-STRONG & \parbox{6cm}{Die Lizenz hat einen schwachen/eingeschränkten Copyleft-Effekt} \\
+    \D \parbox{4cm}{Weak Copyleft Effect} & COPYLEFT-STRONG & \parbox{6cm}{Die Lizenz hat einen schwachen/eingeschränkten Copyleft-Effekt} \E \\
     \hline
-    \parbox{4cm}{Strong Copyleft Effect} & COPYLEFT-WEAK & \parbox{6cm}{Die Lizenz hat eine starke/ vollständigen Copyleft-Effekt} \\
+    \T \parbox{4cm}{Strong Copyleft Effect} & COPYLEFT-WEAK & \parbox{6cm}{Die Lizenz hat eine starke/ vollständigen Copyleft-Effekt} \B \\
     \hline
-    \parbox{4cm}{Non OSS Definition Compliant} & NON-OSS-DEF & \parbox{6cm}{Die Lizenz enthält Bedingungen, die nicht mit der Definition von Open Source Software übereinstimmen} \\
+    \A \parbox{4cm}{Non OSS Definition Compliant} & NON-OSS-DEF & \parbox{6cm}{Die Lizenz enthält Bedingungen, die nicht mit der Definition von Open Source Software übereinstimmen} \C \\
     \hline 
-    \parbox{4cm}{Other Obligations} & OTHER & \parbox{6cm}{Die Lizenz enthält beliebige andere wichtige Bedingungen, die von uns nicht modelliert/abgedeckt werden (Fallback)} \\
+    \A \parbox{4cm}{Other Obligations} & OTHER & \parbox{6cm}{Die Lizenz enthält beliebige andere wichtige Bedingungen, die von uns nicht modelliert/abgedeckt werden (Fallback)} \C \\
     \hline 
 
 \end{tabular}
 
-\paragraph{Manuelle beispielhafte Überprüfung von Apache 2.0}
+\paragraph{Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}
+
+Die folgende Tabelle beinhaltet die beschriebenen Informationen bezüglich der Nutzungstypen und der jeweiligen Verplfichtungselementen und zeigt diese innerhalb einer Matrix an und stellt die ausführliche manuelle Checkliste dar.
+
+Zunächst wurde die Checkliste anhand eines Lizenzmodells, in diesem Fall \textit{Apache License 2.0}, exemplarisch dargestellt, da dieses vermehrt innerhalb des internen msg-Projektes verwendet wird.  
 
 Leere Felder zeigen an, dass die Lizenz keine Aussage über die jeweilige Verpflichtung und die entsprechende Nutzungsart macht. 
 
 Gefüllte Felder enthalten die Kennzeichnung welche jeweilige Verpflichtung für die jewelige Nutzungsart  durchgeführt werden muss. 
 
-Die benötigten Informationen können implizit aus dem angegebenen Lizenzauszug des Lizenzmodells hervorgehen oder wurden explizit angegeben. 
+Die benötigten Informationen können implizit aus dem angegebenen Lizenzauszug des Lizenzmodells hervorgehen oder wurden explizit angegeben.
+
+Die verbleibenden Lizenzmodelle, die neben der Apache Lizenz verwendet wurde, wurden im Anhang aufgelistet.   
 
 \begin{figure}[p]
     \centering
-    \includegraphics[angle=90, scale=0.5]{Bilder/Manuelle Checkliste.png}
+    \includegraphics[angle=90, scale=1.0]{Bilder/Manuelle Checkliste.png}
+\end{figure}
+
+\newpage
+\subparagraph{Komprimierung der manuellen Checkliste}
+
+Um eine bessere Übersicht über die wesentlichen Elemente zu gewinnen, wurde in diesem Schritt die manuelle Checkliste komprimiert. 
+
+Damit wird das Ziel verfolgt, eine möglichst leicht verständliche Checkliste zu generieren, indem nur die wesentlichen Elemente eines Lizenzmodells angezeigt werden. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{Bilder/Manuelle Checkliste_komprimiert.png}
 \end{figure}
 
 

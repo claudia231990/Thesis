@@ -7,12 +7,10 @@ Auch wurde ausschließlich die Rolle des Entwicklerteams, mit einem entsprechend
 \begin{figure}[p]
     \centering
     \includegraphics[angle=90, scale=0.5]{Bilder/SOLL-Prozess.png}
-    \caption{Einbindung von OSS in den Softwareentwicklungsprozess basierend auf dem HAF-Projekt}s
+    \caption{Einbindung von OSS in den Softwareentwicklungsprozess basierend auf dem internen msg-Projekt}
 \end{figure}
 
-Da zu dem Zeitpunkt der Nutzung von OSS die Projektstruktur bereits besteht und das Product Backlog ebenfalls erstellt wurde, bildet den Anfang des DevOps-Prozesses nun die Anpassung des priorisierten Product Backlogs.
-
-Nachdem das Sprint Planning Meeting durchgeführt worden ist, kann die Iteration basierend auf den Anforderungen aus dem Sprint Backlog, gestartet werden.\\ 
+Da zu dem Zeitpunkt der Nutzung von OSS die Projektstruktur bereits besteht und das Product Backlog ebenfalls erstellt wurde, bildet den Anfang des Softwareentwicklungsprozesses nun die Anpassung des priorisierten Product Backlogs.
 
 \begin{figure}[h]
     \centering
@@ -20,16 +18,16 @@ Nachdem das Sprint Planning Meeting durchgeführt worden ist, kann die Iteration
     \caption{Erster Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
 \end{figure}
 
-Wie auch bei dem IST-Zustand muss sich zunächst die Frage gestellt werden, ob Codeänderungen durchgeführt werden müssen, unabhängig ob sich die Änderungen auf einen vorhandenen Code oder auf eine Neuimplentierung beziehen. 
+Nachdem das Sprint Planning Meeting durchgeführt worden ist, kann die Iteration basierend auf den Anforderungen aus dem Sprint Backlog, gestartet werden, wodurch der Implmentierungsvorgang für die jeweiligen Sprint Backlog Items beginnen kann.
 
-Sollten Codeänderungen vorgenommen werden, wird der Implementierungsvorgang für das Backlog Item gestartet. 
+In diesem Rahmen sind Codeänderungen notwendig, die sich auf vorhandenen Code oder eine Neuimplementierung beziehen können.
 
 Ab diesem Zeitpunkt setzt die Nutzung von OSS die Prozessänderungen in Gang.
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{Bilder/SOLL-Prozess_second Part.png}
-    \caption{Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
+    \caption{Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internene msg-Projekt}
 \end{figure}
 
 Um präventiv maßgebliche Konsequenzen durch die Nutzung von OSS zu vermeiden, sollten sich die betreffenden Entwickler die Frage stellen, ob tatsächliche eine neue Software oder Softwarekomponete in das Projekt eingebunden werden muss. 
@@ -38,7 +36,9 @@ Falls dies der Fall ist, muss zunächst ein initaler OSS-Check durchgeführt wer
 
 Dieser dient dazu, das Lizenzmodell der verwendeten OSS-Komponete manuell zu überprüfen und diese mit den 'ungefährlichen' Lizenzmodellen zu vergleichen. 
 
-Dies hat zum Vorteil, dass der Entwickler bereits vor einer langen Implementierung eine Aussage darüber treffen kann, ob sich aus Sicht der Lizenzmodelle eine Verwendung eignet oder ob ein Lizenzmodell vorliegt, welches zumindest ein beschränktes Copyleft aufweist. 
+Dies hat zum Vorteil, dass der Entwickler bereits vor einer langen Implementierung eine Aussage darüber treffen kann, ob sich aus Sicht der Lizenzmodelle eine Verwendung eignet oder ob ein Lizenzmodell vorliegt, welches zumindest ein beschränktes Copyleft aufweist.
+
+Die entsprechende manuelle Checkliste wird im Kapitel 3.3 ausführlich behandelt. 
 
 Sollte die verwendete OSS-Komponete ein derartiges Lizenzmodell aufweisen, hat der Entwickler ausreichend Zeit, nach eine 'ungefährlichen' Alternative zu suchen.  
 
@@ -46,9 +46,9 @@ Wird die OSS-Kompoente letztlich verwendet, wird ein Pull-Request für ein Commi
 
 An diesem Punkt befindet sich der Entwickler ebenfalls, wenn keine neue OSS genutzt wird. 
 
-Anschließend hierzu werden wie im regelmäßigen Prozess, Unit-Tests und Codeanalysen durchgeführt und diese vom Reviewer bestätigen lassen.
+Anschließend hierzu werden wie im regelmäßigen Prozess, Unit-Tests und Codeanalysen durchgeführt.
 
-Gleichzeitig zu diesen Schritten muss eine neue Anpassung des Prozesses im Hinblick auf die Verwendung von OSS als ein automatisierten OSS-Check durchgeführt werden.
+Gleichzeitig zu diesen Schritten muss erneut eine neue Anpassung des Prozesses im Hinblick auf die Verwendung von OSS als ein automatisierten OSS-Check durchgeführt werden.
 
 Während bei einer Verwendung von neuer OSS die Lizenzmodelle zeitnah überprüft werden können, kann es Fälle geben, in denen Versionen einer bereits implementierten OSS-Komponete geändert werden und daraus eine Verschiebung der betreffenden Lizenzmodelle stattfinden kann. 
 
@@ -66,24 +66,24 @@ Durch die zeitnahe Übermittlung der notwendigen Informationen wird die Transpar
 
 Die Automatisierung des OSS-Checks entspricht sowohl der Kultur als auch den Methoden nach den DevOps-Prinzipien.
 
-Sollte die OSS-Komponete kein schwieriges Copyleft aufweisen, wird dieser Zustand zunächst vom Reviewer bestätigt und kann dann als Backlog Item erfolgreich implementiert und auf das Master Branch gemergt werden. 
+Sollte die Überprüfung mittels des automatisierten OSS-Checks kein schwieriges Copyleft finden, wird das Commit, wie im gängigen Softwareentwicklungsprozess, zunächst vom Reviewer bestätigt und kann dann als Backlog Item erfolgreich implementiert und auf das Master Branch gemergt werden. 
 
-Falls dies nicht der Fall ist, muss die OSS-Thematik zunächst geklärt werden.
+Falls dies nicht der Fall ist und eine OSS-Komponete ein nicht gewünschtes Lizenzmodell aufweisen, muss die OSS-Thematik zunächst geklärt werden.
 
 Sollte die entstandene Problematik nicht behoben werden, so muss der Projektleiter informiert werden und die Dev-Beteiligung endet zunächst an dieser Stelle. 
 
-Kann die OSS-Thematik gelöst werden, muss diese zunächst überarbeitet werden. 
+Kann das Problem im Hinblick auf die OSS-Komponete behoben werden, muss diese zunächst überarbeitet werden. 
 
 Dies reicht von einem Rückgang auf eine alte Version, wobei an dieser Stelle die gesamte Funktionalität gewährleistet werden muss, bis zur Verwerfung der entsprechenden Kompoente durch den Entwickler. 
 
 Dieser Aufgabenbereich kann mehrere Unteraufgaben aufweisen und die Lösung ist demnach spezifisch auf die Komponete und deren Entwicklung ausgelegt. 
 
-Nach der Überarbeitung erfolgt eine erneute Bestätigung durch einen Reviewer, zum Ziel, die Kompoente erfolgreich auf den Master Branch zu mergen. 
+Nach der Überarbeitung erfolgt eine Bestätigung durch einen Reviewer, zum Ziel, die Kompoente erfolgreich auf den Master Branch zu mergen. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{Bilder/SOLL-Prozess_third Part.png}
-    \caption{Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt}
+    \caption{Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internen msg-Projekt}
 \end{figure}
 
 Sobald das Release auf seine Vollständigkeit und Richtigkeit überprüft worden ist, wird zur erneuten Kontrolle der Lizenzmodelle ein Report erstellt. 

@@ -9,6 +9,7 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{graphicx}
 \usepackage{lscape}
 \usepackage{longtable} 
+\usepackage{booktabs}
 \input{Makros}
 
 \begin{document}
@@ -113,26 +114,22 @@ In diesem Rahmen wurde zunächst der derzeitige IST-Zustand mittels BPMN \dwi{is
 \subsection{Manuelle Überprüfung basierend auf einer Checkliste}
 \input{ManuelleCheckliste.tex}
 
-\subsection{Vorteile der Integration}
-\input{VorteileIntegration.tex}
-
-\subsection{Wesentliche Hindernisse}
-\input{HindernissIntegration.tex}
-
-
 \section{Proof of Concept}
 \input{ProofofConcept.tex}
 
-\subsection{Vergleich Open-Source-Scanner}
-
-\subsection{Internes Plugin}
-
-\subsubsection{Konzeption}
-
+\subsection{Anforderungsdefinition}
+\input{Anforderungsdefinition.tex}
+%Hier das Plugin von Michael Haas erklären und warum es nicht geworden ist. 
+% hier der Vergleich von verschiedenen Open-Source-Scannern 
+\subsection{Konzeption}
+\input{Konzeption.tex}
+%Maven Vorstellung und deren funktionsweise (UML)
 %UML-diagramm zur besseren Darstellung
-\subsubsection{Implementierung}
-
-\subsubsection{Evaluation}
+\subsection{Implementierung}
+\input{Implementierung.tex}
+% Entwicklung starten und die Funktionalitäten beschreiben 
+\subsection{Evaluation}
+\input{Evaluation.tex}
 
 %Automatisierter OSS-Check
 %Möglichkeiten, die bestehen, zur automatisierten Einbindung 
@@ -159,11 +156,4 @@ In diesem Rahmen wurde zunächst der derzeitige IST-Zustand mittels BPMN \dwi{is
 
 \end{document}
 
-
-%Bilder einfügen
-%\begin{figure}[h]
-    %\centering
-    %\includegraphics[scale=0.7]{Bilder/what-is-foss}
-    %\caption{Ein Beispiel}
-%\end{figure}
 

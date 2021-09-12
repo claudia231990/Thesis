@@ -3,10 +3,10 @@ Eine große Herausforderung bei der Modellierung des Softwareentwicklungsprozess
 \begin{figure}[p]
     \centering
     \includegraphics[angle=90, scale=0.6]{Bilder/IST-Prozess_neu.png}
-    \caption{Softwareentwicklungsprozess im IST-Zustand basierend auf dem HAF-Projekt}
+    \caption{Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
 \end{figure}
 
-Im Rahmen dieser Arbeit bildet die Grundlage des vorgestellten Prozesses, der Softwareentwicklungsprozess basierend auf dem HAF-Projekt innerhalb der msg systems ag, ab.
+Im Rahmen dieser Arbeit bildet die Grundlage des vorgestellten Prozesses, der Softwareentwicklungsprozess basierend auf dem internen Projekt innerhalb der msg systems ag, ab.
 
 Dieser Prozess beschreibt die Vorgehensweise und die darauf aufbauenden Aufgaben, die im Laufe der Entwicklung zu erbringen sind und an dem konkreten Projekt festgelegt wurden.
 
@@ -27,7 +27,7 @@ Zum besseren Verständnis wurde der Gesamtprozess in drei Teile (Abbildung 10 - 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{Bilder/IST-Prozess_first Part.png}
-    \caption{Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem HAF-Projekt}
+    \caption{Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
 \end{figure}
 
 Der erste Startpunkt des Prozesses stellt die Erstellung des Product Backlogs durch den Product Owner dar, welches durchgängig priorisiert und innerhalb der Abbildung 10 dargestellt wird. 
@@ -40,7 +40,7 @@ Ist die Priorisierung erfolgt, startet die Iteration mit dem Sprint Planning Mee
 
 Hierbei wird abhängig von den verfügbaren Kapazitäten und den Ergebnissen des letzten Sprints entschieden, welche User Stories zuerst bearbeitet werden. 
 
-Sowohl die erstellten Incidents als auch die ausgewählten User Stories des Product Backlogs bilden den Sprint Backlog, welcher somit die geplanten Umsetzungen an Entwicklungen innerhalb des Releases darstellt.
+Sowohl die erstellten Incidents, die als sehr dringend gelten und sofort beseitigt werden müssen, als auch die ausgewählten User Stories des Product Backlogs bilden den Sprint Backlog, welcher somit die geplanten Umsetzungen an Entwicklungen innerhalb des Releases darstellt.
 
 Parallel hierzu beginnt der Change-/Incidentprozess, bei dem zunächst die täglichen Informationen verarbeitet werden. 
 
@@ -70,37 +70,33 @@ Obwohl der Change- und Incidentprozess vom Product Owner begonnen wird, ist dies
 
 Der Incidentprozess wird anhand des täglichen Monitorings vom Entwicklerteam durchgeführt. 
 
-Nach der Verarbeitung der täglichen Informationen, werden die auftretenden Bugs zunächst in Incident und Changeprozesses unterschieden, da beide Prozesse werden unterschiedlich behandelt werden.
+Nach der Verarbeitung der täglichen Informationen, werden die auftretenden Bugs zunächst in Incident und Changeprozesses unterschieden, da beide Prozesse unterschiedlich behandelt werden.
 
-Innerhalb des Changeprozesses werden die Änderungen definiert und verfeinert. 
+Innerhalb des Changeprozesses werden die Änderungen definiert und verfeinert und die Anforderungen festgelegt, die entwickelt werden müssen. 
 
-Nachdem die Änderung geprüft wurde, muss entschieden werden, ob die Änderung durchführbar also entwickelt werden kann. 
+Das Ergebnis fließt in den Product Backlog ein, bei dem die Items wiederrum priorisiert werden. 
 
-Ist dies der Fall wird die Änderung dokumentiert und fließt in den Product Backlog ein, bei dem die Items wiederrum priorisiert werden. 
+Sollte der Bug als Incident bestätigt werden, so wird dieser zunächst erstellt. 
 
-Sollte der Change nicht durchzuführen sein, müssen die Definitionen und Verfeinerungen angepasst werden.
-
-Sollte der Bug als Incident bestätigt werden, so wird dieser zunächst erstellt und zunächst in das Sprint Backlog übertragen. 
+Sollte es sich bei dem erstellten Incident um ein schwerwiegendes Problem handeln, der sofort beseitigt werden muss wird dieser zunächst in das Sprint Backlog übertragen.
 
 Dies ist wichtig, da durch dieses Vorgehen Auskunft während des nächsten Sprint darüber gegeben werden kann, wie hoch die Anzahl der Fehlermeldungen oder Störungen aufgrund ausgefallener Systeme ist und demnach eine Anpassung erforderlich macht. 
 
-Sollte ein schwerwiegendes Problem auftreten, welches eine Codeänderung benötigt, wird nach der Erstellung des Incidents, dieser als ein Item in der überarbeitete Product Backlog eingetragen. 
+Sollte ein Problem auftreten, welches eine Codeänderung benötigt aber nicht als dringlich gilt, wird nach der Erstellung des Incidents, dieser als ein Item in der überarbeitete Product Backlog eingetragen. 
 
 Falls die vermeitliche Incident nicht bestätigt wird, wird dieser vermerkt und geschlossen, wodurch der Incidentprozess ab diesem Zeitpunkt als geschlossen gilt. \\ 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{Bilder/IST-Prozess_second Part.png}
-    \caption{Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem HAF-Projekt}
+    \includegraphics[scale=0.6]{Bilder/IST-Prozess_second Part.png}
+    \caption{Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internene msg-Projekt}
 \end{figure}
 
-Wie in Abbildung 11 zu erkennen ist, startet die Iteration zunächst mit der Überprüfung, ob Codeänderungen notwendig sind. 
+Wie in Abbildung 11 zu erkennen ist, startet die Iteration nach dem durchgeführten Sprint Planning Meeting, wodurch der Implmentierungsvorgang für die jeweiligen Sprint Backlog Items beginnen kann. 
 
-Dies kann sich auf Änderungen eines vorhandenen Codes oder auf eine Neuimplementierung beziehen. 
+In diesem Rahmen sind Codeänderungen notwendig, die sich auf vorhandenen Code oder eine Neuimplementierung beziehen können. 
 
-Falls keine Änderungen notwendig sind, bleibt das entsprechende Item im priorisierten Product Backlog und wird im Release auf seine Vollständigkeit und Richtigkeit überprüft.
-
-Sollten Codeänderungen durchgeführt werden, kann der entsprechende Implmentierungsvorgang für das Backlog Item beginnen. 
+Je nach Backlog Item entscheidet der Entwickler, welche Maßnahmen durchgeführt werden müssen und dokummentiert etwaige Fehler, die sich während der Entwicklung ergeben können.  
 
 Nachdem der Pull-Request für das Commit durchgeführt wurde, werden mehrere Aufgaben parallel erledigt. 
 
@@ -120,11 +116,13 @@ Sobald alle Änderungen erfolgreich implementiert worden sind, werden diese auf 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{Bilder/IST-Prozess_third Part.png}
-    \caption{Dritter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem HAF-Projekt}
+    \includegraphics[scale=0.6]{Bilder/IST-Prozess_third Part.png}
+    \caption{Dritter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
 \end{figure}
 
-Nachdem das Release auf seine Vollständigkeit und Richitgkeit überprüft worden ist, wird dieses im Review vorgestellt. 
+Nachdem das Mergen erfolgreich durchgeführt wurde, wird das Release auf seine Vollständigkeit und Richtigkeit überprüft und im Review vorgestellt. 
+
+Die Vorstellung erfolgt ebenfalls durch den entsprechenden Entwickler, der die jeweilige Entwicklung den jeweligen Stakeholdern präsentiert. 
 
 Ab diesem Zeitpunkt endet die Iteration. 
 
@@ -133,7 +131,6 @@ Werden weitere Anpassungen benötigt, müssen diese aufgearbeitet werden und fli
 Sind keine Änderungen notwendig, wird das Release bereitgestellt. 
 
 Das Projekt endet sobald das Product Backlog leer ist.
-
 
 % \paragraph{Agility Master}
 
