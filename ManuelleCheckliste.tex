@@ -2,7 +2,9 @@ Wie bereits im Kapitel 3.1.2 beschrieben, muss durch die Verwendung von OSS der 
 
 Die erste notwendige Anpassung erfolgt mittels einer Überprüfung der verwendeten Lizenzmodelle basierend auf einer manuellen Checkliste durch die entsprechenden Entwickler.  
 
-Durch das strukturierte und mehrmalige Arbeiten mit einer manuellen Checkliste entsteht eine Routine für das Entwicklerteam innerhalb des gesamten Softwareentwicklungsprozesses. 
+Durch das strukturierte und mehrmalige Arbeiten mit einer manuellen Checkliste entsteht eine Routine für das Entwicklerteam innerhalb des gesamten Softwareentwicklungsprozesses.
+
+Ferner sind Softwarekomponenten oftmals stark miteinander verschachtelt und enthalten zudem viele transitive Abhängigkeiten, wodurch das Ziel verfolgt wird, mit der manuellen Checkliste eine gemeinsame Basis zu schaffen.
 
 Der Einsatz schafft Effizenz und eine Zeitersparnis, da nur das Lizenzmodell betrachetet wird, was in diesem Moment verwendet werden möchte. 
 
@@ -18,12 +20,18 @@ Ziel des Einsatzes der manuellen Checkliste ist es, sowohl die technische als au
 
 Innerhalb der kommerziellen Softwareentwicklung stellt dies eine große Herausforderung dar.
 
-Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtweise und wenig Affinität zu Lizenztexten. 
+Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtweise und wenig Affinität zu Lizenztexten und benötigen daher Hilfe bei der Auswahl von OSS-Komponenten. 
 
-Juristen hingegen haben ein Verständnis für Lizenzrecht, allerdings fällt es ihnen schwer, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich zu intepretieren. 
+Juristen hingegen haben ein Verständnis für Lizenzrecht, allerdings fällt es ihnen schwer, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich zu intepretieren.
+
+Benötigt wird eine aussagekräftige Entscheidungsgrundlage, die aufzeigt, ob der Einsatz einer bestimmten Komponente rechtlich zulässig ist.
+
+Darüber hinaus sollte bei der Bewertung der Lizenzmodelle auch die jewelige Nutzung der Komponenten berücksichtigt werden, die einen erheblichen Einfluss auf die zu erfüllenden Lizenzbedingungen haben kann. 
+
+So ist beispielsweise die interne Nutzung oft unbedenklich und bedarf keiner Bedingungen, während eine Weitergabe viele Einschränkungen mit sich bringt. 
 
 Die unten stehende manuelle Checkliste und die zugrunde liegenden Elemente wurden bereits innerhalb der msg systems ag als OSS-Guide erstellt worden und im Rahmen dieser Arbeit auf das Problemfeld erweitert und angepasst.
-%Hier Fußzeile zu dem OSS-Guide von Ralf und Navina 
+%Hier Fußzeile zu dem OSS-Guide von Ralf und Navina  
 
 \paragraph{Use Types}
 
@@ -91,7 +99,7 @@ Diese wurden in sieben verschiedene Kategorien unterteilt: Format (format), Abh�
 
 \paragraph{Umfang und Ausprägung der Verpflichtungen}
 
-Je nach Nutzungsart müssen verschiedene und festgelegte Verpflichtungen innerhalb eines vorgeschriebenen Rahmens erfüllt werden oder können unter bestimmten Bedingungen ausgeschlossen werden.
+Je nach Nutzungsart müssen verschiedene und festgelegte Verpflichtungen innerhalb eines vorgeschriebenen Rahmens erfüllt werden oder können unter bestimmten Bedingungen ausgeschlossen werden. \cite{tldr_legal_software_2012}
 
 Aufgrund dessen kann der Umfang der Verplichtung sich um eine Last, die der Nutzer erfüllen muss handeln oder um eine bestimmte Nutzungsart beziehen, indem einzelne Verpflichtungen erfüllt werden müssen oder die gesamte Nutzung ausgeschlossen wird. 
 

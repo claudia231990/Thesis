@@ -1,5 +1,146 @@
-Als ersten Schritt wurde anhand der Problembeschreibung die darauf aufbauenden Anforderungen definiert. 
+%Hier das Plugin von Michael Haas erklären und warum es nicht geworden ist. 
+% hier der Vergleich von verschiedenen Open-Source-Scannern 
 
-In diesem Rahmen wurden die technischen Spezifikationen, die die automatisierte Checkliste aufweisen muss, festgelegt. 
+Als ersten Schritt wurde, basierend auf der Problembeschreibung, die darauf aufbauenden Anforderungen analysiert, die widerrum als Grundlage für die Entwicklung des Prototyps dienten. 
+
+In diesem Rahmen wurden neben den technischen Spezifikationen als funktionale Anforderungen, die Nicht-Funktionalen Anforderungen, die die automatisierte Checkliste aufweisen muss, festgelegt.
+
+Anhand der Problembeschreibung wurden folgende Elemente als Nicht-funktionale Anforderung erarbeitet: 
+
+\begin{itemize}
+    \item Die automatisierte Checkliste, soll alle integrierten OSS-Komponenten auf Ihre Lizenzmodelle überprüfen und bei risikobehafteten Lizenzmodelle einen Abbruch des Build-Prozesses verursachen
+\end{itemize}
+
+Basierend auf diesen Informationen wurden folgende Punkte als funktionale Anforderungen identifiziert: 
+
+\begin{itemize}
+    \item Die Analyse der verwendeten OSS-Komponenten anhand ihrer Lizenzmodelle, soll möglichst automatisiert, also ohne menschliches Zutun, erfolgen
+    \item Der Prototyp muss direkt in den Entwicklungsprozess  eingebunden werden 
+    \item Der Prototyp muss die verwendeten OSS-Komponenten mit Daten aller Lizenzmodelle und ihrer 'Copyleft'-Bestimmungen vergleichen 
+    \item Bei Verwendung eines 'beschränkten' oder 'verbotenen' Lizenzmodells soll eine Warnung oder ein Abbruch des Build-Prozesses erfolgen      
+    \item Der Entwickler muss durch den Abbruch des Buildprozess erkennen, dass der Ursprung des Fehlers bei der Verwendung von risikobehafteten Lizenzmodellen liegt
+    \item Nach der Prüfung des Release sollen die verrwendeten Lizenzmodelle in einem Dokument zusammengefasst werden
+\end{itemize}
 
 Im Laufe des PoC wurden die Anforderungen weiter präzisiert.
+
+In diesem Zuge konnten mehrere Möglichkeiten im Rahmen dieser Thesis umgesetzt werden.
+
+\subsubsection{Internes Tool}
+
+Zunächst war bereits innerhalb des internen Projektes bei der msg systems ag, ein Plugin vorhanden, welches für den Anforderungszweck geeignet ist. 
+
+Dies baut auf der Entwicklung eines automatisierbaren, generischen Tools zum Auslesen, Bearbeiten und Schreiben von Tabellen in verschiedenen Formaten auf. 
+
+Ziel dieses Tool ist es, alle Licensing Quelldateien zu einer neuen Tabelle zu konsolidieren und mit einer bereits fertigen Tabelle, die den alten Zustand des Projektes darstellt, zu vergleichen. 
+
+Dabei werden gelöschte Einträge entfernt, veränderte Einträge aktualisiert und unveränderte Einträge beibehalten, bis eine neue Tabelle erstellt wird.
+
+Allerdings mussten einige Überlegungen bei der Verwendung beachtet werden. 
+
+Zunächst muss dieses Projekt stets manuell angestoßen werden. 
+
+Dies birgt die Gefahr, dass dieses Tool innerhalb des täglichen Entwicklungsalltags nicht regelmäßig verwendet wird und folglich Entwicklungsaufwand für eine OSS-Komponente bereits miteinbezogen wird, die ein schwieriges Copyleft aufweist. 
+
+Infolgedessen ist eine zeitnahe Kenntnisnahme der Entwickler nicht möglich. 
+
+Aus diesem Grund wurde die Weiterentwicklung dieses Tools nicht weiterverfolgt. 
+
+\subsubsection{Vergleich Open Source Scanner}
+
+Darüber hinaus gibt es bereits einige verwandte Projekte, die das Ziel haben, OSS nach ihren Lizenzmodellen zu scannen. 
+
+Obwohl einige der Scanner ebenfalls als OSS frei verfügbar sind, gibt es eine erhebliche Anzahl von Tools die lediglich als eine bezahlbare Version erhändlich sind.  
+
+Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gemäß der Problembeschreibung und der Anforderungsanalyse untersucht. 
+
+\paragraph{Black Duck Suite}
+
+Black Duck bietet eine umfassende Software Composition Analysis (SCA)-Lösung für das Management von Sicherheits-, Qualitäts- und Lizenz-Compliance-Risiken, die sich aus der Verwendung von Open-Source- und Drittanbieter-Code in Anwendungen und Containern ergeben. \cite{}
+
+Dabei werden OSS-Komponenten durch Überwachung des Build-Prozesses identifiziert, Dateien gescannt und mit Code-Snippets abgeglichen. 
+
+Ferner erkennt es Sicherheitsschwachstellen und benachrichtigt die Benutzer direkt. 
+
+Darüber hinaus bietet das Tool DevOps-Integrationen, um die Prozesse agiler Entwicklungsteams zu definieren und sicherzustellen, dass die Anwendungen den Lizenzbedingungen entsprechen.
+
+\paragraph{WhiteSource}
+
+WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{}  
+
+Das Tool ist in den Build-Prozess integriert, wobei zusätzliche Richtlinien definiert werden, um die Kontrolle der Verwendung sicherzustellen. 
+
+So können Lizenzen durch eine festgelegte Blacklist abgelehnt werden, mittels einer White List, Lizenzen automatisch genehmigt werden oder mittels einer Liste von Lizenzen, dessen Genehmigung zunächst beantragt werden. 
+
+Wenn eine geprüfte Komponente oder Abhängigkeit unter einer Lizenz lizenziert wird, die auf der Blacklist steht, erhält der Benutzer eine Warnung und/oder der Build schlägt fehl.
+
+\paragraph{Fossa}
+
+Fossa ist ein Open-Source-Management-Tool, welches den gesamten Quellcode scannt, um zu prüfen, ob die Lizenzverpflichtungen erfüllt sind oder Schwachstellen entdeckt wurden. \cite{} 
+
+Sobald es in den Build-Prozess integriert ist, wird die Prüfung bei jedem Commit durchgeführt. 
+
+Ähnlich wie bei WhiteSource werden verschiedene Richtlinien definiert, um Lizenzen in unterschiedliche Kategorien zu unterteilen und je nach Lizenz zu genehmigen, abzulehnen oder zu Prüfung vorzumerken. 
+
+\paragraph{FOSSology}
+
+FOSSology ist ein quelloffenes Softwaresystem und Toolkit zur Einhaltung von Lizenzbestimmungen, wobei ein Benutzer einzelne Dateien oder ganze Softwarepakete über eine Web-Benutzeroberfläche hochladen kann. \cite{} 
+
+Als Toolkit können Lizenz-, Copyright- und Exportkontroll-Scans über die Befehlszeile ausführt werden.
+
+FOSSology funktioniert ähnlich wie ein leistungsorientiertes, konsensbasiertes Gemeinschaftsprojekt, bei dem sich jeder anmelden und etwas beitragen kann. 
+
+Der Bearbeiter kann jede beliebige Analyseoperation an der Datei durchführen. 
+
+Obwohl sich das FOSSology-Paket zur Zeit auf lizenzrelevante Daten konzentriert, kann es um Analysen für andere Zwecke (z.B. statische Code-Analyse) erweitert werden.
+
+\paragraph{Nexus Vulnerability Scanner}
+
+Nexus Vulnerability Scanner ist ein Tool zum Scannen des Quellcodes eines Projekts, um risikoreiche Lizenzmodelle für Komponenten und transitive Abhängigkeiten zu entdecken. \cite{} 
+
+Hierbei werden Lizenzen in den Kategorien Copyleft, Not Provided, Weak Copyleft und Liberal aufgeteilt. 
+
+Der Scanner prüft, ob im Quelltext Lizenzerklärungen vorhanden sind und bestimmt die Risikostufe. 
+
+Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{} 
+
+Ferner werden die Lizenzrisiken der aktuellen Version mit denen neuerer Versionen verglichen. 
+
+Nach der Bewertung wird eine Nachdokumentation mit den entsprechenden Informationen erstellt. 
+
+\paragraph{Eclipse SW360}
+
+SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{} 
+
+SW360 ermöglicht einerseits die Verfolgung von OSS-Komponenten, die innerhalb eines Projektes verwendet werden, die Einhaltung von Lizenzverpflichtungen, die Durchsetzung von Richtlinien und die Erstellung rechtlicher Dokumente und die Integration mit anderen Tools wie FOSSology. 
+
+Darüber hinaus werden Berichte mit Informationen über die verwendeten Komponenten und deren Lizenzen bereitgestellt.\\
+
+Obwohl einige Tools gemäß der Anforderungsanalyse für den benötigten Verwendungszweck eine Möglichkeit zur Integration bieten, wurden aus kosten- und zeitintensiven Gründen keine der dargestellten Lösungen letztlich in Betracht gezogen.   
+
+\subsubsection{Maven}
+
+Darüber hinaus wurde das Build Management System 'Maven' für die Entwicklung des PoC untersucht, welches sich vorwiegend für Java-Projekte eignet. 
+
+Maven verfolgt die Philosopie \textit{Konvention über Konfiguration}. 
+
+In diesem Rahmen sind Strukuren oder Abläufe, die zur Kompilierung, Testen, Paketierung und Veröffentlichung von Projekten benötigt werden, bereits vorgegeben und müssen nicht mehr definiert werden, wodurch sich die Entwicklung auf den Inhalt des Projektes einschränkt. \cite[]{}
+
+Softwareentwickler werden unterstützt, indem Maven die Ordnerstruktur und Organisation eines Projektes standardisiert und Empfehlungen abgibt, wo sich verschiedene Teile des Codes wie der Quellcode oder Konfigurationsdateien abgelegt werden sollten. \cite[]{}  
+
+Ferner bietet Maven die Möglichkeit Projektabhängigkeiten, Projektumgebungen und Projektbeziehungen in einer seperaten, externen pom.xml-Datei zu deklarieren. \cite[]{} 
+
+Dies erleichtert insbesondere die Verwaltung von Projektabhängigkeiten, da Bibliotheken einfach ausgetauscht werden können und die entsprechenden Abhängigkeiten sowie die transitiven Abhängigkeiten aufgelöst und entfernt werden.
+
+Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. 
+
+Somit werden alle auszuführbaren Aufgaben als Plugins heruntergeladen und innerhalb des Projektes verwendet. 
+
+Aufgrund der vielen automatisierten und standardisierten Schritte insbesondere im Bereich des Build-Managements, wird die Navigation und das Verständnis erheblich erleichtert.  
+
+Darüber hinaus erlaubt es Maven, eigene Plugins zu erstellen, womit Aufaben und Arbeitsabläufe in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden, weshalb sich die Entwicklung des PoC darauf konzentriert.
+
+Maven bietet den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
+
+Infolgedessen hat sich die Konzeption und die Implementierung auf Maven konzentriert.  
+

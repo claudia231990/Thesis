@@ -1,8 +1,10 @@
-Nachdem sowohl der theoretische Rahmen als auch der angepasste Prozess im Hinblick auf die Verwendung von OSS, ausführlich beschrieben worden sind, wird innerhalb dieses Kapitels der Proof of Concept (PoC) näher beschrieben. 
+Während die manuelle Checkliste dafür verwendet wird, präventiv OSS-Komponenten mit riskanten Lieznzmodellen bereits zu Beginn des Entwicklungsprozesses zu vermeiden, soll die automatisierte Checkliste das Ziel verfolgen, bereits implementierte OSS-Komponenten auf ihre Lizenzmodelle zu prüfen, bevor diese ausgeliefert werden. 
+
+Diese wird innerhalb des folgenden Kapitels als der Proof of Concept (PoC) näher beschrieben. 
 
 Grundsätzlich bestimmt der PoC die Machtbarkeit einer Idee, also ob die Idee wie geplant funktioniert und in die Realität umgesetzt werden kann, bevor für diese Ressourcen auf Produktionsebene verschwendet werden.  
 
-In dem Rahmen dieser Arbeit stellt der PoC einen Prototypen dar, der die prinzipelle Durchführbarkeit einer automatisierten Checkliste aufzeigt.
+In dem Rahmen dieser Arbeit stellt der PoC einen Prototypen dar, der die prinzipelle Durchführbarkeit einer automatisierten Checkliste aufzeigt, wobei dieser nicht direkt innerhalb des Build-Prozess integriert sondern unabhängig von dem jetzigen Entwicklungsprozess entwickelt wurde.  
 
 Obwohl der PoC nicht immer mit einem Prototypen gleichzusetzten ist, werden in diesem Fall beide Begriffe gleichermaßen behandelt. 
 
@@ -23,6 +25,8 @@ Wesentliche Elemente waren hierbei die momentane Problembeschreibung als auch di
 Die Ausarbeitung als auch der Umfang des zugrundeliegenden Problems wurden zunächst durch die Gespräche mit mehreren Teammitgliedern und durch die Teilnahme an Teammeetings anfänglich skizziert.
 
 In diesem Rahmen wurde \textit{die fehlende Bewertung und Prüfung bei der Verwendung von OSS} als das wesentliche Problem identifiziert, welches mithilfe einer automatisierten Überprüfung gelöst werden sollte.  
+
+Demnach sollte der Protoytyp verwendete OSS-Komponenten anhand ihrer Lizenzmodelle analysieren und bei einem, mit Risiko verbundenen Lizenzmodell, den jeweiligen Entwickler darüber zeitnah in Kenntnis setzen.  
 
 Die weitere Anforderungsdefinition, Gestaltung und Einbeziehung erfolgte im Zuge der Prozessmodellierung und der dazugehörigen Anpassung des Soll-Prozesses und wurde in vier grundlegende Schritte unterteilt.
 
