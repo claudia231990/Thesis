@@ -56,7 +56,7 @@ Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gem�
 
 \paragraph{Black Duck Suite}
 
-Black Duck bietet eine umfassende Software Composition Analysis (SCA)-Lösung für das Management von Sicherheits-, Qualitäts- und Lizenz-Compliance-Risiken, die sich aus der Verwendung von Open-Source- und Drittanbieter-Code in Anwendungen und Containern ergeben. \cite{}
+Black Duck bietet eine umfassende Software Composition Analysis (SCA)-Lösung für das Management von Sicherheits-, Qualitäts- und Lizenz-Compliance-Risiken, die sich aus der Verwendung von Open-Source- und Drittanbieter-Code in Anwendungen und Containern ergeben. \cite{synopsys_black_2021}
 
 Dabei werden OSS-Komponenten durch Überwachung des Build-Prozesses identifiziert, Dateien gescannt und mit Code-Snippets abgeglichen. 
 
@@ -66,7 +66,7 @@ Darüber hinaus bietet das Tool DevOps-Integrationen, um die Prozesse agiler Ent
 
 \paragraph{WhiteSource}
 
-WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{}  
+WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{whitesource_software_whitesource_2021}  
 
 Das Tool ist in den Build-Prozess integriert, wobei zusätzliche Richtlinien definiert werden, um die Kontrolle der Verwendung sicherzustellen. 
 
@@ -76,7 +76,7 @@ Wenn eine geprüfte Komponente oder Abhängigkeit unter einer Lizenz lizenziert 
 
 \paragraph{Fossa}
 
-Fossa ist ein Open-Source-Management-Tool, welches den gesamten Quellcode scannt, um zu prüfen, ob die Lizenzverpflichtungen erfüllt sind oder Schwachstellen entdeckt wurden. \cite{} 
+Fossa ist ein Open-Source-Management-Tool, welches den gesamten Quellcode scannt, um zu prüfen, ob die Lizenzverpflichtungen erfüllt sind oder Schwachstellen entdeckt wurden. \cite{fossa_fossa_2021} 
 
 Sobald es in den Build-Prozess integriert ist, wird die Prüfung bei jedem Commit durchgeführt. 
 
@@ -84,7 +84,7 @@ Sobald es in den Build-Prozess integriert ist, wird die Prüfung bei jedem Commi
 
 \paragraph{FOSSology}
 
-FOSSology ist ein quelloffenes Softwaresystem und Toolkit zur Einhaltung von Lizenzbestimmungen, wobei ein Benutzer einzelne Dateien oder ganze Softwarepakete über eine Web-Benutzeroberfläche hochladen kann. \cite{} 
+FOSSology ist ein quelloffenes Softwaresystem und Toolkit zur Einhaltung von Lizenzbestimmungen, wobei ein Benutzer einzelne Dateien oder ganze Softwarepakete über eine Web-Benutzeroberfläche hochladen kann. \cite{fossology_workgroup_fossology_2017} 
 
 Als Toolkit können Lizenz-, Copyright- und Exportkontroll-Scans über die Befehlszeile ausführt werden.
 
@@ -96,13 +96,13 @@ Obwohl sich das FOSSology-Paket zur Zeit auf lizenzrelevante Daten konzentriert,
 
 \paragraph{Nexus Vulnerability Scanner}
 
-Nexus Vulnerability Scanner ist ein Tool zum Scannen des Quellcodes eines Projekts, um risikoreiche Lizenzmodelle für Komponenten und transitive Abhängigkeiten zu entdecken. \cite{} 
+Nexus Vulnerability Scanner ist ein Tool zum Scannen des Quellcodes eines Projekts, um risikoreiche Lizenzmodelle für Komponenten und transitive Abhängigkeiten zu entdecken. \cite{sonatype_nexus_2008} 
 
 Hierbei werden Lizenzen in den Kategorien Copyleft, Not Provided, Weak Copyleft und Liberal aufgeteilt. 
 
 Der Scanner prüft, ob im Quelltext Lizenzerklärungen vorhanden sind und bestimmt die Risikostufe. 
 
-Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{} 
+Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{sonatype_guide_nodate} 
 
 Ferner werden die Lizenzrisiken der aktuellen Version mit denen neuerer Versionen verglichen. 
 
@@ -110,7 +110,7 @@ Nach der Bewertung wird eine Nachdokumentation mit den entsprechenden Informatio
 
 \paragraph{Eclipse SW360}
 
-SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{} 
+SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{the_eclipse_foundation_sw360_2018} 
 
 SW360 ermöglicht einerseits die Verfolgung von OSS-Komponenten, die innerhalb eines Projektes verwendet werden, die Einhaltung von Lizenzverpflichtungen, die Durchsetzung von Richtlinien und die Erstellung rechtlicher Dokumente und die Integration mit anderen Tools wie FOSSology. 
 
@@ -124,21 +124,19 @@ Darüber hinaus wurde das Build Management System 'Maven' für die Entwicklung d
 
 Maven verfolgt die Philosopie \textit{Konvention über Konfiguration}. 
 
-In diesem Rahmen sind Strukuren oder Abläufe, die zur Kompilierung, Testen, Paketierung und Veröffentlichung von Projekten benötigt werden, bereits vorgegeben und müssen nicht mehr definiert werden, wodurch sich die Entwicklung auf den Inhalt des Projektes einschränkt. \cite[]{}
+In diesem Rahmen sind Strukuren oder Abläufe, die zur Kompilierung, Testen, Paketierung und Veröffentlichung von Projekten benötigt werden, bereits vorgegeben und müssen nicht mehr definiert werden, wodurch sich die Entwicklung auf den Inhalt des Projektes einschränkt. \cite[S. 27]{spiller_maven_2011}
 
-Softwareentwickler werden unterstützt, indem Maven die Ordnerstruktur und Organisation eines Projektes standardisiert und Empfehlungen abgibt, wo sich verschiedene Teile des Codes wie der Quellcode oder Konfigurationsdateien abgelegt werden sollten. \cite[]{}  
+Softwareentwickler werden unterstützt, indem Maven die Ordnerstruktur und Organisation eines Projektes standardisiert und Empfehlungen abgibt, wo sich verschiedene Teile des Codes wie der Quellcode oder Konfigurationsdateien abgelegt werden sollten. \cite[S. 2]{varanasi_introducing_2019}  
 
-Ferner bietet Maven die Möglichkeit Projektabhängigkeiten, Projektumgebungen und Projektbeziehungen in einer seperaten, externen pom.xml-Datei zu deklarieren. \cite[]{} 
+Ferner bietet Maven die Möglichkeit Projektabhängigkeiten, Projektumgebungen und Projektbeziehungen in einer seperaten, externen pom.xml-Datei zu deklarieren. \cite[S. 3]{varanasi_introducing_2019} 
 
 Dies erleichtert insbesondere die Verwaltung von Projektabhängigkeiten, da Bibliotheken einfach ausgetauscht werden können und die entsprechenden Abhängigkeiten sowie die transitiven Abhängigkeiten aufgelöst und entfernt werden.
 
-Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. 
+Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. \cite[S. 28]{spiller_maven_2011} 
 
-Somit werden alle auszuführbaren Aufgaben als Plugins heruntergeladen und innerhalb des Projektes verwendet. 
+Somit können alle auszuführbaren Aufgaben als Plugins heruntergeladen und innerhalb des Projektes verwendet. 
 
-Aufgrund der vielen automatisierten und standardisierten Schritte insbesondere im Bereich des Build-Managements, wird die Navigation und das Verständnis erheblich erleichtert.  
-
-Darüber hinaus erlaubt es Maven, eigene Plugins zu erstellen, womit Aufaben und Arbeitsabläufe in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden, weshalb sich die Entwicklung des PoC darauf konzentriert.
+Aufgrund der vielen automatisierten und standardisierten Schritte insbesondere im Bereich des Build-Managements, wird die Navigation übersichtlich und das Verständnis erheblich erleichtert.  
 
 Maven bietet den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
 

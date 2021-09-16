@@ -9,6 +9,11 @@ Abrahamsson, P., Jedlitschka, A., Nguyen~Duc, A., Felderer, M., Amasaki, S.,
   in {Computer} {Science}}.
 \newblock Springer International Publishing, Cham.
 
+\bibitem[Allberg et~al.,
+  2021]{allberg_ayoyabayoy-maven-license-verifier-plugin_2021}
+Allberg, J., Digana, T., and Opheim, M. (2021).
+\newblock {AyoyAB}/{Ayoy}-{Maven}-{License}-{Verifier}-{Plugin}.
+
 \bibitem[Allmann and {Nomos Verlagsgesellschaft}, 2019]{allmann_open_2019}
 Allmann, I. and {Nomos Verlagsgesellschaft} (2019).
 \newblock {\em Open {Source} {Compliance}}.
@@ -83,6 +88,14 @@ Forsgren, N., Humble, J., and Kim, G. (2019).
   entwickeln und zu skalieren}.
 \newblock Vahlen, München.
 
+\bibitem[Fossa, 2021]{fossa_fossa_2021}
+Fossa (2021).
+\newblock Fossa.
+
+\bibitem[Foundation, 2018]{the_eclipse_foundation_sw360_2018}
+Foundation, T.~E. (2018).
+\newblock {SW360}.
+
 \bibitem[Gotel and Leip, 2007]{concas_agile_2007}
 Gotel, O. and Leip, D. (2007).
 \newblock Agile {Software} {Development} {Meets} {Corporate} {Deployment}
@@ -91,6 +104,10 @@ Gotel, O. and Leip, D. (2007).
   Agile {Processes} in {Software} {Engineering} and {Extreme} {Programming}},
   volume 4536, pages 24--27. Springer Berlin Heidelberg, Berlin, Heidelberg.
 \newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem[Guntur, 2020]{guntur_understanding_2020}
+Guntur, C. (2020).
+\newblock Understanding {Apache} {Maven}.
 
 \bibitem[Haffke et~al., 2017]{haffke_transformative_2017}
 Haffke, I., Kalgovas, B., and Benlian, A. (2017).
@@ -269,11 +286,32 @@ Smeds, J., Nybom, K., and Porres, I. (2015).
   {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
   Publishing.
 
+\bibitem[Software, 2021]{whitesource_software_whitesource_2021}
+Software, W. (2021).
+\newblock {WhiteSource}.
+
+\bibitem[Sonatype, ]{sonatype_guide_nodate}
+Sonatype.
+\newblock Guide to the {Nexus} {Vulnerability} {Scanner}.
+
+\bibitem[Sonatype, 2008]{sonatype_nexus_2008}
+Sonatype (2008).
+\newblock Nexus open {Source} {Vulnerability} {Scanner}.
+
+\bibitem[Spiller, 2011]{spiller_maven_2011}
+Spiller, M. (2011).
+\newblock {\em Maven 3: {Konfigurationsmanagement} mit {Java}}.
+\newblock mitp, Heidelberg München Landsberg Frechen Hamburg, 1. aufl edition.
+
 \bibitem[Sturm et~al., 2017]{sturm_devops_2017}
 Sturm, R., Pollard, C., and Craig, J. (2017).
 \newblock {DevOps} and {Continuous} {Delivery}.
 \newblock In {\em Application {Performance} {Management} ({APM}) in the
   {Digital} {Enterprise}}, pages 121--135. Elsevier.
+
+\bibitem[Synopsys, 2021]{synopsys_black_2021}
+Synopsys (2021).
+\newblock Black {Duck} {Suite}.
 
 \bibitem[TheDev, 2019]{thedev_eight_2019}
 TheDev, J. (2019).
@@ -302,6 +340,12 @@ Van~Hoorn, A., Rohr, M., Hasselbring, W., Waller, J., Ehlers, J., and Frey, S.
 \newblock Continuous {Monitoring} of {Software} {Services}: {Design} and
   {Application} of the {Kieker} {Framework}.
 \newblock Technical report, Kiel University, Germany.
+
+\bibitem[Varanasi, 2019]{varanasi_introducing_2019}
+Varanasi, B. (2019).
+\newblock {\em Introducing {Maven}: a build tool for today's {Java}
+  developers}.
+\newblock OCLC: 1136550397.
 
 \bibitem[Verona, 2016]{verona_practical_2016}
 Verona, J. (2016).
@@ -341,6 +385,10 @@ Wolff, E. (2016).
 \newblock {\em Continuous {Delivery}: der pragmatische {Einstieg}}.
 \newblock dpunkt.verlag, Heidelberg, 2., aktualisierte und erweiterte auflage
   edition.
+
+\bibitem[Workgroup, 2017]{fossology_workgroup_fossology_2017}
+Workgroup, F. (2017).
+\newblock {FOSSology}.
 
 \bibitem[Yarlagadda, 2021]{yarlagadda_devops_2021}
 Yarlagadda, R.~T. (2021).
