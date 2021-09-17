@@ -92,6 +92,10 @@ Forsgren, N., Humble, J., and Kim, G. (2019).
 Fossa (2021).
 \newblock Fossa.
 
+\bibitem[Foundation, 2002]{the_apache_software_foundation_maven_2002}
+Foundation, T. A.~S. (2002).
+\newblock Maven.
+
 \bibitem[Foundation, 2018]{the_eclipse_foundation_sw360_2018}
 Foundation, T.~E. (2018).
 \newblock {SW360}.
@@ -215,6 +219,12 @@ Kneuper, R. (2017).
 König, G. and Kugel, R. (2019).
 \newblock {DevOps}—{Welcome} to the {Jungle}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
+
+\bibitem[Loukides and Inc, 2008]{loukides_maven_2008}
+Loukides, M. and Inc, S., editors (2008).
+\newblock {\em Maven: the definitive guide: everthing you need to know from
+  ideation to deployment}.
+\newblock O'Reilly, Beijing Köln, 1. ed edition.
 
 \bibitem[Luber and Karlstetter, 2020]{luber_was_2020}
 Luber, S. and Karlstetter, F. (2020).
