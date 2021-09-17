@@ -1,28 +1,35 @@
 Eine große Herausforderung bei der Modellierung des Softwareentwicklungsprozesses war eine genaue Momentaufnahme eines kontinierlichen arbeitenden Prozesses. 
+\dwi{ich sehe das das für dich eine große herausforderung ist,
+aber würde dem jeder leser zustimmen? warum schreibst du das, bzw was möchtest du damit transportieren?}
 
 \begin{figure}[p]
     \centering
     \includegraphics[angle=90, scale=0.6]{Bilder/IST-Prozess_neu.png}
     \caption{Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
 \end{figure}
+\dwi{die bildqualität ist noch sehr grob - ich nehme an du exportierst das am ende nochmal in 600+dpi?}
 
-Im Rahmen dieser Arbeit bildet die Grundlage des vorgestellten Prozesses, der Softwareentwicklungsprozess basierend auf dem internen Projekt innerhalb der msg systems ag, ab.
+Im Rahmen dieser Arbeit bildet die Grundlage des vorgestellten Prozesses, \dwi{den?} Softwareentwicklungsprozess basierend auf dem internen Projekt \dwi{"dem" klingt wie es gibt nur eins. sprich doch einfach von einem beispielprojekt} innerhalb der msg systems ag, ab.
+\dwi{irgendwie ist der satz etwas holprig}
 
 Dieser Prozess beschreibt die Vorgehensweise und die darauf aufbauenden Aufgaben, die im Laufe der Entwicklung zu erbringen sind und an dem konkreten Projekt festgelegt wurden.
+\dwi{"erbringt" man eine aufgabe? und du beschreibst ja sicher nicht die aufgaben die in der entwicklung zu erledigen sind (z.b. user stories), sondern beschreibst die abläufe entlang derer diese aufgaben erledigt werden. vielleicht einfach den absatz weglassen.}
 
-Da das entsprechende Team mit agilen Methoden wie Scrum und Kanban und mittels DevOps-Methoden arbeitet, erwies sich die Modellierung des IST-Prozesses basierend auf einem Sprint am geeignesten. 
+Da das entsprechende Team mit agilen Methoden wie Scrum und Kanban und mittels DevOps-Methoden arbeitet, erwies sich die Modellierung des IST-Prozesses basierend auf einem Sprint am geeignesten.
+\dwi{Vorschlag für die beiden letzen absätze in "kompakt":
+Der Beispielprozess beschreibt kontextrelevante Aspekte der projektspezifischen DevOps-Ausprägung und wird entlang eines Entwicklungssprints erklärt.}
 
 Da die Rollen von DevOps, sowohl den Tätigkeitsbereich als auch den entsprechenden Personenrahmen abbilden, werden die Aufgaben innerhalb DevOps als eine zusammenhängende und eigenständige Rolle behandelt und trägt daher den Namen 'Entwicklungsteam'.
 
-Somit entsprechen innerhalb dieses konkreten Projektes Dev und Ops, Entwicklern und nehmen infolgedessen beide Tätigkeitsbereiche, also die Entwicklung als auch die Verwaltung, gemeinsam wahr.
+Somit entsprechen innerhalb dieses konkreten Projektes Dev und Ops, Entwicklern und nehmen infolgedessen beide Tätigkeitsbereiche, also die Entwicklung als auch die Verwaltung, gemeinsam wahr. \dwi{weglassen. du hast devops schon vorher ausführlich beschrieben..}
 
 Ferner fungiert der Product Owner, als die nächste Rolle, als die Schnittstelle zwischen verschiedenen Stakeholdern oder Kunden und dem Entwicklungsteam. 
 
 Er vertritt demnach die Interessen des Kunden in den Entwicklungsprozess, ohne aktiv in die Softwareentwicklung einzugreifen.
 
-Ferner erstellt der Product Owner den Product Backlog und legt die Reihenfolge der Items, die bearbeitet werden müssen, fest. 
+Ferner \dwi{"Ferner" wiederholt. hier vielleicht die vorigen 3 sätze zusammenführen.} erstellt der Product Owner den Product Backlog und legt die Reihenfolge der Items, die bearbeitet werden müssen, fest. 
 
-Zum besseren Verständnis wurde der Gesamtprozess in drei Teile (Abbildung 10 - 12) unterteilt und diese einzeln erläutert.\\
+Zum besseren Verständnis \dwi{du meinst wohl aus gründen der übersichtlichkeit? du schneidest ja vertikal um die elemente auf der seite unterzubringen} wurde der Gesamtprozess in drei Teile (Abbildung 10 - 12) unterteilt und diese einzeln erläutert.\\
 
 \begin{figure}[h]
     \centering
@@ -32,13 +39,15 @@ Zum besseren Verständnis wurde der Gesamtprozess in drei Teile (Abbildung 10 - 
 
 Der erste Startpunkt des Prozesses stellt die Erstellung des Product Backlogs durch den Product Owner dar, welches durchgängig priorisiert und innerhalb der Abbildung 10 dargestellt wird. 
 
-Die Priorisierung findet sequentiell statt, da mehrere Entwicklungen und Änderungen eines Items des Product Backlogs parallel und gleichzeitig und nicht als eine Aufgabenschleife stattfinden. 
+Die Priorisierung findet sequentiell statt, da mehrere Entwicklungen und Änderungen eines Items des Product Backlogs parallel und gleichzeitig und nicht als eine Aufgabenschleife stattfinden. \dwi{den satz kapier ich nicht. es ist sequentiell weils parallel ist?}
 
-Das Ergebnis ist das priorisierte Product Backlog, welches eine Liste der Anforderungen für alle Produktänderungen darstellt, die anhand einer Schätzung in eine abzuarbeitende Reihenfolge gebracht werden. 
+Das Ergebnis ist das priorisierte Product Backlog, welches eine Liste der Anforderungen für alle Produktänderungen darstellt, die anhand einer Schätzung in eine abzuarbeitende Reihenfolge gebracht werden.
+\dwi{.."anhand einer schätzung".. versteh ich nicht? die schätzung legt die komplexität einer story fest ("wie groß ist der stein"). die storypoints werden nicht in direktem sinne zur priorisierung genutzt ("welche steine will ich zuerst weg haben")}
 
 Ist die Priorisierung erfolgt, startet die Iteration mit dem Sprint Planning Meeting. 
 
 Hierbei wird abhängig von den verfügbaren Kapazitäten und den Ergebnissen des letzten Sprints entschieden, welche User Stories zuerst bearbeitet werden. 
+\dwi{die priorisierung entscheidet, welche stories als nächstes bearbeitet werden. im sprint planning wird eigentlich nur entschieden, wie viel man sich entlang der schon priorisierten liste vornimmt ("wie viele steine bekommen wir in den nächsten zwei wochen mit den leuten hier weggeschafft, wenn wir wissen welche zuerst und wie groß sie sind")}
 
 Sowohl die erstellten Incidents, die als sehr dringend gelten und sofort beseitigt werden müssen, als auch die ausgewählten User Stories des Product Backlogs bilden den Sprint Backlog, welcher somit die geplanten Umsetzungen an Entwicklungen innerhalb des Releases darstellt.
 
