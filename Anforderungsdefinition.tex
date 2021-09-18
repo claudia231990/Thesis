@@ -24,7 +24,7 @@ Basierend auf diesen Informationen wurden folgende Punkte als funktionale Anford
 
 Im Laufe des PoC wurden die Anforderungen weiter präzisiert.
 
-In diesem Zuge konnten mehrere Möglichkeiten im Rahmen dieser Thesis umgesetzt werden.
+In diesem Zuge mussten mehrere Möglichkeiten im Rahmen dieser Thesis untersucht und anhand der Anforderungsdefinition analysiert werden.
 
 \subsubsection{Internes Tool}
 
@@ -46,13 +46,13 @@ Infolgedessen ist eine zeitnahe Kenntnisnahme der Entwickler nicht möglich.
 
 Aus diesem Grund wurde die Weiterentwicklung dieses Tools nicht weiterverfolgt. 
 
-\subsubsection{Vergleich Open Source Scanner}
+\subsubsection{Eignungsprüfung bekannter Open Source Scanner}
 
 Darüber hinaus gibt es bereits einige verwandte Projekte, die das Ziel haben, OSS nach ihren Lizenzmodellen zu scannen. 
 
 Obwohl einige der Scanner ebenfalls als OSS frei verfügbar sind, gibt es eine erhebliche Anzahl von Tools die lediglich als eine bezahlbare Version erhändlich sind.  
 
-Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gemäß der Problembeschreibung und der Anforderungsanalyse untersucht. 
+Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gemäß der Problembeschreibung und der Anforderungsanalyse verglichen und einzeln untersucht.
 
 \paragraph{Black Duck Suite}
 
@@ -64,6 +64,8 @@ Ferner erkennt es Sicherheitsschwachstellen und benachrichtigt die Benutzer dire
 
 Darüber hinaus bietet das Tool DevOps-Integrationen, um die Prozesse agiler Entwicklungsteams zu definieren und sicherzustellen, dass die Anwendungen den Lizenzbedingungen entsprechen.
 
+Dieses Tool wurde letztlich aufgrund der erheblichen Kosten nicht weiter verfolgt.
+
 \paragraph{WhiteSource}
 
 WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{whitesource_software_whitesource_2021}  
@@ -74,13 +76,7 @@ So können Lizenzen durch eine festgelegte Blacklist abgelehnt werden, mittels e
 
 Wenn eine geprüfte Komponente oder Abhängigkeit unter einer Lizenz lizenziert wird, die auf der Blacklist steht, erhält der Benutzer eine Warnung und/oder der Build schlägt fehl.
 
-\paragraph{Fossa}
-
-Fossa ist ein Open-Source-Management-Tool, welches den gesamten Quellcode scannt, um zu prüfen, ob die Lizenzverpflichtungen erfüllt sind oder Schwachstellen entdeckt wurden. \cite{fossa_fossa_2021} 
-
-Sobald es in den Build-Prozess integriert ist, wird die Prüfung bei jedem Commit durchgeführt. 
-
-Ähnlich wie bei WhiteSource werden verschiedene Richtlinien definiert, um Lizenzen in unterschiedliche Kategorien zu unterteilen und je nach Lizenz zu genehmigen, abzulehnen oder zu Prüfung vorzumerken. 
+Auch dieses Tool wurde aufgrund erheblicher Kosten nicht weiter innerhalb des PoC in Betracht gezogen. 
 
 \paragraph{FOSSology}
 
@@ -92,7 +88,7 @@ FOSSology funktioniert ähnlich wie ein leistungsorientiertes, konsensbasiertes 
 
 Der Bearbeiter kann jede beliebige Analyseoperation an der Datei durchführen. 
 
-Obwohl sich das FOSSology-Paket zur Zeit auf lizenzrelevante Daten konzentriert, kann es um Analysen für andere Zwecke (z.B. statische Code-Analyse) erweitert werden.
+Aufgrund der fehlenden Sicherheit über den Kenntnisstand des jeweiligen Bearbeiters wurde auch dieses Tool für die weitere Bearbeitung nicht mehr in Betracht gezogen. 
 
 \paragraph{Nexus Vulnerability Scanner}
 
@@ -108,6 +104,8 @@ Ferner werden die Lizenzrisiken der aktuellen Version mit denen neuerer Versione
 
 Nach der Bewertung wird eine Nachdokumentation mit den entsprechenden Informationen erstellt. 
 
+Obwohl sich dieses Tool sich anhand der Anforderungsdefinition sehr gut für die weitere Bearbeitung eignet, wurde dieses Tool aufgrund der zeit- und entwicklungsintensiven Integration verworfen.
+
 \paragraph{Eclipse SW360}
 
 SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{the_eclipse_foundation_sw360_2018} 
@@ -116,29 +114,26 @@ SW360 ermöglicht einerseits die Verfolgung von OSS-Komponenten, die innerhalb e
 
 Darüber hinaus werden Berichte mit Informationen über die verwendeten Komponenten und deren Lizenzen bereitgestellt.\\
 
-Obwohl einige Tools gemäß der Anforderungsanalyse für den benötigten Verwendungszweck eine Möglichkeit zur Integration bieten, wurden aus kosten- und zeitintensiven Gründen keine der dargestellten Lösungen letztlich in Betracht gezogen.   
+Obwohl einige Tools gemäß der Anforderungsanalyse für den benötigten Verwendungszweck eine Möglichkeit zur Integration bieten, wurde aus kosten- und zeitintensiven Gründen keine der dargestellten Lösungen letztlich in Betracht gezogen.   
 
-\subsubsection{Maven}
+\subsubsection{Ayoy - Maven Licence Vertify Plugin}
 
-Darüber hinaus wurde das Build Management System 'Maven' für die Entwicklung des PoC untersucht, welches sich vorwiegend für Java-Projekte eignet. 
+Des Weiteren wurde untersucht, ob die Entwicklung des PoC mittels des Build Management Systems 'Maven' für den vorliegenden Verwendungszweck eignen würde. 
 
-Maven verfolgt die Philosopie \textit{Konvention über Konfiguration}. 
-
-In diesem Rahmen sind Strukuren oder Abläufe, die zur Kompilierung, Testen, Paketierung und Veröffentlichung von Projekten benötigt werden, bereits vorgegeben und müssen nicht mehr definiert werden, wodurch sich die Entwicklung auf den Inhalt des Projektes einschränkt. \cite[S. 27]{spiller_maven_2011}
-
-Softwareentwickler werden unterstützt, indem Maven die Ordnerstruktur und Organisation eines Projektes standardisiert und Empfehlungen abgibt, wo sich verschiedene Teile des Codes wie der Quellcode oder Konfigurationsdateien abgelegt werden sollten. \cite[S. 2]{varanasi_introducing_2019}  
-
-Ferner bietet Maven die Möglichkeit Projektabhängigkeiten, Projektumgebungen und Projektbeziehungen in einer seperaten, externen pom.xml-Datei zu deklarieren. \cite[S. 3]{varanasi_introducing_2019} 
-
-Dies erleichtert insbesondere die Verwaltung von Projektabhängigkeiten, da Bibliotheken einfach ausgetauscht werden können und die entsprechenden Abhängigkeiten sowie die transitiven Abhängigkeiten aufgelöst und entfernt werden.
+Maven eignet sich vorwiegend für Java-Projekte, welche zudem ausschließlich innerhalb des interne Projekt bei der msg systems ag verwendet werden.  
 
 Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. \cite[S. 28]{spiller_maven_2011} 
 
-Somit können alle auszuführbaren Aufgaben als Plugins heruntergeladen und innerhalb des Projektes verwendet. 
+Daher bietet Maven die Möglichkeit, eigene Plugins zu erstellen, womit Aufgaben und Arbeitsabläufe einfach in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden. \cite[S. 3]{varanasi_introducing_2019}
 
-Aufgrund der vielen automatisierten und standardisierten Schritte insbesondere im Bereich des Build-Managements, wird die Navigation übersichtlich und das Verständnis erheblich erleichtert.  
+Die entsprechenden Plugins können selbst entwickelt oder heruntergeladen und innerhalb des Projektes integriert werden.  
 
-Maven bietet den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
+Zudem bietet Maven den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
 
-Infolgedessen hat sich die Konzeption und die Implementierung auf Maven konzentriert.  
+Basierend auf dem Rahmen dieser Arbeit, OSS in den DevOps-Softwareentwicklungsprozesses zu integrieren, wurde das Ayoy - Maven Licence Vertify Plugin \cite{allberg_ayoyabayoy-maven-license-verifier-plugin_2021} als eine OSS innerhalb des PoCs auf GitHub, einer der bekanntesten Plattformen für Quellcode-Datenbanken und deren Versionverwaltung, heruntergeladen und für den entsprechenden Verwendungszweck angepasst.
+
+Dieses Plugin überprüft und vergleicht die OSS-Abhängigkeiten anhand der Lizenzmodelle des aktuellen Projektes mit einer erstellten Datei und bricht den Build-Prozess ab, wenn die Anforderungen nicht erfüllt sind.
+
+Aufgrund der einfachen Handbarkeit, der bereits vorhandenen Integration von Maven in den Softwareentwicklungsprozesses und des java-basierten Projektes konzentriert sich die Entwicklung des PoC im Hinblick auf die Konzeption und Implementierung dieses Plugins. 
+
 

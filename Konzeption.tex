@@ -1,12 +1,17 @@
-Ferner bietet Maven die Möglichkeit, eigene Plugins zu erstellen, womit Aufgaben und Arbeitsabläufe einfach in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden. \cite[S. 3]{varanasi_introducing_2019}
-
-Basierend auf dem Rahmen dieser Arbeit, OSS in den DevOps-Softwareentwicklungsprozesses zu integrieren, wurde diese Möglichkeit für den PoC aufgegriffen. 
-
-Demgemäß wurde eine entsprechende OSS als ein Maven Plugin \cite{allberg_ayoyabayoy-maven-license-verifier-plugin_2021} innerhalb des PoCs auf GitHub, einer der bekanntesten Plattformen für Quellcode-Datenbanken und deren Versionverwaltung, heruntergeladen und für den entsprechenden Verwendungszweck angepasst.
+Um ein besseres Verständnis zu ermöglichen, wird zunächst auf die generelle Funktionsweise von Maven näher eingegangen. 
 
 \subsubsection{Workflow Maven}
+Maven verfolgt die Philosopie \textit{Konvention über Konfiguration}. 
 
-Um ein besseres Verständnis zu ermöglichen, wird zunächst auf die generelle Funktionsweise von Maven näher eingegangen. 
+In diesem Rahmen sind Strukuren oder Abläufe, die zur Kompilierung, Testen, Paketierung und Veröffentlichung von Projekten benötigt werden, bereits vorgegeben und müssen nicht mehr definiert werden, wodurch sich die Entwicklung auf den Inhalt des Projektes einschränkt. \cite[S. 27]{spiller_maven_2011}
+
+Softwareentwickler werden unterstützt, indem Maven die Ordnerstruktur und Organisation eines Projektes standardisiert und Empfehlungen abgibt, wo sich verschiedene Teile des Codes wie der Quellcode oder Konfigurationsdateien abgelegt werden sollten. \cite[S. 2]{varanasi_introducing_2019}  
+
+Ferner bietet Maven die Möglichkeit Projektabhängigkeiten, Projektumgebungen und Projektbeziehungen in einer seperaten, externen pom.xml-Datei zu deklarieren. \cite[S. 3]{varanasi_introducing_2019} 
+
+Dies erleichtert insbesondere die Verwaltung von Projektabhängigkeiten, da Bibliotheken einfach ausgetauscht werden können und die entsprechenden Abhängigkeiten sowie die transitiven Abhängigkeiten aufgelöst und entfernt werden.
+
+Aufgrund der vielen automatisierten und standardisierten Schritte insbesondere im Bereich des Build-Managements, wird die Navigation übersichtlich und das Verständnis erheblich erleichtert. 
 
 \begin{figure}[h]
     \centering
@@ -45,7 +50,7 @@ Zunächst überprüft Maven bei der Zerlegung der Abhängigkeiten, ob sich die b
 
 Ist dies der Fall, wird die Datei, ohne die Erstellung einer Kopie im lokalen Verzeichnis, innerhalb des Local Repositorys verwendet.
 
-Kann keine Zerlegung der Abhängigkeiten lokal erfolgen, versucht Maven diese mittels dem Maven Repository über das Internet auf das Local Repository herunterzuladen und zu kopieren, damit diese aussschließlich lokal verwendet werden.\cite[S. 115]{spiller_maven_2011}   
+Kann keine Zerlegung der Abhängigkeiten lokal erfolgen, versucht Maven diese mittels dem Maven Repository über das Internet auf das Local Repository herunterzuladen und zu kopieren, damit diese aussschließlich lokal verwendet werden. \cite[S. 115]{spiller_maven_2011}   
 
 Sollten neue Abhängigkeiten oder neue Versionen der vorhandenen Abhängigkeiten hinzugefügt werden, wird das Repository anhand dessen aktualisiert oder die betreffenden Abhängigkeiten kopiert. 
 
@@ -91,30 +96,23 @@ Während das POM alle notwendigen Informationen über ein Projekt enthält, die 
 
 \paragraph{Plugins in Maven}
 
+Wie bereits beschrieben, ist Maven ein Framework zum Ausführen von Plugins, indem benötigte Funktionen als Plugins anhand des Goals in den Softwareentwicklungsprozess ausgeführt werden.
 
+In diesem Rahmen wird das Konzepts \textit{Seperation of Concerns} verfolgt. 
 
+Aufgrund der hohen Anzahl der Varianten derselben Funktionalitäten wie beispielsweise das Kompilieren oder das Testen, muss stets ein Goal innerhalb eines Plugins angegeben werden, wodurch ein Maven-Plugin für genau eine Aufgabe zuständig ist. 
 
+Infolgedessen kann jede Funktionalität durch ein Plugin ersetzt werden, wodurch Plugins eine zentrale Rolle innerhalb des Softwareentwicklungsprozesses zufällt. 
 
-% Maven  wurde  so  konzipiert,  dass  die meisten  Funktionen  von  Plugins  geliefert  werden.  Die  Grundfunktionen  beinhalten  etwa  das Parsen  von XML-Dateien,  Plugin-Verwaltung  und  den Default-Lifecycle.  
+Wird das Plugin regelmäßig verwendet, wird dieses innerhalb der POM deklariert, ansonsten reicht ein Aufruf über die Kommandozeile.  
 
-% Das  heißt  dass  die Hauptverantwortung  auf  Plugins  fällt. 
+Durch die Koordinaten groupId, artifactId und version können die Artefakte identifiziert werden, wobei die Verwaltung der Abhängigkeiten ebenfalls im Repository erfolgt. 
 
-% Auch  andere  wichtige  Funktionen  wie  das  Kompilieren  des  Projektes  sind nicht Bestandteil derGrundfunktionenvon Maven. 
-
-% Jede Phase kann von einem Plugin „ersetzt“ werden. 
-
-% Maven  hat  also  verschiedene  Aufgaben  als  Plugins  ausgelagert.
-
-% Dies  hatden  Vorteil,dass einzelne Plugins mit bestimmten Aufgaben weitaus leichterzu Warten und Einzusetzen sind, als große Bibliotheken.
-
-% Der Nutzer muss nichts tun um Updatesder Pluginszu erhalten, da dies von Maven  geregelt  wird.Das  heißt  gleichzeitig  auch  dass  der  Nutzer  in  seinem  Projekt so  gut  wie keine   Anpassungen   am   Projektcode   machen   muss   um   neuen   Code   zu   unterstützen, vorrausgesetzt   die   Abwärtskompatibilität des Plugins   ist   erhalten   geblieben.   
-
-% Die   einzige Benötigte Anpassung ist die Versionsnummer des jeweiligen Plugins in der Projekt-POM.Wird in der   POM   eine   neue   Version   eingetragen,   wird   diese   automatisch   ins   lokale   Repository heruntergeladen und benutzt
-
-\paragraph{Abhängigkeiten verwalten mittels Dependencies-Dateien}
+Mittels der Auslagerung unterschiedlicher Aufgaben, ist sowohl der Einsatz als auch die Wartung einfacher wie bei großen Abhängigkeiten, da die Aktualisierung durch Maven durchgeführt werden.  
 
 \subsubsection{Entwurf PoC basierend auf einem Maven-Plugin}
 %Idee: Lizenzen als eine Datei zu beschreiben und mit den Lizenzen die sich in den Dependency-Dateien befinden, zu vergleichen 
+
 
 
 
