@@ -1,0 +1,24 @@
+Zunächst konnte mittels der Implentierung aufgezeigt werden, dass sich das Plugin ideal für den benötigten automatisierten OSS-Check eignet. 
+
+Durch die Fehlermeldungen und die Abbrüche des Build-Prozesses wird der Entwickler innerhalb des Softwareentwicklungsprozess in Kenntnis gesetzt, ob eine Lizenz mit einem beschränkten und/oder starken Copyleft vorliegt. 
+
+Zunächst muss berücksichtigt werden, dass Verweise auf die licence.xml und die allowedMissingLicence.xml innerhalb des Aufrufs des Plugins innerhalb der pom.xml befindet. 
+
+Daher muss die Struktur und der entsprechende Pfad der licence.xml und allowedMissingLicence.xml zwingend eingehalten werden.
+
+Zudem müssen beide Dateien das Grundgerüst für den Vergleich bereits beinhalten, also nicht leer sein. 
+
+Sollten diese Strukturen nicht eingehalten werden, wird ebenfalls eine Fehlermeldung angezeigt. 
+
+Darüber hinaus bietet das Plugin nicht den höchsten Grad der Automatisierung, da Entwickler bei unbekannten und transitiven Abhängigkeiten und Lizenzen zunächst recherchieren müssen, ob diese einen Copyleft-Effekt besitzen oder aussschließlich zu Testzwecken verwendet werden.  
+
+Daher kann eine vollständige Abkehr von manuellen Tätigkeiten mittels des Ayoy-Plugins nicht vorrausgesetzt werden. 
+
+Allerdings ist zu bedenken, dass im Verhältnis zum jetztigen IST-Zustand ein erheblicher Zeitaufwand reduziert werden kann. 
+
+An dieser Stelle muss darüber hinaus festgehalten werden, dass keine Evaluierung des Ayoy-Plugins innerhalb des jetztigen Projektes vorliegt. 
+
+Der PoC wurde aufgrund von einer zeitintensiven Integration in den bestehenden Projektablauf nicht durchgeführt, womit die vollständige Bewertung insbesondere durch die Entwickler ausfällt. 
+
+Allerdings zeigt der PoC die grundsätzliche Funtkions- und Vorgehensweise auf, wie das Plugin zu handhaben ist und welches Potential und Vorteile es als integriertes Tool bietet.
+ 

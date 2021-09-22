@@ -84,7 +84,7 @@ Neben den Phasen sind auch die zugrundeliegenden Plugins innerhalb jedes Lifecyc
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.6]{Bilder/lifecycle_maven.png}
+    \includegraphics[scale=0.5]{Bilder/lifecycle_maven.png}
     \caption{Zusammenspiel Plugin-Goals und Lifecycle, \cite[S. 59]{varanasi_introducing_2019}}
 \end{figure}
 
@@ -110,8 +110,97 @@ Durch die Koordinaten groupId, artifactId und version können die Artefakte iden
 
 Mittels der Auslagerung unterschiedlicher Aufgaben, ist sowohl der Einsatz als auch die Wartung einfacher wie bei großen Abhängigkeiten, da die Aktualisierung durch Maven durchgeführt werden.  
 
-\subsubsection{Entwurf PoC basierend auf einem Maven-Plugin}
-%Idee: Lizenzen als eine Datei zu beschreiben und mit den Lizenzen die sich in den Dependency-Dateien befinden, zu vergleichen 
+\subsubsection{Entwurf des PoC basierend auf dem Ayoy - Maven Licence Vertify Plugin}
+
+Kernelement des Ayoy-Plugins ist die Prüfung und der darauf aufbauende Vergleich von Lizenzmodellen und deren Abhängigkeiten innerhalb eines Projektes.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.4]{Bilder/Ayoy-Plugin.png}
+    \caption{Funktionsweise des Ayoy-Plugin}
+\end{figure}
+
+Alle Komponeten des ausführbaren Programms beinhalten zunächst jeweils eine pom.xml-Datei und die darin enthaltenen Bibliotheken als zu prüfende Abhängigkeiten. 
+
+Eine pom.xml enthält neben der groupId, artifactId und version zur Identifikation, die Lizenz des Projektes, verschiedene Abhängigkeiten und die entsprechenden Plugins, die zur Ausführung benötigt werden.  
+
+Die für den Vergleich essentielle licence.xml und befindet sich src-Verzeichnis.  
+
+Die darin enthaltenen Lizenzmodelle werden jeweils mit Namen und der dazu gehörigen URL versehen. 
+
+Die Angabe der URL muss zwingend eingehalten werden, da der Vergleich auf diesem Wert basiert, während der Name aussschließlich für die Ausgabe verwendet wird. 
+
+Die licence-Datei wird als ein xml-Format gespeichert und enthält alle erlaubten ('valid') und nicht genehmigten ('forbidden') Lizenzmodelle. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.45]{Bilder/licencesxml.png}
+    \caption{Genehmigte und nicht genehmigte Lizenzmodelle innerhalb der licence.xml}
+\end{figure}
+
+Nachdem der Build-Prozess angestoßen wird, vergleicht das Plugin alle Lizenzen der unterschiedlichen pom.xml-Dateien und deren Abhängigkeiten des aktuellen Projekts mit der entsprechenden licence.xml. 
+
+Wenn die Anforderungen erfüllt sind, wird der Build-Prozess erfolgreich ausgeführt, ansonsten wird dieser abgebrochen. 
+
+Ferner kann der Build-Prozess unterschiedlich gestartet werden. 
+
+Sollte das Plugin, gemäß der Anforderungsdefinition, automatisiert und daher regelmäßig durchgeführt werden, muss der entsprechende Aufruf innerhalb der pom.xml eingebettet werden. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{Bilder/PluginConfigurationzumAufruf.png}
+\end{figure}
+
+Bei unregelmäßiger Verwendung kann der Aufruf über die Kommandozeile mittels folgenden Befehl eingegeben werden:  
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{Bilder/mvn-Aufruf.png}
+\end{figure}
+
+Der Aufruf spiegelt den Pfad des Goals des Plugins innerhalb des Repositorys dar: 
+
+\begin{itemize}
+    \item \textbf{mvn}: Syntax zum Ausführen des Maven-Befehls
+    \item \textbf{se.ayoy.maven-plugins}: Aufruf der Bibliothek innerhalb des Repositorys
+    \item \textbf{ayoy-license-verifier-maven-plugin}: Aufruf des Plugins auf dem Repositorys
+    \item \textbf{verify}: Goal des Plugins
+\end{itemize}
+
+Die Prüfung der Abhängigkeiten ist neben der Prüfung der direkten Lizenzen von Komponenten essentiell, da Bibliotheken ebenfalls Lizenzmodelle besitzen, die ein starkes Copyleft aufweisen können und aufgrund dessen von dem Plugin erkannt werden müssen. 
+
+Auch können Abhängigkeiten eingebunden werden, die weitere Abhängigkeiten aufweisen und diese widerrum ein risikoreiches Copyleft aufweisen. 
+
+Ferner besteht die Möglichkeit, dass sich die Lizenzen der Abhängigkeiten aufgrund einer Versionsänderung auf ein Lizenmodel mit beschränkter oder starker Copyleft umgestellen.  
+
+Sowohl Versionumstellungen als auch transitive Abhängigkeiten sind oftmals für den Entwickler nicht sofort erkennbar und bieten ein hohes Potential 'gefährliche' Lizenzmodelle zu übersehen. 
+
+Während diese Abhängigkeiten zwingend betrachtet werden müssen, sollten Abhängigkeiten die aussschließlich zum Testen verwendet werden, sowie bereits in Szenario eins beschrieben, nicht innerhalb des Plugins einbezogen werden. 
+
+Da diese Abhängigkeiten aussschließlich für Testzwecke verwendet und folglich nicht ausgeliefert werden, ist eine Beachtung der Lizenzmodelle nicht zwingend notwendig. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{Bilder/allowedmiisingLicence.png}
+\end{figure}
+
+Zu diesem Zweck müssen die entsprechenden Lizenzen zunächst innerhalb der allowedMissingLicence.xml eingebettet werden.
+
+Die Lizenzmodelle der darin eingegebenen Abhängigkeiten werden vom Plugin ignoriert, ohne das Build-Prozess fehlschlägt, falls eine risikoreiche Lizenzen gefunden wird. 
+
+Als Ergebnis des Build-Prozesses wird die SNAPSHOT.jar als eine ausführbare Datei erstellt. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
