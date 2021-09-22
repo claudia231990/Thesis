@@ -1,92 +1,9 @@
 \begin{thebibliography}{}
 
-\bibitem[Abrahamsson et~al., 2016]{abrahamsson_product-focused_2016}
-Abrahamsson, P., Jedlitschka, A., Nguyen~Duc, A., Felderer, M., Amasaki, S.,
-  and Mikkonen, T., editors (2016).
-\newblock {\em Product-{Focused} {Software} {Process} {Improvement}: 17th
-  {International} {Conference}, {PROFES} 2016, {Trondheim}, {Norway},
-  {November} 22-24, 2016, {Proceedings}}, volume 10027 of {\em Lecture {Notes}
-  in {Computer} {Science}}.
-\newblock Springer International Publishing, Cham.
-
 \bibitem[Allberg et~al.,
   2021]{allberg_ayoyabayoy-maven-license-verifier-plugin_2021}
 Allberg, J., Digana, T., and Opheim, M. (2021).
 \newblock {AyoyAB}/{Ayoy}-{Maven}-{License}-{Verifier}-{Plugin}.
-
-\bibitem[Allmann and {Nomos Verlagsgesellschaft}, 2019]{allmann_open_2019}
-Allmann, I. and {Nomos Verlagsgesellschaft} (2019).
-\newblock {\em Open {Source} {Compliance}}.
-\newblock PhD thesis.
-\newblock ISBN: 9783848750030 OCLC: 1065926917.
-
-\bibitem[Alt et~al., 2017]{alt_innovationsorientiertes_2017}
-Alt, R., Auth, G., and Kögler, C. (2017).
-\newblock {\em Innovationsorientiertes {IT}-{Management} mit {DevOps}: {IT} im
-  {Zeitalter} von {Digitalisierung} und {Software}-defined {Business}}.
-\newblock Essentials. Springer Gabler, Wiesbaden.
-\newblock OCLC: 992991783.
-
-\bibitem[Augsten, 2019]{augsten_10_2019}
-Augsten, S. (2019).
-\newblock 10 {Vorteile} der {Open}-{Source}-{Nutzung}.
-
-\bibitem[Bakaji and Murugaiyan, 2012]{bakaji_waterfall_2012}
-Bakaji, S. and Murugaiyan, S. (2012).
-\newblock Waterfall vs. {V}-{Model} vs. {Agile}: a comparative study on {SDLC}.
-\newblock {\em International Journal of Information Technology and Business
-  Management}, 2(1):26--30.
-
-\bibitem[Balajee, 2020]{balajee_what_2020}
-Balajee, N. (2020).
-\newblock What is {CI}/{CD} {Pipeline}?
-
-\bibitem[Bass et~al., 2015]{bass_devops_2015}
-Bass, L., Weber, I.~M., and Zhu, L. (2015).
-\newblock {\em {DevOps}: a software architect's perspective}.
-\newblock The {SEI} series in software engineering. Addison-Wesley
-  Professional, New York.
-
-\bibitem[Cohen et~al., 2004]{cohen_introduction_2004}
-Cohen, D., Lindvall, M., and Costa, P. (2004).
-\newblock An {Introduction} to {Agile} {Methods}.
-\newblock In {\em Advances in {Computers}}, volume~62, pages 1--66. Elsevier.
-
-\bibitem[Dyck et~al., 2015]{dyck_towards_2015}
-Dyck, A., Penners, R., and Lichter, H. (2015).
-\newblock Towards {Definitions} for {Release} {Engineering} and {DevOps}.
-\newblock In {\em 2015 {IEEE}/{ACM} 3rd {International} {Workshop} on {Release}
-  {Engineering}}, pages 3--3, Florence, Italy. IEEE.
-
-\bibitem[Ebert et~al., 2016]{ebert_devops_2016}
-Ebert, C., Gallardo, G., Hernantes, J., and Serrano, N. (2016).
-\newblock {DevOps}.
-\newblock {\em IEEE Software}, 33(3):94--100.
-
-\bibitem[Erder and Pureur, 2016]{erder_continuous_2016}
-Erder, M. and Pureur, P. (2016).
-\newblock {\em Continuous {Architecture} - {Sustainable} {Architecture} in an
-  {Agile} {andCloud}-{Centric} {World}}.
-\newblock Elsevier, Waltham, MA, 1. auflage edition.
-
-\bibitem[e.V., 2016]{bitkom_ev_open_2016}
-e.V., B. (2016).
-\newblock Open {Source} {Monitor} – {Studienbericht} 2019.
-\newblock Technical report.
-
-\bibitem[Fitzgerald and Stol, 2014]{fitzgerald_continuous_2014}
-Fitzgerald, B. and Stol, K.-J. (2014).
-\newblock Continuous software engineering and beyond: trends and challenges.
-\newblock In {\em Proceedings of the 1st {International} {Workshop} on {Rapid}
-  {Continuous} {Software} {Engineering} - {RCoSE} 2014}, pages 1--9, Hyderabad,
-  India. ACM Press.
-
-\bibitem[Forsgren et~al., 2019]{forsgren_mindset_2019}
-Forsgren, N., Humble, J., and Kim, G. (2019).
-\newblock {\em Das {Mindset} von {DevOps}: {Accelerate}: 24
-  {Schlüsselkompetenzen}, um leistungsstarke {Technologieunternehmen} zu
-  entwickeln und zu skalieren}.
-\newblock Vahlen, München.
 
 \bibitem[Foundation, 2002]{the_apache_software_foundation_maven_2002}
 Foundation, T. A.~S. (2002).
@@ -96,201 +13,15 @@ Foundation, T. A.~S. (2002).
 Foundation, T.~E. (2018).
 \newblock {SW360}.
 
-\bibitem[Gotel and Leip, 2007]{concas_agile_2007}
-Gotel, O. and Leip, D. (2007).
-\newblock Agile {Software} {Development} {Meets} {Corporate} {Deployment}
-  {Procedures}: {Stretching} the {Agile} {Envelope}.
-\newblock In Concas, G., Damiani, E., Scotto, M., and Succi, G., editors, {\em
-  Agile {Processes} in {Software} {Engineering} and {Extreme} {Programming}},
-  volume 4536, pages 24--27. Springer Berlin Heidelberg, Berlin, Heidelberg.
-\newblock Series Title: Lecture Notes in Computer Science.
-
 \bibitem[Guntur, 2020]{guntur_understanding_2020}
 Guntur, C. (2020).
 \newblock Understanding {Apache} {Maven}.
-
-\bibitem[Haffke et~al., 2017]{haffke_transformative_2017}
-Haffke, I., Kalgovas, B., and Benlian, A. (2017).
-\newblock The {Transformative} {Role} of {Bimodal} {IT} in an {Era} of
-  {Digital} {Business}.
-
-\bibitem[Halstenberg et~al., 2020]{halstenberg_devops_2020}
-Halstenberg, J., Pfitzinger, B., and Jestädt, T. (2020).
-\newblock {\em {DevOps}: {Ein} Überblick}.
-\newblock essentials. Springer Fachmedien Wiesbaden, Wiesbaden.
-
-\bibitem[Helmreich and Riehle, 2012]{helmreich_geschaftsrisiken_2012}
-Helmreich, M. and Riehle, D. (2012).
-\newblock Geschäftsrisiken und {Governance} von {Open} {Source} in
-  {Softwareprodukten}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 49(1):17--25.
-
-\bibitem[Hemon et~al., 2020]{hemon_agile_2020}
-Hemon, A., Lyonnet, B., Rowe, F., and Fitzgerald, B. (2020).
-\newblock From {Agile} to {DevOps}: {Smart} {Skills} and {Collaborations}.
-\newblock {\em Information Systems Frontiers}, 22(4):927--945.
-
-\bibitem[Hering, 2018]{hering_devops_2018}
-Hering, M. (2018).
-\newblock {\em {DevOps} for the modern enterprise : winning practices to
-  transform legacy {IT} organizations}.
-\newblock IT REVOLUTION PR, Portland, Or, 1. auflage edition.
-\newblock OCLC: 1053995231.
-
-\bibitem[Hüttermann, 2012]{huttermann_devops_2012}
-Hüttermann, M. (2012).
-\newblock {\em {DevOps} for {Developers}}.
-\newblock Apress, Berkeley, CA.
-
-\bibitem[Humble, 2012]{humble_theres_2012}
-Humble, J. (2012).
-\newblock There´s {No} {Such} {Thing} as a "{Devops} {Team}".
-
-\bibitem[Humble, 2014]{humble_state_2014}
-Humble, J. (2014).
-\newblock The {State} of {DevOps}.
-
-\bibitem[Humble and Farley, 2011]{humble_continuous_2011}
-Humble, J. and Farley, D. (2011).
-\newblock {\em Continuous delivery: reliable software releases through build,
-  test, and deployment automation}.
-\newblock A {Martin} {Fowler} {Signature} {Book}. Addison-Wesley, Upper Saddle
-  River, NJ, 7th printing 2013 edition.
-
-\bibitem[Humble and Molesky, 2011]{humble_why_2011}
-Humble, J. and Molesky, J. (2011).
-\newblock Why {Enterprises} {Must} {Adopt} {Devops} to {Enable} {Continuous}
-  {Delivery}.
-\newblock {\em Cutter IT Journal}, 24(8):6--12.
-
-\bibitem[Jones, 2012]{jones_how_2012}
-Jones, R. (2012).
-\newblock How to {Hire} {DevOps}.
-
-\bibitem[Juner and Benlian, 2017]{juner_praxisbasierte_2017}
-Juner, C. and Benlian, A. (2017).
-\newblock Praxisbasierte {Capability}-{Modelle} für {DevOps}-{Einsätze} in
-  {Unternehmen}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):230--243.
-
-\bibitem[Kasteleiner and Schwartz, 2019]{kasteleiner_devops_2019}
-Kasteleiner, B. and Schwartz, A. (2019).
-\newblock {DevOps}: {Schnell}, zuverlässig und sicher von der {Idee} zur
-  {Realisierung}.
-\newblock {\em Informatik Spektrum}, 42(3):211--214.
-
-\bibitem[Kawaguchi, 2020]{kawaguchi_wall_2020}
-Kawaguchi, S. (2020).
-\newblock The {Wall} of {Confusion}.
-
-\bibitem[Keßler, 2013]{kesler_anpassung_2013}
-Keßler, S. (2013).
-\newblock {\em Anpassung von {Open}-{Source}-{Software} in
-  {Anwenderunternehmen}}.
-\newblock Springer Fachmedien Wiesbaden, Wiesbaden.
-
-\bibitem[Kim, 2012]{kim_three_2012}
-Kim, G. (2012).
-\newblock The {Three} {Ways}: the {Pinciples} {Underplinning} {DevOps}.
-
-\bibitem[Kim et~al., 2014]{kim_phoenix_2014}
-Kim, G., Behr, K., and Spafford, G. (2014).
-\newblock {\em The {Phoenix} project: a novel about it, {DevOps}, and helping
-  your business win; [revised with new resource guide]}.
-\newblock IT Revolution Press, Portland, Or.
-
-\bibitem[Kim et~al., 2017]{kim_devops-handbuch_2017}
-Kim, G., Humble, J., Debois, P., and Willis, J. (2017).
-\newblock {\em Das {DevOps}-{Handbuch}: {Teams}, {Tools} und {Infrastrukturen}
-  erfolgreich umgestalten}.
-\newblock O'Reilly, Heidelberg, 1. auflage edition.
-\newblock OCLC: 979555777.
-
-\bibitem[Kneuper, 2017]{kneuper_sixty_2017}
-Kneuper, R. (2017).
-\newblock Sixty {Years} of {Software} {Development} {Life} {Cycle} {Models}.
-\newblock {\em IEEE Annals of the History of Computing}, 39(3):41--54.
-
-\bibitem[König and Kugel, 2019]{konig_devopswelcome_2019}
-König, G. and Kugel, R. (2019).
-\newblock {DevOps}—{Welcome} to the {Jungle}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
 
 \bibitem[Loukides and Inc, 2008]{loukides_maven_2008}
 Loukides, M. and Inc, S., editors (2008).
 \newblock {\em Maven: the definitive guide: everthing you need to know from
   ideation to deployment}.
 \newblock O'Reilly, Beijing Köln, 1. ed edition.
-
-\bibitem[Luber and Karlstetter, 2020]{luber_was_2020}
-Luber, S. and Karlstetter, F. (2020).
-\newblock Was ist {Infrastructure} ({IaC})?
-
-\bibitem[Lwakatare et~al., 2019]{lwakatare_devops_2019}
-Lwakatare, L.~E., Kilamo, T., Karvonen, T., Sauvola, T., Heikkilä, V.,
-  Itkonen, J., Kuvaja, P., Mikkonen, T., Oivo, M., and Lassenius, C. (2019).
-\newblock {DevOps} in practice: {A} multiple case study of five companies.
-\newblock {\em Information and Software Technology}, 114:217--230.
-
-\bibitem[Meyer, 2014]{meyer_continuous_2014}
-Meyer, M. (2014).
-\newblock Continuous {Integration} and {Its} {Tools}.
-\newblock {\em IEEE Software}, 31(3):14--16.
-
-\bibitem[Müller, 2010]{muller_whats_2010}
-Müller, E. (2010).
-\newblock What´s a "{DevOp}?".
-
-\bibitem[Nelson, 2016]{nelson_devops_2016}
-Nelson, J. (2016).
-\newblock {DevOps} as a {Lean} {Strategy}.
-\newblock In {\em Becoming a {Lean} {Library}}, pages 123--130. Elsevier.
-
-\bibitem[Puppet, 2021]{puppet_inc_2020_2021}
-Puppet, I. (2021).
-\newblock 2020 {STATE} {OF} {DEVOPS} {REPORT}.
-
-\bibitem[Ravichandran et~al., 2016]{ravichandran_devops_2016}
-Ravichandran, A., Taylor, K., and Waterhouse, P. (2016).
-\newblock {\em {DevOps} for {Digital} {Leaders}}.
-\newblock Apress, Berkeley, CA.
-
-\bibitem[Roche, 2011]{roche_roche_2011}
-Roche, J. (2011).
-\newblock Roche, {J}. (2013). {Adopting} {DevOps} practices in quality
-  assurance.
-\newblock {\em Communications of the ACM}, 56(11):38--43.
-
-\bibitem[Samulat, 2017]{samulat_raus_2017}
-Samulat, P. (2017).
-\newblock Raus aus den {Silos} – mit {DevOps} zum {Lean} {Manufacturing}:
-  {Der} {Weg} zur {Plattform} „{Lean} {IT}“.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):205--215.
-
-\bibitem[Schaefer and Söllner, 2017]{schaefer_devops_2017}
-Schaefer, P. and Söllner, D. (2017).
-\newblock {DevOps} by {Scrumban}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):251--260.
-
-\bibitem[Sharma, 2017]{sharma_devops_2017}
-Sharma, S. (2017).
-\newblock {\em The {DevOps} adoption playbook: a guide to adopting {DevOps} in
-  a multi-speed {IT} enterprise}.
-\newblock Wiley, Indianapolis, IN.
-\newblock OCLC: ocn953222693.
-
-\bibitem[Söllner, 2017]{sollner_devops_2017}
-Söllner, D. (2017).
-\newblock {DevOps} in der {Praxis} – {Handlungsfelder} für eine erfolgreiche
-  {Zusammenarbeit} von {Entwicklung} und {Betrieb}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):189--204.
-
-\bibitem[Smeds et~al., 2015]{smeds_devops_2015}
-Smeds, J., Nybom, K., and Porres, I. (2015).
-\newblock {DevOps}: {A} {Definition} and {Perceived} {Adoption} {Impediments}.
-\newblock In {\em Agile {Processes} in {Software} {Engineering} and {Extreme}
-  {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
-  Publishing.
 
 \bibitem[Software, 2021]{whitesource_software_whitesource_2021}
 Software, W. (2021).
@@ -309,43 +40,9 @@ Spiller, M. (2011).
 \newblock {\em Maven 3: {Konfigurationsmanagement} mit {Java}}.
 \newblock mitp, Heidelberg München Landsberg Frechen Hamburg, 1. aufl edition.
 
-\bibitem[Sturm et~al., 2017]{sturm_devops_2017}
-Sturm, R., Pollard, C., and Craig, J. (2017).
-\newblock {DevOps} and {Continuous} {Delivery}.
-\newblock In {\em Application {Performance} {Management} ({APM}) in the
-  {Digital} {Enterprise}}, pages 121--135. Elsevier.
-
 \bibitem[Synopsys, 2021]{synopsys_black_2021}
 Synopsys (2021).
 \newblock Black {Duck} {Suite}.
-
-\bibitem[TheDev, 2019]{thedev_eight_2019}
-TheDev, J. (2019).
-\newblock The {Eight} {Phases} of a {DevOps} {Pipeline}.
-
-\bibitem[Tiemeyer, 2021]{tiemeyer_handbuch_2021}
-Tiemeyer, E., editor (2021).
-\newblock {\em Handbuch {IT}-{System}- und {Plattformmanagement}:
-  {Handlungsfelder}, {Technologien}, {Managementinstrumente},
-  {Good}-{Practices}}.
-\newblock Hanser, München, 2. auflage edition.
-
-\bibitem[tl;dr Legal, 2012]{tldr_legal_software_2012}
-tl;dr Legal (2012).
-\newblock Software {Licenses} in {Plain} {English}.
-
-\bibitem[Tokarski et~al., 2018]{tokarski_strategische_2018}
-Tokarski, K.~O., Schellinger, J., and Berchtold, P., editors (2018).
-\newblock {\em Strategische {Organisation}: {Aktuelle} {Grundfragen} der
-  {Organisationsgestaltung}}.
-\newblock Springer Fachmedien Wiesbaden, Wiesbaden.
-
-\bibitem[Van~Hoorn et~al., 2012]{van_hoorn_continuous_2012}
-Van~Hoorn, A., Rohr, M., Hasselbring, W., Waller, J., Ehlers, J., and Frey, S.
-  (2012).
-\newblock Continuous {Monitoring} of {Software} {Services}: {Design} and
-  {Application} of the {Kieker} {Framework}.
-\newblock Technical report, Kiel University, Germany.
 
 \bibitem[Varanasi, 2019]{varanasi_introducing_2019}
 Varanasi, B. (2019).
@@ -353,53 +50,8 @@ Varanasi, B. (2019).
   developers}.
 \newblock OCLC: 1136550397.
 
-\bibitem[Verona, 2016]{verona_practical_2016}
-Verona, J. (2016).
-\newblock {\em Practical {DevOps}: harness the power of {DevOps} to boost your
-  skill set and make your {IT} organization perform better}.
-\newblock Open source community experience distilled. Packt Publishing,
-  Birmingham Mumbai.
-
-\bibitem[Walls, 2013]{walls_building_2013}
-Walls, M. (2013).
-\newblock {\em Building a {DevOps} {Culture}}.
-\newblock O’Reilly Media, Inc., Sebastopol, CA, 1. auflage edition.
-
-\bibitem[Wettinger et~al., 2016]{wettinger_streamlining_2016}
-Wettinger, J., Breitenbücher, U., Kopp, O., and Leymann, F. (2016).
-\newblock Streamlining {DevOps} automation for {Cloud} applications using
-  {TOSCA} as standardized metamodel.
-\newblock {\em Future Generation Computer Systems}, 56:317--332.
-
-\bibitem[Wiedemann et~al., 2019]{wiedemann_research_2019}
-Wiedemann, A., Forsgren, N., Wiesche, M., Gewald, H., and Krcmar, H. (2019).
-\newblock Research for practice: the {DevOps} phenomenon.
-\newblock {\em Communications of the ACM}, 62(8):44--49.
-
-\bibitem[Willis, 2010]{willis_what_2010}
-Willis, J. (2010).
-\newblock What {Devops} {Means} to {Me}.
-
-\bibitem[Wilmer, 2021]{wilmer_rechtliche_2021}
-Wilmer, T. (2021).
-\newblock Rechtliche {Fallstricke} des {Einsatzes} von {Open} {Source}
-  {Software} und freier {Software} – {Hinweise} für die {Praxis}.
-\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 58(2):271--287.
-
-\bibitem[Wolff, 2016]{wolff_continuous_2016}
-Wolff, E. (2016).
-\newblock {\em Continuous {Delivery}: der pragmatische {Einstieg}}.
-\newblock dpunkt.verlag, Heidelberg, 2., aktualisierte und erweiterte auflage
-  edition.
-
 \bibitem[Workgroup, 2017]{fossology_workgroup_fossology_2017}
 Workgroup, F. (2017).
 \newblock {FOSSology}.
-
-\bibitem[Yarlagadda, 2021]{yarlagadda_devops_2021}
-Yarlagadda, R.~T. (2021).
-\newblock {DevOps} and {Its} {Practices}.
-\newblock {\em International Journal of Creative Research Thoughts (IJCRT)},
-  Volume 9(3):111 -- 119.
 
 \end{thebibliography}

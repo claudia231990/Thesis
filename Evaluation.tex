@@ -1,6 +1,7 @@
 Zunächst konnte mittels der Implentierung aufgezeigt werden, dass sich das Plugin ideal für den benötigten automatisierten OSS-Check eignet. 
 
-Durch die Fehlermeldungen und die Abbrüche des Build-Prozesses wird der Entwickler innerhalb des Softwareentwicklungsprozess in Kenntnis gesetzt, ob eine Lizenz mit einem beschränkten und/oder starken Copyleft vorliegt. 
+Durch die Fehlermeldungen und die Abbrüche des Build-Prozesses wird der Entwickler innerhalb des Softwareentwicklungsprozess in Kenntnis gesetzt, ob eine Lizenz mit einem beschränkten und/oder starken Copyleft vorliegt.
+\dwi{all praise the lord! 'ideal' ist vielleicht etwas übertrieben hm? die manuelle pflege der lokalen dateien ist nicht sonderlich nachhaltig.}
 
 Zunächst muss berücksichtigt werden, dass Verweise auf die licence.xml und die allowedMissingLicence.xml innerhalb des Aufrufs des Plugins innerhalb der pom.xml befindet. 
 
@@ -12,10 +13,14 @@ Sollten diese Strukturen nicht eingehalten werden, wird ebenfalls eine Fehlermel
 
 Darüber hinaus bietet das Plugin nicht den höchsten Grad der Automatisierung, da Entwickler bei unbekannten und transitiven Abhängigkeiten und Lizenzen zunächst recherchieren müssen, ob diese einen Copyleft-Effekt besitzen oder aussschließlich zu Testzwecken verwendet werden.  
 
-Daher kann eine vollständige Abkehr von manuellen Tätigkeiten mittels des Ayoy-Plugins nicht vorrausgesetzt werden. 
+Daher kann eine vollständige Abkehr von manuellen Tätigkeiten mittels des Ayoy-Plugins nicht vorrausgesetzt werden.\dwi{also doch nicht so ideal ;-) siehe oben.}
 
 Allerdings ist zu bedenken, dass im Verhältnis zum jetztigen IST-Zustand ein erheblicher Zeitaufwand reduziert werden kann. 
 
+\dwi{für alles folgende: hier wäre zu überlegen, ob man
+nicht eine einfache integration in zumindest 1-2 komponenten erfolgen kann, und wenn nur als "warning" statt build error. weil wenn du dein beispiel schon laufen hattest, ist der schritt in das projekt nur 1. eine komponente auswählen, 2. die häufigen lizenzen im projekt (10 oder so) einpflegen und 3. plugin konfigurieren. das ist bis zur abgabe jetzt irrelevant,
+aber bis zur verteidigung wäre es ja sehr beruhigend wenn du sagen kannst das es inzwischen eingebaut ist ;-)
+da helf ich dir auch bei.}
 An dieser Stelle muss darüber hinaus festgehalten werden, dass keine Evaluierung des Ayoy-Plugins innerhalb des jetztigen Projektes vorliegt. 
 
 Der PoC wurde aufgrund von einer zeitintensiven Integration in den bestehenden Projektablauf nicht durchgeführt, womit die vollständige Bewertung insbesondere durch die Entwickler ausfällt. 

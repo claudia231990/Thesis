@@ -2,14 +2,21 @@
 % hier der Vergleich von verschiedenen Open-Source-Scannern 
 
 Als ersten Schritt wurde, basierend auf der Problembeschreibung, die darauf aufbauenden Anforderungen analysiert, die widerrum als Grundlage für die Entwicklung des Prototyps dienten. 
+\dwi{du erklärst immer wieder dein internes vorgehen um zu dem inhalt zu kommen - wenn du einen
+präzisen text formulieren willst, schreib sowas lieber
+als "In diesem Kapitel werden die Anforderungen an den Prototyp beschrieben".
+durch deinen textfluss ist dann schon klar, was wo nach kommt und warum.}
 
 In diesem Rahmen wurden neben den technischen Spezifikationen als funktionale Anforderungen, die Nicht-Funktionalen Anforderungen, die die automatisierte Checkliste aufweisen muss, festgelegt.
+\dwi{hier solltest du kurz den unterschied erläutern, oder einfach nur von 'Anforderungen' sprechen. das
+könnte sonst für verwirrung sorgen. ich finde die trennung im text nicht scharf genug.}
 
 Anhand der Problembeschreibung wurden folgende Elemente als Nicht-funktionale Anforderung erarbeitet: 
 
 \begin{itemize}
     \item Die automatisierte Checkliste, soll alle integrierten OSS-Komponenten auf Ihre Lizenzmodelle überprüfen und bei risikobehafteten Lizenzmodelle einen Abbruch des Build-Prozesses verursachen
 \end{itemize}
+\dwi{das ist für mich eine funktionale anforderung.}
 
 Basierend auf diesen Informationen wurden folgende Punkte als funktionale Anforderungen identifiziert: 
 
@@ -39,6 +46,8 @@ Dabei werden gelöschte Einträge entfernt, veränderte Einträge aktualisiert u
 Allerdings mussten einige Überlegungen bei der Verwendung beachtet werden. 
 
 Zunächst muss dieses Projekt stets manuell angestoßen werden. 
+\dwi{also die begründung ist hier etwas dünn. es sollte hier ein argument gebracht werden, welches z.b. die schwierige integrierbarkeit (warum?) in die projektumgebung oder die fehlenden funktionalitäten (liest keine lizenzinformationen aus) betont werden.
+in allen fällen war der aufwand der integration in deinem rahmen zu hoch, und nicht das manuelle anstoßen..}
 
 Dies birgt die Gefahr, dass dieses Tool innerhalb des täglichen Entwicklungsalltags nicht regelmäßig verwendet wird und folglich Entwicklungsaufwand für eine OSS-Komponente bereits miteinbezogen wird, die ein schwieriges Copyleft aufweist. 
 
@@ -98,7 +107,7 @@ Hierbei werden Lizenzen in den Kategorien Copyleft, Not Provided, Weak Copyleft 
 
 Der Scanner prüft, ob im Quelltext Lizenzerklärungen vorhanden sind und bestimmt die Risikostufe. 
 
-Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{sonatype_guide_nodate} 
+Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{sonatype_guide_nodate} \dwi{citation-details fehlen.}
 
 Ferner werden die Lizenzrisiken der aktuellen Version mit denen neuerer Versionen verglichen. 
 
@@ -117,10 +126,13 @@ Darüber hinaus werden Berichte mit Informationen über die verwendeten Komponen
 Obwohl einige Tools gemäß der Anforderungsanalyse für den benötigten Verwendungszweck eine Möglichkeit zur Integration bieten, wurde aus kosten- und zeitintensiven Gründen keine der dargestellten Lösungen letztlich in Betracht gezogen.   
 
 \subsubsection{Ayoy - Maven Licence Vertify Plugin}
+\dwi{ich weiß noch wie wir darüber gesprochen haben, dass der ayoy scanner genauso ein tool der liste oben ist wie der rest - dort sollte es auch auftauchen. das 'thema', dass es dafür maven als ausführungsumgebung benötigt, kannst du dort kurz aufnehmen und abhaken, weil wir maven
+eh schon verwenden. ka-tsching!}
+Des Weiteren wurde untersucht, ob die Entwicklung des PoC mittels des Build Management Systems 'Maven' für den vorliegenden Verwendungszweck eignen würde.
+\dwi{ich würd die schleife hier maven irgendwie mehr als über eine referenz auszurollen lassen.}
 
-Des Weiteren wurde untersucht, ob die Entwicklung des PoC mittels des Build Management Systems 'Maven' für den vorliegenden Verwendungszweck eignen würde. 
-
-Maven eignet sich vorwiegend für Java-Projekte, welche zudem ausschließlich innerhalb des interne Projekt bei der msg systems ag verwendet werden.  
+Maven eignet sich vorwiegend für Java-Projekte, welche zudem ausschließlich innerhalb des interne Projekt bei der msg systems ag verwendet werden.
+\dwi{ich finde ausschließlich zu stark formuliert - wir haben auch python an board, aber mit sehr geringem anteil.daher schreib besser 'mehrwiegend' oder 'größtenteils'} 
 
 Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. \cite[S. 28]{spiller_maven_2011} 
 
@@ -129,8 +141,10 @@ Daher bietet Maven die Möglichkeit, eigene Plugins zu erstellen, womit Aufgaben
 Die entsprechenden Plugins können selbst entwickelt oder heruntergeladen und innerhalb des Projektes integriert werden.  
 
 Zudem bietet Maven den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
+\dwi{naja du integrierst ja ein neues tool - den scanner. das stimmt also so nicht. bitte klarer}
 
 Basierend auf dem Rahmen dieser Arbeit, OSS in den DevOps-Softwareentwicklungsprozesses zu integrieren, wurde das Ayoy - Maven Licence Vertify Plugin \cite{allberg_ayoyabayoy-maven-license-verifier-plugin_2021} als eine OSS innerhalb des PoCs auf GitHub, einer der bekanntesten Plattformen für Quellcode-Datenbanken und deren Versionverwaltung, heruntergeladen und für den entsprechenden Verwendungszweck angepasst.
+\dwi{wie kann ich das verstehen? habt ihr den quellcode heruntergeladen und daran änderungen gemacht? oder hat alex/luna das plugin irgendwo in einem pom-file deklariert und konfiguriert? das hier ist ein essentieller unterschied, den du hier sehr genau verstehen solltest!}
 
 Dieses Plugin überprüft und vergleicht die OSS-Abhängigkeiten anhand der Lizenzmodelle des aktuellen Projektes mit einer erstellten Datei und bricht den Build-Prozess ab, wenn die Anforderungen nicht erfüllt sind.
 

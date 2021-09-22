@@ -1,4 +1,6 @@
 Um ein besseres Verständnis zu ermöglichen, wird zunächst auf die generelle Funktionsweise von Maven näher eingegangen. 
+\dwi{ich sags nur ungern, aber das hier ist wieder ein ausflug bei dem du in der arbeit mitteilst was du über maven gelernt hast, ohne das es die kernaussagen deiner 
+arbeit notwendig machen würden. ich empfehle einen durchgang mit rotstift.}
 
 \subsubsection{Workflow Maven}
 Maven verfolgt die Philosopie \textit{Konvention über Konfiguration}. 
@@ -119,16 +121,19 @@ Kernelement des Ayoy-Plugins ist die Prüfung und der darauf aufbauende Vergleic
     \includegraphics[scale=0.4]{Bilder/Ayoy-Plugin.png}
     \caption{Funktionsweise des Ayoy-Plugin}
 \end{figure}
+\dwi{alert! JEDE grafik, die du in den text einbaust und NICHT explizit im text referenzierst (wie das geht hab ich dir schonmal gezeigt) werde ich als überflüssig betrachten und nicht anschauen. falls du das nicht mehr weißt, andreas hessenthaler kann dir das auch schnell nochmal zeigen.}
 
 Alle Komponeten des ausführbaren Programms beinhalten zunächst jeweils eine pom.xml-Datei und die darin enthaltenen Bibliotheken als zu prüfende Abhängigkeiten. 
 
 Eine pom.xml enthält neben der groupId, artifactId und version zur Identifikation, die Lizenz des Projektes, verschiedene Abhängigkeiten und die entsprechenden Plugins, die zur Ausführung benötigt werden.  
 
 Die für den Vergleich essentielle licence.xml und befindet sich src-Verzeichnis.  
+\dwi{welches src-verzeichnis? vom program? muss ich in dieser lösung in JEDEM programm eine solche datei hinterlegen? das solltest du hier sehr genau beschreiben.}
 
 Die darin enthaltenen Lizenzmodelle werden jeweils mit Namen und der dazu gehörigen URL versehen. 
 
-Die Angabe der URL muss zwingend eingehalten werden, da der Vergleich auf diesem Wert basiert, während der Name aussschließlich für die Ausgabe verwendet wird. 
+Die Angabe der URL muss zwingend eingehalten werden, da der Vergleich auf diesem Wert basiert, während der Name aussschließlich für die Ausgabe verwendet wird.
+\dwi{was passiert, wenn eine license.xml die URL nicht enthält?}
 
 Die licence-Datei wird als ein xml-Format gespeichert und enthält alle erlaubten ('valid') und nicht genehmigten ('forbidden') Lizenzmodelle. 
 
@@ -170,10 +175,11 @@ Der Aufruf spiegelt den Pfad des Goals des Plugins innerhalb des Repositorys dar
 Die Prüfung der Abhängigkeiten ist neben der Prüfung der direkten Lizenzen von Komponenten essentiell, da Bibliotheken ebenfalls Lizenzmodelle besitzen, die ein starkes Copyleft aufweisen können und aufgrund dessen von dem Plugin erkannt werden müssen. 
 
 Auch können Abhängigkeiten eingebunden werden, die weitere Abhängigkeiten aufweisen und diese widerrum ein risikoreiches Copyleft aufweisen. 
+\dwi{die fähigkeit, transitive abhängigkeiten zu prüfen sollte eine funktionale anforderung sein, oder? :-)}
 
 Ferner besteht die Möglichkeit, dass sich die Lizenzen der Abhängigkeiten aufgrund einer Versionsänderung auf ein Lizenmodel mit beschränkter oder starker Copyleft umgestellen.  
 
-Sowohl Versionumstellungen als auch transitive Abhängigkeiten sind oftmals für den Entwickler nicht sofort erkennbar und bieten ein hohes Potential 'gefährliche' Lizenzmodelle zu übersehen. 
+Sowohl Versionumstellungen \dwi{Versionsumstellungen} als auch transitive Abhängigkeiten sind oftmals für den Entwickler nicht sofort erkennbar und bieten ein hohes Potential 'gefährliche' Lizenzmodelle zu übersehen. 
 
 Während diese Abhängigkeiten zwingend betrachtet werden müssen, sollten Abhängigkeiten die aussschließlich zum Testen verwendet werden, sowie bereits in Szenario eins beschrieben, nicht innerhalb des Plugins einbezogen werden. 
 
@@ -185,6 +191,7 @@ Da diese Abhängigkeiten aussschließlich für Testzwecke verwendet und folglich
 \end{figure}
 
 Zu diesem Zweck müssen die entsprechenden Lizenzen zunächst innerhalb der allowedMissingLicence.xml eingebettet werden.
+\dwi{ich bin mir unsicher, ob dies (=testen) der originalzweck dieser XML datei ist. das legst du dem leser mit der vorigen argumentation aber nahe. hier vielleicht nachschärfen.}
 
 Die Lizenzmodelle der darin eingegebenen Abhängigkeiten werden vom Plugin ignoriert, ohne das Build-Prozess fehlschlägt, falls eine risikoreiche Lizenzen gefunden wird. 
 
