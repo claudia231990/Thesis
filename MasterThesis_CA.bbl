@@ -47,6 +47,14 @@ Bass, L., Weber, I.~M., and Zhu, L. (2015).
 \newblock The {SEI} series in software engineering. Addison-Wesley
   Professional, New York.
 
+\bibitem[Bitzer and Schröder, 2007]{bitzer_entwicklung_2007}
+Bitzer, J. and Schröder, P.~J. (2007).
+\newblock Entwicklung von {Open}-{Source}-{Software}: {Kostenrelevante}
+  {Eigenschaften} einer ungewöhnlichen {Organisation}.
+\newblock In {\em Open {Source} {Jahrbuch} 2007: {Zwischen} freier {Software}
+  und {Gesellschaftsmodell}}, pages 185 -- 194. Lehmanns Media, Berlin, 1.
+  auflage edition.
+
 \bibitem[Cohen et~al., 2004]{cohen_introduction_2004}
 Cohen, D., Lindvall, M., and Costa, P. (2004).
 \newblock An {Introduction} to {Agile} {Methods}.
@@ -71,8 +79,13 @@ Erder, M. and Pureur, P. (2016).
 
 \bibitem[e.V., 2016]{bitkom_ev_open_2016}
 e.V., B. (2016).
-\newblock Open {Source} {Monitor} – {Studienbericht} 2019.
+\newblock Open {Source} {Monitor} – {Leitfaden}.
 \newblock Technical report.
+
+\bibitem[{Fitzgerald}, 2006]{fitzgerald_transformation_2006}
+{Fitzgerald} (2006).
+\newblock The {Transformation} of {Open} {Source} {Software}.
+\newblock {\em MIS Quarterly}, 30(3):587.
 
 \bibitem[Fitzgerald and Stol, 2014]{fitzgerald_continuous_2014}
 Fitzgerald, B. and Stol, K.-J. (2014).
@@ -182,6 +195,12 @@ Kasteleiner, B. and Schwartz, A. (2019).
 \bibitem[Kawaguchi, 2020]{kawaguchi_wall_2020}
 Kawaguchi, S. (2020).
 \newblock The {Wall} of {Confusion}.
+
+\bibitem[Kees, 2015]{kees_open_2015}
+Kees, A. (2015).
+\newblock {\em Open {Source} {Enterprise} {Software}: {Grundlagen},
+  {Praxistauglichkeit} und {Marktübersicht} quelloffener {ERP}-{Systeme}}.
+\newblock Springer Fachmedien Wiesbaden GmbH, Wiesbaden.
 
 \bibitem[Keßler, 2013]{kesler_anpassung_2013}
 Keßler, S. (2013).
@@ -309,6 +328,11 @@ Spiller, M. (2011).
 \newblock {\em Maven 3: {Konfigurationsmanagement} mit {Java}}.
 \newblock mitp, Heidelberg München Landsberg Frechen Hamburg, 1. aufl edition.
 
+\bibitem[Spinellis and Szyperski, 2004]{spinellis_how_2004}
+Spinellis, D. and Szyperski, C. (2004).
+\newblock How is open source affecting software development?
+\newblock {\em IEEE Software}, 21(1):28--33.
+
 \bibitem[Sturm et~al., 2017]{sturm_devops_2017}
 Sturm, R., Pollard, C., and Craig, J. (2017).
 \newblock {DevOps} and {Continuous} {Delivery}.
@@ -371,10 +395,23 @@ Wettinger, J., Breitenbücher, U., Kopp, O., and Leymann, F. (2016).
   {TOSCA} as standardized metamodel.
 \newblock {\em Future Generation Computer Systems}, 56:317--332.
 
+\bibitem[Wichmann, 2005]{wichmann_linux-_2005}
+Wichmann, T. (2005).
+\newblock {\em Linux- und {Open}-{Source}-{Strategien}}.
+\newblock Xpert.press. Springer, Berlin.
+\newblock OCLC: 249630807.
+
 \bibitem[Wiedemann et~al., 2019]{wiedemann_research_2019}
 Wiedemann, A., Forsgren, N., Wiesche, M., Gewald, H., and Krcmar, H. (2019).
 \newblock Research for practice: the {DevOps} phenomenon.
 \newblock {\em Communications of the ACM}, 62(8):44--49.
+
+\bibitem[Will, 2003]{will_open-source-software_2003}
+Will, A. (2003).
+\newblock {\em Open-{Source}-{Software} - {Vor}- und {Nachteile} beim {Einsatz}
+  un der {Entwicklung} in {Unternehmen}}.
+\newblock PhD thesis, Universität Kassel - Fachbereich
+  Wirtschaftswissenschaften, Hamburg.
 
 \bibitem[Willis, 2010]{willis_what_2010}
 Willis, J. (2010).
