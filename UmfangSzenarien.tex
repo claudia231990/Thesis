@@ -1,51 +1,15 @@
-Um das Themenfeld der Verwendung von OSS in den Kontext des DevOps-Prozess innerhalb des HAF-Projektes in einem festen Rahmen erfassen zu können, musste zunächst der Umfang dieser Problemstellung reduziert werden. 
-\dwi{ich mag nirgens mehr HAF-Projekt lesen ;-)}
+Um das Themenfeld der Verwendung von OSS in den Kontext des DevOps-Prozess innerhalb des Beispielprojektes in einem festen Rahmen erfassen zu können, musste zunächst der Umfang dieser Problemstellung reduziert werden. In diesem Rahmen wurde der Grad der Nutzung von OSS, insbesondere im Hinblick auf die Lizenzmodelle auf drei Szenarien beschränkt. Diese stellen zunächst drei Ausgangssituationen dar, unter welchen Bedinungen OSS verwendet werden dürfen und welche Einschränkungen dabei getroffen werden müssen.   
 
-In diesem Rahmen wurde der Grad der Nutzung von OSS, insbesondere im Hinblick auf die Lizenzmodelle auf drei Szenarien beschränkt. 
+\subsubsection{Szenario 1: Verwendung von OSS zur Testzwecken}
 
-Diese stellen zunächst drei Ausgangssituationen dar, unter welchen Bedinungen OSS innerhalb des konkreten HAF-Projekes verwendet werden dürfen und welche Einschränkungen dabei getroffen werden müssen.   
+Bei dem ersten Szenario beschränkt sich die Nutzung von OSS ausschließlich auf Unterstützung- oder Testzwecke wie bespielsweise Treiber. Dementsprechend soll dieses Szenario verdeutlichen, dass die Verwendung von OSS ausschließlich als Werkzeug fungiert und keine Abhängigkeit zwischen der Funktionalität und der verwendeten OSS-Komponente stattfindet. Würde die OSS wegfallen, wäre die Funktionalität des Projekts weiterhin gewährleistet. Ferner werden keine Kopien des Original-Quellcodes innerhalb eines Repositorys hochgeladen, sowohl manuell als auch mittels Skript. Infolge der ausschließlichen Unterstützungsfunktion erfolgt innerhalb dieses Szenarios keine Auslieferung der Komponete an den Kunden. Demzufolge muss bei der Konstellation dieses Vewendungszwecks keine Beachtung der Lizenzmodelle genommen werden. 
 
-\paragraph{Szenario 1: Verwendung von OSS zur Testzwecken}
+\subsubsection{Szenario 2: Verwendung von OSS-Bibliotheken als Referenz}
 
-Bei dem ersten Szenario beschränkt sich die Nutzung von OSS ausschließlich auf Unterstützung- oder Testzwecke wie bespielsweise Treiber. 
+Im Rahmen des zweiten Szenarios wird der Quellcode der OSS während des Builds und Deployments heruntergeladen, um die ausführbare Datei zu erstellen. Damit können wiederverwendbare Software-Komponenten, welche generische Funktionalitäten des über festgelegte Schnittstellen bereitstellen, eingebunden werden. Zweck des zweiten Szenarios ist es, die OSS als reine Bibliothek zu verwenden und daher vollständig unverändert beizubehalten. Obwohl die Bibliothek ausschließlich unmodifiziert verwendet wird, ist sie Teil der ausführbaren Datei, welche beispielsweise über ein Artefakt-Feed bereitgestellt wird. Es entsteht demnach eine direkte Verbindung zu einer lizensierten OSS. Aus diesem Grund sollten innerhalb dieses Szenarios weitgreifend auf OSS-Komponenten mit einem starken Copyleft vermieden werden. 
 
-Dementsprechend soll dieses Szenario verdeutlichen, dass die Verwendung von OSS ausschließlich als Werkzeug fungiert und keine Abhängigkeit zwischen der Funktionalität und der verwendeten OSS-Komponente stattfindet. 
+\subsubsection{Szenario 3: Verwendung von OSS als modifizierter Quellcode}
 
-Würde die OSS wegfallen, wäre die Funktionalität des Projekts weiterhin gewährleistet. 
-
-Ferner werden keine Kopien des Original-Quellcodes innerhalb eines Repositorys hochgeladen, sowohl manuell als auch mittels Skript. 
-
-Infolge der ausschließlichen Unterstützungsfunktion erfolgt innerhalb dieses Szenarios keine Auslieferung der Komponete an den Kunden. 
-
-Demzufolge muss bei der Konstellation dieses Vewendungszwecks keine Beachtung der Lizenzmodelle genommen werden. 
-
-\paragraph{Szenario 2: Verwendung von OSS-Bibliotheken als Referenz}
-
-Im Rahmen des zweiten Szenarios wird der Quellcode der OSS während des Builds und Deployments heruntergeladen, um die ausführbare Datei zu erstellen. 
-
-Damit können wiederverwendbare Software-Komponenten, welche generische Funktionalitäten des über festgelegte Schnittstellen bereitstellen, zeitnah eingebunden werden.
-\dwi{zeitnah?}
-
-Zweck des zweiten Szenarios ist es, die OSS als reine Bibliothek zu verwenden und daher vollständig unverändert beizubehalten. 
-
-Obwohl die Bibliothek ausschließlich unmodifiziert verwendet wird, ist sie Teil der ausführbaren Datei, welche beispielsweise über ein Artefakt-Feed bereitgestellt wird. 
-
-Es entsteht demnach eine direkte Verbindung zu einer lizensierten OSS. 
-
-Aus diesem Grund sollten innerhalb dieses Szenarios weitgreifend auf OSS-Komponenten mit einem starken Copyleft vermieden werden. 
-
-\paragraph{Szenario 3: Verwendung von OSS als modifizierter Quellcode}
-
-Innerhalb des letzten Szenarios findet eine tatsächliche Integration und Modifikation der OSS innerhalb der Entwicklung des Projekts statt.
-
-In diesem Rahmen wird der Quellcode heruntergeladen, entsprechend den Anforderungen angepasst und letztlich in das Repository hochgeladen. 
-
-Dies kann sowohl auf eine reine Modifikation des Quellcodes oder die Erstellung neuer Dateien basieren.  
-
-Ab diesem Zeitpunkt ist die Berücksichtigung der Lizenzmodelle essentiell, wodurch bestimmte Bedinungen erfüllen werden müssen. 
-
-Um weitgreifende Folgen zu vermeiden, sollten in diesem Szenario auschließlich OSS verwendet werden, die kein Copyleft oder teilweise ein beschränktes Copyleft aufweisen.
-
-Jede Datei, welches modifiziert oder neu erstellt wurde, muss zur Kennzeichnung einer Modifikation mit einem Header-Kommentar versehen werden.
+Innerhalb des letzten Szenarios findet eine tatsächliche Integration und Modifikation der OSS innerhalb der Entwicklung des Projekts statt. In diesem Rahmen wird der Quellcode heruntergeladen, entsprechend den Anforderungen angepasst und letztlich in das Repository hochgeladen. Dies kann sowohl auf eine reine Modifikation des Quellcodes oder die Erstellung neuer Dateien basieren. Ab diesem Zeitpunkt ist die Berücksichtigung der Lizenzmodelle essentiell, wodurch bestimmte Bedinungen erfüllen werden müssen. Um weitgreifende Folgen zu vermeiden, sollten in diesem Szenario auschließlich OSS verwendet werden, die kein Copyleft oder teilweise ein beschränktes Copyleft aufweisen. Jede Datei, welches modifiziert oder neu erstellt wurde, muss zur Kennzeichnung einer Modifikation mit einem Header-Kommentar versehen werden.
 
 %Frage an Daniel: Szenarios grafisch darstellen?????

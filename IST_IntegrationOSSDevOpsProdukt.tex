@@ -1,149 +1,39 @@
-Eine große Herausforderung bei der Modellierung des Softwareentwicklungsprozesses war eine genaue Momentaufnahme eines kontinierlichen arbeitenden Prozesses. 
-\dwi{ich sehe das das für dich eine große herausforderung ist,
-aber würde dem jeder leser zustimmen? warum schreibst du das, bzw was möchtest du damit transportieren?}
+Im Rahmen dieser Arbeit stellt die Grundlage der Prozessmodellierung ein DevOps - Softwareentwicklungsprozess basierend auf einem Beispielprojekt bei der der msg systems ag dar. Der Beispielprozess beschreibt kontextrelevante Abläufe und Aufgaben der projektspezifischen DevOps-Ausprägung und wird entlang eines Entwicklungssprints erklärt. \\ 
 
 \begin{figure}[p]
     \centering
     \includegraphics[angle=90, scale=0.6]{Bilder/IST-Prozess_neu.png}
-    \caption{Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
-\end{figure}
-\dwi{die bildqualität ist noch sehr grob - ich nehme an du exportierst das am ende nochmal in 600+dpi?}
+    \caption{Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}
+\end{figure} 
 
-Im Rahmen dieser Arbeit bildet die Grundlage des vorgestellten Prozesses, \dwi{den?} Softwareentwicklungsprozess basierend auf dem internen Projekt \dwi{"dem" klingt wie es gibt nur eins. sprich doch einfach von einem beispielprojekt} innerhalb der msg systems ag, ab.
-\dwi{irgendwie ist der satz etwas holprig}
-
-Dieser Prozess beschreibt die Vorgehensweise und die darauf aufbauenden Aufgaben, die im Laufe der Entwicklung zu erbringen sind und an dem konkreten Projekt festgelegt wurden.
-\dwi{"erbringt" man eine aufgabe? und du beschreibst ja sicher nicht die aufgaben die in der entwicklung zu erledigen sind (z.b. user stories), sondern beschreibst die abläufe entlang derer diese aufgaben erledigt werden. vielleicht einfach den absatz weglassen.}
-
-Da das entsprechende Team mit agilen Methoden wie Scrum und Kanban und mittels DevOps-Methoden arbeitet, erwies sich die Modellierung des IST-Prozesses basierend auf einem Sprint am geeignesten.
-\dwi{Vorschlag für die beiden letzen absätze in "kompakt":
-Der Beispielprozess beschreibt kontextrelevante Aspekte der projektspezifischen DevOps-Ausprägung und wird entlang eines Entwicklungssprints erklärt.}
-
-Da die Rollen von DevOps, sowohl den Tätigkeitsbereich als auch den entsprechenden Personenrahmen abbilden, werden die Aufgaben innerhalb DevOps als eine zusammenhängende und eigenständige Rolle behandelt und trägt daher den Namen 'Entwicklungsteam'.
-
-Somit entsprechen innerhalb dieses konkreten Projektes Dev und Ops, Entwicklern und nehmen infolgedessen beide Tätigkeitsbereiche, also die Entwicklung als auch die Verwaltung, gemeinsam wahr. \dwi{weglassen. du hast devops schon vorher ausführlich beschrieben..}
-
-Ferner fungiert der Product Owner, als die nächste Rolle, als die Schnittstelle zwischen verschiedenen Stakeholdern oder Kunden und dem Entwicklungsteam. 
-
-Er vertritt demnach die Interessen des Kunden in den Entwicklungsprozess, ohne aktiv in die Softwareentwicklung einzugreifen.
-
-Ferner \dwi{"Ferner" wiederholt. hier vielleicht die vorigen 3 sätze zusammenführen.} erstellt der Product Owner den Product Backlog und legt die Reihenfolge der Items, die bearbeitet werden müssen, fest. 
-
-Zum besseren Verständnis \dwi{du meinst wohl aus gründen der übersichtlichkeit? du schneidest ja vertikal um die elemente auf der seite unterzubringen} wurde der Gesamtprozess in drei Teile (Abbildung 10 - 12) unterteilt und diese einzeln erläutert.\\
+\newpage
+Da die Rollen von DevOps, sowohl den Tätigkeitsbereich als auch den entsprechenden Personenrahmen abbilden, werden die Aufgaben innerhalb DevOps als eine zusammenhängende und eigenständige Rolle behandelt und trägt daher den Namen 'Entwicklungsteam'. Ferner fungiert der Product Owner, als nächste Rolle, als die Schnittstelle zwischen verschiedenen Stakeholdern oder Kunden und dem Entwicklungsteam und vertritt demnach die Interessen des Kunden in den Entwicklungsprozess, ohne aktiv in die Softwareentwicklung einzugreifen. Zudem erstellt der Product Owner den Product Backlog und legt die Reihenfolge der Items, die bearbeitet werden müssen, fest. Aus Gründen der Übersichtlichkeit wurde der Gesamtprozess vertikal in drei Teile (Abbildung 14 - 16) unterteilt und diese einzeln erläutert. In diesem Rahmen wurden einigen Abbildungen Nummern hinzugefügt, um den Prozessfluss verständlicher darzustellen.  
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.5]{Bilder/IST-Prozess_first Part.png}
-    \caption{Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
+    \includegraphics[scale=0.5]{Bilder/IST-Prozess_first Partv2.png}
+    \caption{Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}
 \end{figure}
 
-Der erste Startpunkt des Prozesses stellt die Erstellung des Product Backlogs durch den Product Owner dar, welches durchgängig priorisiert und innerhalb der Abbildung 10 dargestellt wird. 
+Der erste Startpunkt des Prozesses stellt die Erstellung des Product Backlogs durch den Product Owner dar, welches durchgängig priorisiert und innerhalb der Abbildung 14 dargestellt wird. Dabei findet die Priorisierung sequentiell statt, da mehrere Entwicklungen und Änderungen eines Items des Product Backlogs gleichzeitig und nicht als eine Aufgabenschleife stattfinden.\\\\ Das Ergebnis ist das priorisierte Product Backlog, welches eine Liste der Anforderungen für alle Produktänderungen darstellt, die anhand einer Schätzung die Komplexität einer Story fesgelegen und anhand der Priorisierung in eine abzuarbeitende Reihenfolge gebracht werden. Ist die Priorisierung erfolgt, startet die Iteration mit dem Sprint Planning Meeting.\\\\ Hierbei wird abhängig von den verfügbaren Kapazitäten und anhand der Dringlichkeit der User Stories entschieden, welche zuerst bearbeitet werden. Sowohl die erstellten Incidents, die als sehr dringend gelten und sofort beseitigt werden müssen, als auch die ausgewählten User Stories des Product Backlogs bilden den Sprint Backlog, welcher somit die geplanten Umsetzungen an Entwicklungen innerhalb des Releases darstellt.\\\\ Anhand der Abbildung 14 zu erkennen, beginnt parallel hierzu der Change-/ Incidentprozess, bei dem zunächst die täglichen Informationen verarbeitet werden. Diese Unterprozesse sind essentiell für den Gesamtprozess, da die entsprechenden Ergebnisse aller Unterprozesse zu einer möglichen Codeänderung und infolgedessen zu einer Verwendung von OSS führen können. Die Auswirkungen erstrecken sich daher auf den Product Backlog aus, indem festgelegt wird, welche geplanten oder ungeplanten Änderungen zu den bestehenden Anfoderungen am Produkt entwickelt werden müssen und bestimmen daher einen wesentlichen Teil des Inhalts des Product Backlogs. Wesentlicher Unterschied beider Prozesse ist, dass der Change eine geplante Veränderung voraussetzt, während der Incident eine ungeplante Entwicklung beansprucht. Der Changeprozess bescheibt den Prozess für eine Änderung, die sich auf eine geplante Modifikation der Definition eines bestehenden oder neuen Produkts bezieht und für die das DevOps-Teams verantwortlich ist. Der Prozess umfasst die Erfassung jedes Requests, die Dokumentation, Genehmigung und Kontrolle und stellt sicher, dass Change Requests definiert, geplant, effizient, wirtschaftlich und mit vertretbarem Risiko abgewickelt werden. Ein Ziel des Change Managements ist es, die Nachvollziehbarkeit von Anforderungen und Änderungen zu gewährleisten. Währenddessen umfasst das Incident Management den gesamten organisatorischen und technischen Prozess für Reaktionen und Maßnahmen auf Störungen des IT-Betriebs.Das Spektrum möglicher Incidents reicht von Fehlermeldungen durch Anwender bis hin zu automatisierten Alarmen und Warnungen durch das Monitoring. Das Ziel des Incident Managements ist die Wiederherstellung eines zugesagten Dienstes in einem definierten Prozess und in optimaler Zeit. Dies kann auch Umgehungslösungen beinhalten. Incident Management deckt keine (neuen) Anforderungen, Wünsche, Anfragen oder ähnliches ab. Obwohl der Product Owner für den Start des Change- und Incidentprozess vom Product Owner informiert wird, ist dieser ausschließlich für den Changeprozess verantwortlich, wobei die Aufgaben ohne seine Mitwirkung ausgeführt werden können.\\\\ Der Incidentprozess wird anhand des täglichen Monitorings vom Entwicklerteam durchgeführt. Nach der Verarbeitung der täglichen Informationen, werden die auftretenden Bugs zunächst in Incident und Changeprozesses unterschieden, da beide Prozesse unterschiedlich behandelt werden. Innerhalb des Changeprozesses werden die Änderungen definiert und verfeinert und die Anforderungen festgelegt, die entwickelt werden müssen. Das Ergebnis fließt in den Product Backlog ein, bei dem die Items wiederrum priorisiert werden. Sollte der Meldung als Incident bestätigt werden, so wird dieser zunächst erstellt. Sollte es sich bei dem erstellten Incident um ein schwerwiegendes Problem handeln, der sofort beseitigt werden muss wird dieser zunächst in das Sprint Backlog übertragen. Dies ist wichtig, da durch dieses Vorgehen Auskunft während des nächsten Sprint darüber gegeben werden kann, wie hoch die Anzahl der Fehlermeldungen oder Störungen aufgrund ausgefallener Systeme ist und demnach eine Anpassung erforderlich macht. Sollte ein Problem auftreten, welches eine Codeänderung benötigt aber nicht als dringlich gilt, wird nach der Erstellung des Incidents, dieser als ein Item in der überarbeitete Product Backlog eingetragen. Falls die vermeitliche Incident nicht bestätigt wird, wird dieser vermerkt und geschlossen, wodurch der Incidentprozess ab diesem Zeitpunkt als geschlossen gilt.
 
-Die Priorisierung findet sequentiell statt, da mehrere Entwicklungen und Änderungen eines Items des Product Backlogs parallel und gleichzeitig und nicht als eine Aufgabenschleife stattfinden. \dwi{den satz kapier ich nicht. es ist sequentiell weils parallel ist?}
-
-Das Ergebnis ist das priorisierte Product Backlog, welches eine Liste der Anforderungen für alle Produktänderungen darstellt, die anhand einer Schätzung in eine abzuarbeitende Reihenfolge gebracht werden.
-\dwi{.."anhand einer schätzung".. versteh ich nicht? die schätzung legt die komplexität einer story fest ("wie groß ist der stein"). die storypoints werden nicht in direktem sinne zur priorisierung genutzt ("welche steine will ich zuerst weg haben")}
-
-Ist die Priorisierung erfolgt, startet die Iteration mit dem Sprint Planning Meeting. 
-
-Hierbei wird abhängig von den verfügbaren Kapazitäten und den Ergebnissen des letzten Sprints entschieden, welche User Stories zuerst bearbeitet werden. 
-\dwi{die priorisierung entscheidet, welche stories als nächstes bearbeitet werden. im sprint planning wird eigentlich nur entschieden, wie viel man sich entlang der schon priorisierten liste vornimmt ("wie viele steine bekommen wir in den nächsten zwei wochen mit den leuten hier weggeschafft, wenn wir wissen welche zuerst und wie groß sie sind")}
-
-Sowohl die erstellten Incidents, die als sehr dringend gelten und sofort beseitigt werden müssen, als auch die ausgewählten User Stories des Product Backlogs bilden den Sprint Backlog, welcher somit die geplanten Umsetzungen an Entwicklungen innerhalb des Releases darstellt.
-
-Parallel hierzu beginnt der Change-/Incidentprozess, bei dem zunächst die täglichen Informationen verarbeitet werden. 
-
-Diese Unterprozesse sind essentiell für den Gesamtprozess, da die entsprechenden Ergebnisse aller Unterprozesse zu einer möglichen Codeänderung und infolgedessen zu einer Verwendung von OSS führen können. 
-
-Die Auswirkungen erstrecken sich daher auf den Product Backlog aus, indem festgelegt wird, welche geplanten oder ungeplanten Änderungen zu den bestehenden Anfoderungen am Produkt entwickelt werden müssen und bestimmen daher einen wesentlichen Teil des Inhalts des Product Backlogs.  
-
-Wesentlicher Unterschied beider Prozesse ist, dass der Change eine geplante Veränderung voraussetzt, während der Incident eine ungeplante Entwicklung beansprucht.  
-
-Der Changeprozess bescheibt den Prozess für eine Änderung, die sich auf eine geplante Modifikation der Definition eines bestehenden oder neuen Produkts bezieht und für die das DevOps-Teams verantwortlich ist. 
-
-Der Prozess umfasst die Erfassung jedes Requests, die Dokumentation, Genehmigung und Kontrolle und stellt sicher, dass Change Requests definiert, geplant, effizient, wirtschaftlich und mit vertretbarem Risiko abgewickelt werden. 
-
-Ein Ziel des Change Managements ist es, die Nachvollziehbarkeit von Anforderungen und Änderungen zu gewährleisten.
-
-Währenddessen umfasst das Incident Management den gesamten organisatorischen und technischen Prozess für Reaktionen und Maßnahmen auf Störungen des IT-Betriebs.
-
-Das Spektrum möglicher Incidents reicht von Fehlermeldungen durch Anwender bis hin zu automatisierten Alarmen und Warnungen durch das Monitoring.
-
-Das Ziel des Incident Managements ist die Wiederherstellung eines zugesagten Dienstes in einem definierten Prozess und in optimaler Zeit. 
-
-Dies kann auch Umgehungslösungen beinhalten. 
-
-Incident Management deckt keine (neuen) Anforderungen, Wünsche, Anfragen oder ähnliches ab.  
-
-Obwohl der Change- und Incidentprozess vom Product Owner begonnen wird, ist dieser ausschließlich für den Changeprozess verantwortlich. 
-\dwi{incidents werden nicht ausschließlich vom PO 'begonnen' - eine automatische meldung kann ihn zwar informieren, aber die aufgabe dahinter ist direkt klar ohne sein mitwirken.}
-
-Der Incidentprozess wird anhand des täglichen Monitorings vom Entwicklerteam durchgeführt. 
-
-Nach der Verarbeitung der täglichen Informationen, werden die auftretenden Bugs zunächst in Incident und Changeprozesses unterschieden, da beide Prozesse unterschiedlich behandelt werden.
-
-Innerhalb des Changeprozesses werden die Änderungen definiert und verfeinert und die Anforderungen festgelegt, die entwickelt werden müssen. 
-
-Das Ergebnis fließt in den Product Backlog ein, bei dem die Items wiederrum priorisiert werden. 
-
-Sollte der Bug als Incident bestätigt werden, so wird dieser zunächst erstellt. 
-\dwi{welcher Bug? das schreibst hier zum ersten mal.}
-
-Sollte es sich bei dem erstellten Incident um ein schwerwiegendes Problem handeln, der sofort beseitigt werden muss wird dieser zunächst in das Sprint Backlog übertragen.
-
-Dies ist wichtig, da durch dieses Vorgehen Auskunft während des nächsten Sprint darüber gegeben werden kann, wie hoch die Anzahl der Fehlermeldungen oder Störungen aufgrund ausgefallener Systeme ist und demnach eine Anpassung erforderlich macht. 
-
-Sollte ein Problem auftreten, welches eine Codeänderung benötigt aber nicht als dringlich gilt, wird nach der Erstellung des Incidents, dieser als ein Item in der überarbeitete Product Backlog eingetragen. 
-
-Falls die vermeitliche Incident nicht bestätigt wird, wird dieser vermerkt und geschlossen, wodurch der Incidentprozess ab diesem Zeitpunkt als geschlossen gilt. \\ 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.6]{Bilder/IST-Prozess_second Part.png}
-    \caption{Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internene msg-Projekt}
+    \includegraphics[scale=0.5]{Bilder/IST-Prozess_second Partv2.png}
+    \caption{Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}
 \end{figure}
-
-Wie in Abbildung 11 zu erkennen ist, startet die Iteration nach dem durchgeführten Sprint Planning Meeting, wodurch der Implmentierungsvorgang für die jeweiligen Sprint Backlog Items beginnen kann. 
-\dwi{also wenn ich das kapitel so lese, dann fehlt mir die verbindung zwischen grafik und textfluss. ich würde
-dazu kleine buchstaben/zahlen in den grafiken und eine auflistung der beschreibungen entlang der gleichen nummerierung für eingänglicher halten. so läufst du gefahr, das das wissen was du hast nicht richtig transportiert wird.}
-
-In diesem Rahmen sind Codeänderungen notwendig, die sich auf vorhandenen Code oder eine Neuimplementierung beziehen können. 
-
-Je nach Backlog Item entscheidet der Entwickler, welche Maßnahmen durchgeführt werden müssen und dokummentiert etwaige Fehler, die sich während der Entwicklung ergeben können. \dwi{dokummentiert .. hier sind noch einige rechtschreibfehler, da solltest nochmal prüfen. es gibt vllt für visual studio auch ein plugin was dir dabei hilft, z.B. https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-german}
-
-Nachdem der Pull-Request für das Commit durchgeführt wurde, werden mehrere Aufgaben parallel erledigt. 
-
-Dazu gehört die Durchführung der Unit-Test und Codeanalyse und die Bestätigung des Reviewer.
-
-Diese Vorgehensweise ist ebenfalls essentiell für den weiteren Ablauf des Softwareentwicklungsprozesses und beruht auf dem Vier-Augen-Prinzip, um die Qualität und Wartbarkeit sicherzustellen und zu erhöhen.  
-
-Dabei wird ein vorher festgelegter Teil des Quellcodes von Entwicklern, die nicht direkt an der Entwicklung des jeweiligen Codes beteiligt waren, begutachtet und nach Fehlern untersucht. 
-
-Umso später Fehler im Softwareentwicklungsprozesses gefunden werden, desto aufwändiger sind diese zu beheben. 
-
-Darüber hinaus ermöglichen regelmäßige Reviews einen Wissensaustausch, eine Dokumentation über etwaige Schwachstellen und eine kontinierliche Verbesserung der eigenen Kenntnisse, was wiederrum die Kultur von DevOps wiederspiegelt. 
-
-Sollten Fehler gefunden werden oder die Test fehlschlagen, so wird der entsprechende Entwickler informiert. 
-
-Sobald alle Änderungen erfolgreich implementiert worden sind, werden diese auf das Master Branch gemergt. 
+\newpage
+Wie in Abbildung 15 zu erkennen ist, startet die Iteration nach dem durchgeführten Sprint Planning Meeting, wodurch der Implmentierungsvorgang für die jeweiligen Sprint Backlog Items beginnen kann. In diesem Rahmen sind Codeänderungen notwendig, die sich auf vorhandenen Code oder eine Neuimplementierung beziehen können. Je nach Backlog Item entscheidet der Entwickler, welche Maßnahmen durchgeführt werden müssen und dokumentiert etwaige Fehler, die sich während der Entwicklung ergeben können.\\\\ Nachdem der Pull-Request für das Commit durchgeführt wurde, werden mehrere Aufgaben parallel erledigt. Dazu gehört die Durchführung der Unit-Test und Codeanalyse und die Bestätigung des Reviewer. Diese Vorgehensweise ist ebenfalls essentiell für den weiteren Ablauf des Softwareentwicklungsprozesses und beruht auf dem Vier-Augen-Prinzip, um die Qualität und Wartbarkeit sicherzustellen und zu erhöhen. Dabei wird ein vorher festgelegter Teil des Quellcodes von Entwicklern, die nicht direkt an der Entwicklung des jeweiligen Codes beteiligt waren, begutachtet und nach Fehlern untersucht. Umso später Fehler im Softwareentwicklungsprozesses gefunden werden, desto aufwändiger sind diese zu beheben. Darüber hinaus ermöglichen regelmäßige Reviews einen Wissensaustausch, eine Dokumentation über etwaige Schwachstellen und eine kontinierliche Verbesserung der eigenen Kenntnisse, was wiederrum die Kultur von DevOps wiederspiegelt. Sollten Fehler gefunden werden oder die Test fehlschlagen, so wird der entsprechende Entwickler informiert. Sobald alle Änderungen erfolgreich implementiert worden sind, werden diese auf das Master Branch gemergt. 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[scale=0.6]{Bilder/IST-Prozess_third Part.png}
-    \caption{Dritter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt}
+    \includegraphics[scale=0.5]{Bilder/IST-Prozess_third Part.png}
+    \caption{Dritter Teil des Softwareentwicklungsprozess im IST-Zustandbasierend auf einem Beispielprojekt der msg systems ag}
 \end{figure}
 
-Nachdem das Mergen erfolgreich durchgeführt wurde, wird das Release auf seine Vollständigkeit und Richtigkeit überprüft und im Review vorgestellt. 
-
-Die Vorstellung erfolgt ebenfalls durch den entsprechenden Entwickler, der die jeweilige Entwicklung den jeweligen Stakeholdern präsentiert. 
-
-Ab diesem Zeitpunkt endet die Iteration. 
-
-Werden weitere Anpassungen benötigt, müssen diese aufgearbeitet werden und fließen in das priorisierte Backlog zurück.
-
-Sind keine Änderungen notwendig, wird das Release bereitgestellt. 
-
-Das Projekt endet sobald das Product Backlog leer ist.
+\newpage
+Wie in Abbildung 16 dargestellt, wird das Release auf seine Vollständigkeit und Richtigkeit überprüft und im Review vorgestellt nachdem das Mergen erfolgreich durchgeführt wurde. Die Vorstellung erfolgt ebenfalls durch den entsprechenden Entwickler, der die jeweilige Entwicklung den jeweligen Stakeholdern präsentiert. Ab diesem Zeitpunkt endet die Iteration. Werden weitere Anpassungen benötigt, müssen diese aufgearbeitet werden und fließen in das priorisierte Backlog zurück. Sind keine Änderungen notwendig, wird das Release bereitgestellt. Das Projekt endet sobald das Product Backlog leer ist.
 
 % \paragraph{Agility Master}
 

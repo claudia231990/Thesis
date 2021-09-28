@@ -1,47 +1,12 @@
-Nachdem der theoretische Rahmen und die Funktionsweise beider Bereiche beschrieben worden ist, wird in diesem Kapitel näher auf die Integration der OSS innerhalb des Prozesses der DevOps-Produktentwicklung, eingegangen.
-\dwi{marker anfang...}
+Nachdem der theoretische Rahmen und die Funktionsweise beider Bereiche beschrieben worden ist, wird in diesem Kapitel näher auf die Integration der OSS innerhalb des Prozesses der DevOps-Produktentwicklung, eingegangen. In den letzten Jahren hat sich die Nutzung der OSS, durch eine große Anzahl an Individualisierungsmöglichkeiten als ein Standard in der Softwareentwicklung innerhalb Unternehmen etabliert. Entwickler sind in der Lage je nach Projekt OSS mit wenig Ressourcen anpassen, zusätzliche Funktionen einbauen oder fehlerhafte Teile entfernen können. DevOps-Teams profitieren von dieser Vorgehensweise, da sich das Experimentieren mit OSS, wesentlicher einfacher gestaltet als mit kommerziellen Produkten. Gleichwohl der Vorteile die eine Einbindung von OSS befürwortet, fehlt in den meisten Unternehmen oftmals eine Strategie für die Nutzung von OSS, da der Einsatz mit wenig Hürden verbunden ist und die Konsequenzen von den damit verbundenen Lizenzmodellen nicht jedem bewusst sind.Die Folgen einer Verletzung der Nutzungsrechte Dritter an der OSS können über kostenintensive Abmahnungen, Unterlassungs- und Schadenersatzklagen oder kostspielige Patentrechtstretigkeiten führen. \textit{"Beliebtheit und zunehmende Verwendung stehen nach wie vor in Kontrast zu einer grundsätzlichen Unkenntnis: So selbstverständlich die Verwendung ist, so verbreitet sind oft auch Wissenslücken über Grundanforderungen im Umgang mit OSS, sei es als Basis für einen erfolgreichen Einsatz im Alltag oder als Voraussetzung für die Verwendung für eigene Softwareprojekte."} \cite{bitkom_ev_open_2016} In diesem Rahmen sollten sowohl manuelle als auch automatisierte Prüfungen der OSS-Lizenzen innerhalb des Softwareentwicklungsprozesses integriert werden, um mögliche rechtliche Schwierigkeiten und im schlimmsten Fall einen Rückgang in der Entwicklung zu vermeiden. In dem folgenden Kapitel wird zunächst die Einbindung eines OSS-Checks in den Entwicklungsprozess des DevOps-Teams näher beschrieben und der Umfang anhand festgelegter Szenarien innerhalb des Projekts bei der msg systems ag festgelegt. Die manuelle Überprüfung basiert auf einer Checkliste, die ebenfalls in diesem Kapitel näher erläutert wird. 
 
-In den letzten Jahren hat sich die Nutzung der OSS über die Jahre \dwi{jahre .. über die jahre} als ein Standard in der Softwareentwicklung innerhalb Unternehmen etabliert. 
 
-Die Gründe sind verschiedenartig und reichen von Innovationskraft, Flexibilität, Geschwindigkeit bis zur Reduzierung der Kosten.
 
-Offensichtlichster Grund für die Einbindung von OSS ist das große Innovationspotential, durch eine große Anzahl an Individualisierungsmöglichkeiten. 
+% Ferner können die Reduzierung der Gesamtkosten eines Unternehmens als ein essentieller Grund für die Verwendung von OSS-Komponeten angesehen werden. 
 
-Entwickler sind in der Lage je nach Projekt OSS mit wenig Ressourcen anpassen, zusätzliche Funktionen einbauen oder fehlerhafte Teile entfernen können. 
+% Im Gegensatz zu proprietärer Software wird OSS meist kostenlos heruntergeladen und verlagert die Kostenstelle Betriebskosten im Bereich der Lizenzierung auf die Implementierung im Rahmen der Investitionskosten. \cite{augsten_10_2019} 
 
-In diesem Rahmen können spezifische Kundenanforderungen zeitnah modifiziert, Code wiederverwendet und innovationsträchtige Entwicklungen in bestehende Projekte eingesetzt werden.
-
-DevOps-Teams profitieren von dieser Vorgehensweise, da sich das Experimentieren mit OSS, wesentlicher einfacher gestaltet als mit kommerziellen Produkten.   
-
-Diese sind oftmals mit massiven Lizenzvereinbarungen und technischen Abhängigkeiten gekennzeichnet, wodurch die Flexibilität von Entwicklern stark eingeschränkt wird. 
-
-Insbesondere Schwachstellen sind in der Regel schnell sichtbar, da die OSS bereits vor einer Einbindung mehrmals getestet und eine häufigere Fehlerbehebung durchgeführt wird.
-
-Darüber hinaus haben die entwicklenden DevOps-Teams die Möglichkeit, das Know-how von sehr guten Entwicklern in ein bestehendes Produkt direkt einzubinden, wodurch sich der Wissenspool eines jeden Entwicklers erweitert und festigt. 
-
-Auch die Zusammenarbeit zwischen den einzelnen Teammitgliedern innerhalb des DevOps-Teams wird gestärkt, da das entstehende Produkt die gleiche oder bessere Qualität aufweist, wie das von kommerziellen Konkurrenten. 
-
-Ferner können die Reduzierung der Gesamtkosten eines Unternehmens als ein essentieller Grund für die Verwendung von OSS-Komponeten angesehen werden. 
-
-Im Gegensatz zu proprietärer Software wird OSS meist kostenlos heruntergeladen und verlagert die Kostenstelle Betriebskosten im Bereich der Lizenzierung auf die Implementierung im Rahmen der Investitionskosten. \cite{augsten_10_2019} 
-
-Zwar fallen in der Regel auch mit Verwendung von OSS zusätzliche Kosten für Schulungen, Wartung und Support an, die als \emph{sunk costs} bezeichnet werden, wobei diese oft nicht ins Gewicht fallen, da Unternehmen diese Kostenpunkte unabhängig davon tragen, ob es sich um OSS oder Closed Software handelt. \cite{augsten_10_2019} 
-
-Gleichwohl der Vorteile die eine Einbindung von OSS befürwortet, fehlt in den meisten Unternehmen oftmals eine Strategie für die Nutzung und den Einsatz von OSS. 
-\dwi{frage dich mal, ob alles oberhalb dieses kommentars bis zum "marker anfang" hier wirklich stehen muss.}
-Insbesondere im DevOps-Umfeld ist Verwendung von OSS-Komponeten mit wenig Hürden verbunden, wobei die Konsequenzen von den damit verbundenen Lizenzmodellen nicht jedem bewusst sind. 
-
-\textit{Beliebtheit und zunehmende Verwendung stehen nach wie vor in Kontrast zu einer grundsätzlichen Unkenntnis: So selbstverständlich die Verwendung ist, so verbreitet sind oft auch Wissenslücken über Grundanforderungen im Umgang mit OSS, sei es als Basis für einen erfolgreichen Einsatz im Alltag oder als Voraussetzung für die Verwendung für eigene Softwareprojekte.} \cite{bitkom_ev_open_2016}
-
-Die Folgen einer Verletzung der Nutzungsrechte Dritter an der OSS können über kostenintensive Abmahnungen, Unterlassungs- und Schadenersatzklagen oder kostspielige Patentrechtstretigkeiten führen. 
-
-Daher bedarf die Verwendung von OSS-Komponeten eine Schulung in Hinblick auf eine gewissenhafte Nutzung mit inkompatiblen Softwarelizenzen. 
-
-In diesem Rahmen sollten sowohl manuelle als auch automatisierte Prüfungen der OSS-Lizenzen innerhalb des Softwareentwicklungsprozesses integriert werden, um mögliche rechtliche Schwierigkeiten und im schlimmsten Fall einen Rückgang in der Entwicklung zu vermeiden. 
-
-In dem folgenden Kapitel wird die Einbindung dieser OSS-Checks in den Entwicklungsprozess des DevOps-Teams näher beschrieben und der Umfang anhand festgelegter Szenarien innerhalb des HAF-Projekts bei der msg systems ag festgelegt. 
-
-Die manuelle Überprüfung basiert auf einer Checkliste, die ebenfalls in diesem Kapitel näher erläutert wird. 
+% Zwar fallen in der Regel auch mit Verwendung von OSS zusätzliche Kosten für Schulungen, Wartung und Support an, die als \emph{sunk costs} bezeichnet werden, wobei diese oft nicht ins Gewicht fallen, da Unternehmen diese Kostenpunkte unabhängig davon tragen, ob es sich um OSS oder Closed Software handelt. \cite{augsten_10_2019} 
 
 
 

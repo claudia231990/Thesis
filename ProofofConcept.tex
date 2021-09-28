@@ -1,47 +1,4 @@
-\dwi{allgemeines:
-ich habe mir explizit feedback von Prof. Roth geholt.
-er sieht die verteilung theorie 40\% und praxis 60\%, und weiß um die vorgabe von 80-120 seiten, ihm ist inhalt aber wichtiger als seitenzahlen. wenn du dann also 75 seiten mit knackigem inhalt hast wird dir keiner vor den
-karren fahren. ich hoffe das hilft dir
-beim kürzen/zusammenfassen/ergänzen.}
-
-Während die manuelle Checkliste dafür verwendet wird, präventiv OSS-Komponenten mit riskanten Lieznzmodellen bereits zu Beginn des Entwicklungsprozesses zu vermeiden, soll die automatisierte Checkliste das Ziel verfolgen, bereits implementierte OSS-Komponenten auf ihre Lizenzmodelle zu prüfen, bevor diese ausgeliefert werden.
-\dwi{nicht nur für bereits implementiertes - dann müsste man den check ja nur genau 1x laufen lassen, wenn ansonsten diszipliniert die manuelle liste geprüft würde.}
-
-Diese wird innerhalb des folgenden Kapitels als der Proof of Concept (PoC) näher beschrieben.
-\dwi{in Form eines Proof of Concept..}
-
-Grundsätzlich bestimmt der PoC die Machtbarkeit einer Idee, also ob die Idee wie geplant funktioniert und in die Realität umgesetzt werden kann, bevor für diese Ressourcen auf Produktionsebene verschwendet werden.  
-\dwi{weglassen}
-
-In dem Rahmen dieser Arbeit stellt der PoC einen Prototypen dar, der die prinzipelle Durchführbarkeit einer automatisierten Checkliste aufzeigt, wobei dieser nicht direkt innerhalb des Build-Prozess integriert sondern unabhängig von dem jetzigen Entwicklungsprozess entwickelt wurde.  
-
-Obwohl der PoC nicht immer mit einem Prototypen gleichzusetzten ist, werden in diesem Fall beide Begriffe gleichermaßen behandelt.
-\dwi{was hilft das dem leser? wenn du es gleich behandelst, solltest auch in der lage sein immer nur die gleiche bezeichnung zu wählen. oder du machst dir die mühe klarzudenken wo unterschiede sind und verwendest beides korrekt.}
-
-Die automatisierte Checkliste soll dabei als eine reduzierte Version des Endprodukts umgesetzt werden, die auf ihre Nutzbarkeit und Funktionalität getestet und bewertet werden kann. 
-
-Hierbei wird der Prototyp nicht alle Merkmale und Funktionen eines marktreifen Produkts aufweisen, allerdings wird einerseits die generelle Nutzbarkeit in Abhängigkeit der bestehenden Systemumgebung und andererseits die Demonstration der entwickelten Funktionalitäten zum Zweck einer generellen Realisierbarkeit aufgezeigt.
-\dwi{fehlt hier vielleicht ein zitat oder referenz auf eine quelle bzgl 'was ist ein Prototyp' - der sticht durch seine prägnanz aus dem rest heraus. es ist fein wenn du das hier extern referenzierst. ich liege hier gern falsch, aber ich möchte im letzten durchgang keine copy\&paste stelle ohne saubere referenz finden}
-
-Gleichzeitig dient der PoC als eine Basis für weitere Weiterentwicklungsmöglichkeiten. 
-
-Da die direkte Entwicklung innerhalb eines aktiven Projekts große Herausforderungen und Probleme mit sich bringen kann, wurde der Prototyp mit den Kollegen des Projektes bei der msg systems ag, ausgearbeitet und innerhalb dieser Arbeit festgehalten. 
-
-Dies hatte den Vorteil, dass unvorhersehbare Problemfelder berücksichtigt wurden und der Prototyp direkt in die Systemlandschaft eingebunden werden konnte, ohne den gesamten Projektablauf in Mitleidenschaft zu ziehen.
-\dwi{was möchtest du genau mit den beiden letzten absätzen sagen? das geht viel kompakter.}
-
-Der PoC wurde mit der Skizzierung der grundsätzlichen Idee begonnen. 
-
-Wesentliche Elemente waren hierbei die momentane Problembeschreibung als auch die darauf aufbauende Lösung, die umgesetzt werden soll. 
-
-Die Ausarbeitung als auch der Umfang des zugrundeliegenden Problems wurden zunächst durch die Gespräche mit mehreren Teammitgliedern und durch die Teilnahme an Teammeetings anfänglich skizziert.
-
-In diesem Rahmen wurde \textit{die fehlende Bewertung und Prüfung bei der Verwendung von OSS} als das wesentliche Problem identifiziert, welches mithilfe einer automatisierten Überprüfung gelöst werden sollte.
-\dwi{naja also gefehlt hat sie ja im prinzip nicht - wir haben einen manuellen prozess, der einmal alle lizenzen gesammelt und validiert hat. das war nur sehr sehr aufwändig und taugt nicht für die kontinuierliche entwicklung. schreib vllt. eher 'fehlen eines unterstützten prozesses'} 
-
-Demnach sollte der Protoytyp verwendete OSS-Komponenten anhand ihrer Lizenzmodelle analysieren und bei einem, mit Risiko verbundenen Lizenzmodell, den jeweiligen Entwickler darüber zeitnah in Kenntnis setzen.  
-
-Die weitere Anforderungsdefinition, Gestaltung und Einbeziehung erfolgte im Zuge der Prozessmodellierung und der dazugehörigen Anpassung des Soll-Prozesses und wurde in vier grundlegende Schritte unterteilt.
+Während die manuelle Checkliste dafür verwendet wird, präventiv OSS-Komponenten mit riskanten Lieznzmodellen bereits zu Beginn des Entwicklungsprozesses zu vermeiden, verfolgt die automatisierte Checkliste das Ziel, zusätzlich zu einer weiteren Überprüfung von neuen OSS-Komponenten, bereits implementierte auf ihre Lizenzmodelle zu überprüfen, bevor diese ausgeliefert werden. Diese wird innerhalb des folgenden Kapitels in Form eines Proof of Concept (PoC) näher beschrieben. In dem Rahmen dieser Arbeit stellt der PoC einen Prototypen dar, der die prinzipelle Durchführbarkeit einer automatisierten Checkliste aufzeigt, wobei dieser nicht direkt innerhalb des Build-Prozess integriert sondern unabhängig von dem jetzigen Entwicklungsprozess entwickelt wurde. Die automatisierte Checkliste soll dabei als eine reduzierte Version des Endprodukts umgesetzt werden, die auf ihre Nutzbarkeit und Funktionalität getestet und bewertet werden kann. Hierbei wird der Prototyp nicht alle Merkmale und Funktionen eines marktreifen Produkts aufweisen, allerdings wird einerseits die generelle Nutzbarkeit in Abhängigkeit der bestehenden Systemumgebung und andererseits die Demonstration der entwickelten Funktionalitäten zum Zweck einer generellen Realisierbarkeit aufgezeigt. (Quelle) Gleichzeitig dient der PoC als eine Basis für weitere Weiterentwicklungsmöglichkeiten. Da die direkte Entwicklung innerhalb eines aktiven Projekts große Herausforderungen und Probleme mit sich bringen kann, wurde der Prototyp mit Kollegen der msg systems ag, ausgearbeitet und innerhalb dieser Arbeit festgehalten. Der PoC wurde mit der Skizzierung der grundsätzlichen Idee begonnen. Wesentliche Elemente waren hierbei die momentane Problembeschreibung als auch die darauf aufbauende Lösung, die umgesetzt werden soll. Die Ausarbeitung als auch der Umfang des zugrundeliegenden Problems wurden zunächst durch die Gespräche mit mehreren Teammitgliedern und durch die Teilnahme an Teammeetings anfänglich skizziert. In diesem Rahmen wurde \textit{das Fehlen eines unterstützenden Prozesses hinsichtlich der Bewertung und Prüfung von eingesetzter OSS} als das wesentliche Problem identifiziert, welches mithilfe einer automatisierten Überprüfung gelöst werden sollte. Demnach sollte der Protoytyp verwendete OSS-Komponenten anhand ihrer Lizenzmodelle analysieren und bei einem, mit Risiko verbundenen Lizenzmodell, den jeweiligen Entwickler darüber zeitnah in Kenntnis setzen. Die weitere Anforderungsdefinition, Gestaltung und Einbeziehung erfolgte im Zuge der Prozessmodellierung und der dazugehörigen Anpassung des Soll-Prozesses und wurde in vier grundlegende Schritte unterteilt.
 
 
 

@@ -12,45 +12,45 @@ Warning--empty institution in bitkom_ev_open_2016
 Warning--empty booktitle in haffke_transformative_2017
 Warning--empty year in sonatype_guide_nodate
 Warning--empty publisher in varanasi_introducing_2019
-You've used 82 entries,
+You've used 81 entries,
             1935 wiz_defined-function locations,
-            894 strings with 16059 characters,
-and the built_in function-call counts, 28357 in all, are:
-= -- 2835
-> -- 1037
-< -- 72
-+ -- 348
-- -- 330
-* -- 2219
-:= -- 5068
-add.period$ -- 246
-call.type$ -- 82
-change.case$ -- 560
-chr.to.int$ -- 82
-cite$ -- 88
-duplicate$ -- 1162
-empty$ -- 1993
-format.name$ -- 448
-if$ -- 5546
+            890 strings with 15974 characters,
+and the built_in function-call counts, 28121 in all, are:
+= -- 2811
+> -- 1030
+< -- 71
++ -- 346
+- -- 328
+* -- 2204
+:= -- 5021
+add.period$ -- 244
+call.type$ -- 81
+change.case$ -- 554
+chr.to.int$ -- 81
+cite$ -- 87
+duplicate$ -- 1152
+empty$ -- 1978
+format.name$ -- 445
+if$ -- 5503
 int.to.chr$ -- 1
 int.to.str$ -- 0
 missing$ -- 77
-newline$ -- 398
-num.names$ -- 252
-pop$ -- 489
+newline$ -- 394
+num.names$ -- 249
+pop$ -- 485
 preamble$ -- 1
-purify$ -- 573
+purify$ -- 567
 quote$ -- 0
-skip$ -- 884
+skip$ -- 875
 stack$ -- 0
-substring$ -- 1698
+substring$ -- 1686
 swap$ -- 128
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 442
+type$ -- 436
 warning$ -- 6
-while$ -- 233
+while$ -- 231
 width$ -- 0
-write$ -- 1047
+write$ -- 1037
 (There were 7 warnings)

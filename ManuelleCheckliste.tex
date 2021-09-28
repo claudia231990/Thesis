@@ -1,58 +1,12 @@
-Wie bereits im Kapitel 3.1.2 beschrieben, muss durch die Verwendung von OSS der konkrete Prozess innerhalb des HAF-Projektes angepasst werden. 
-
-Die erste notwendige Anpassung erfolgt mittels einer Überprüfung der verwendeten Lizenzmodelle basierend auf einer manuellen Checkliste durch die entsprechenden Entwickler.  
-
-Durch das strukturierte und mehrmalige Arbeiten mit einer manuellen Checkliste entsteht eine Routine für das Entwicklerteam innerhalb des gesamten Softwareentwicklungsprozesses.
-\dwi{haha ... theoretisch klappt die praxis immer!}
-
-Ferner sind Softwarekomponenten oftmals stark miteinander verschachtelt und enthalten zudem viele transitive Abhängigkeiten, wodurch das Ziel verfolgt wird, mit der manuellen Checkliste eine gemeinsame Basis zu schaffen.
-
-Der Einsatz schafft Effizenz und eine Zeitersparnis, da nur das Lizenzmodell betrachetet wird, was in diesem Moment verwendet werden möchte. \dwi{möchte -> soll} 
-
-Dieser Schritt entspricht zwar nicht der gängigen DevOps-Kultur einen möglichst hohen Grad an Automatisierung zu erlangen, jedoch kann bereits durch einen kurzen manuellen Check 'gefährliche' und 'ungefährliche' Lizenzmodelle voneinander unterschieden werden bevor eine langwierige Entwicklung stattfindet. 
-
-Ferner ist an diesem anfänglichen Entwicklungszeitpunkt die Überprüfung mittels einer automatisierten Checkliste bedenklich, da mit der Software zunächst vorrangig expermentiert wird und eine vollständige Integration in die bestehende Anwendung somit nicht feststeht.
-
-Andernfalls müsste jede heruntergeladene OSS direkt in das Softwareentwicklungsprozess integriert werden, um diese anschließend automatisiert überprüfen zu lassen.
-
-Die Folgen wären ein Verlust von wichtigen Ressourcen, Effizenz und Zeit.
-
-Ziel des Einsatzes der manuellen Checkliste ist es, sowohl die technische als auch juristische Faktoren bei der Verwendung von OSS zu berücksichtigen und ein gemeinsames Verständnis zu erreichen.
-
-Innerhalb der kommerziellen Softwareentwicklung stellt dies eine große Herausforderung dar.
-
-Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtweise und wenig Affinität zu Lizenztexten und benötigen daher Hilfe bei der Auswahl von OSS-Komponenten. 
-
-Juristen hingegen haben ein Verständnis für Lizenzrecht, allerdings fällt es ihnen schwer, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich zu intepretieren.
-
-Benötigt wird eine aussagekräftige Entscheidungsgrundlage, die aufzeigt, ob der Einsatz einer bestimmten Komponente rechtlich zulässig ist.
-
-Darüber hinaus sollte bei der Bewertung der Lizenzmodelle auch die jewelige Nutzung der Komponenten berücksichtigt werden, die einen erheblichen Einfluss auf die zu erfüllenden Lizenzbedingungen haben kann. 
-
-So ist beispielsweise die interne Nutzung oft unbedenklich und bedarf keiner Bedingungen, während eine Weitergabe viele Einschränkungen mit sich bringt. 
-
-Die unten stehende manuelle Checkliste und die zugrunde liegenden Elemente wurden bereits innerhalb der msg systems ag als OSS-Guide erstellt worden und im Rahmen dieser Arbeit auf das Problemfeld erweitert und angepasst.
+Wie bereits im Kapitel 3.1.2 beschrieben, muss durch die Verwendung von OSS der konkrete Prozess innerhalb des Beispielprojektes angepasst werden. Die erste notwendige Anpassung erfolgt mittels einer Überprüfung der verwendeten Lizenzmodelle basierend auf einer manuellen Checkliste durch die entsprechenden Entwickler. Durch das strukturierte und mehrmalige Arbeiten mit einer manuellen Checkliste entsteht eine Routine für das Entwicklerteam innerhalb des gesamten Softwareentwicklungsprozesses.\\\\ Softwarekomponenten sind oftmals stark miteinander verschachtelt und enthalten zudem viele transitive Abhängigkeiten, wodurch das Ziel verfolgt wird, mit der manuellen Checkliste eine gemeinsame Basis, Effizenz und eine Zeitersparnis zu schaffen, da nur das Lizenzmodell betrachetet wird, was in diesem Moment verwendet werden soll. Dieser Schritt entspricht zwar nicht der gängigen DevOps-Kultur einen möglichst hohen Grad an Automatisierung zu erlangen, jedoch kann bereits durch einen kurzen manuellen Check 'gefährliche' und 'ungefährliche' Lizenzmodelle voneinander unterschieden werden bevor eine langwierige Entwicklung stattfindet. Ferner ist an diesem anfänglichen Entwicklungszeitpunkt die Überprüfung mittels einer automatisierten Checkliste bedenklich, da mit der Software zunächst vorrangig expermentiert wird und eine vollständige Integration in die bestehende Anwendung somit nicht feststeht. Andernfalls müsste jede heruntergeladene OSS direkt in das Softwareentwicklungsprozess integriert werden, um diese anschließend automatisiert überprüfen zu lassen. Die Folgen wären ein Verlust von wichtigen Ressourcen, Effizenz und Zeit.\\\\ Ziel des Einsatzes der manuellen Checkliste ist es, sowohl die technische als auch juristische Faktoren bei der Verwendung von OSS zu berücksichtigen und ein gemeinsames Verständnis zu erreichen. Innerhalb der kommerziellen Softwareentwicklung stellt dies eine große Herausforderung dar. Softwarearchitekten haben oftmals eine starke funktionale und strukurelle Sichtweise und wenig Affinität zu Lizenztexten und benötigen daher Hilfe bei der Auswahl von OSS-Komponenten. Menschen mit juristischen Hintergrund,  hingegen haben ein Verständnis für Lizenzen und Recht, allerdings können sie, die tatsächliche technische Ausprägung einer Softwarekomponente rechtlich nicht intepretieren. Benötigt wird eine aussagekräftige Entscheidungsgrundlage, die aufzeigt, ob der Einsatz einer bestimmten Komponente rechtlich zulässig ist. Darüber hinaus sollte bei der Bewertung der Lizenzmodelle auch die jewelige Nutzung der Komponenten berücksichtigt werden, die einen erheblichen Einfluss auf die zu erfüllenden Lizenzbedingungen haben kann. So ist beispielsweise die interne Nutzung oft unbedenklich und bedarf keiner Bedingungen, während eine Weitergabe viele Einschränkungen mit sich bringt. Die unten stehende manuelle Checkliste und die zugrunde liegenden Elemente wurden bereits innerhalb der msg systems ag als OSS-Guide erstellt worden und im Rahmen dieser Arbeit auf das Problemfeld erweitert und angepasst.
 %Hier Fußzeile zu dem OSS-Guide von Ralf und Navina  
 %Thesis von Navina nochmal lesen und paragraphen abändern
 
-\paragraph{Use Types}
+\subsubsection{Use Types}
 
-Zunächst werden die 'Use Types' also die unterschiedlichen Nutzungarten erläutert. 
+Zunächst werden die 'Use Types' also die unterschiedlichen Nutzungarten erläutert. Diese geben Auskunft darüber, welche Bedinungen zu den jeweiligen Nutzungsarten erfüllt sein müssen. Die vorgestellten Szenarien dienen als jeweilige Ausgangssituation, während die Nutzungsarten die jeweilige Verwendung detailliert beschreiben. 
 
-Diese geben Auskunft darüber, welche Bedinungen zu den jeweiligen Nutzungsarten erfüllt sein müssen. 
-
-So enthalten einige OSS-Lizenzen beispielsweise die Klausel, dass Modifikationen des Quellcodes nur gestattet sind, wenn diese 'unter derselben OSS-Lizenz wieder allen zur Verfügung gestellt werden.'
-
-Die vorgestellten Szenarien dienen als jeweilige Ausgangssituation, während die Nutzungsarten die jeweilige Verwendung detailliert beschreiben. 
-
-\subparagraph{Auflistung der Nutzungsarten}
-
-Insgesamt gibt es 14 zu beachtende Nutzungsarten.
-
-Diese wurden in sieben verschiedene Kategorien unterteilt: Format (format), Abhängigkeit (dependency), Auslieferung (delivery), Einsatz (usage), Kommunikation (communication), Bündelung (bundling) und Artifakte (artifact). 
-\dwi{referenzen zu den tabellen im text!!}
-
-%Frage Daniel: kann ich die hauptsächlichen Überschriften auf englisch lassen,oder soll ich alles auf deutsch übersetzten ?????
+\paragraph{3.3.1.1. Auflistung der Nutzungsarten}
 
 %Zweizeilig
 % \newcommand\T{\rule{0pt}{4ex}}
@@ -100,14 +54,14 @@ Diese wurden in sieben verschiedene Kategorien unterteilt: Format (format), Abh�
 \end{longtable}
 \end{landscape}
 
-\paragraph{Umfang und Ausprägung der Verpflichtungen}
+Insgesamt gibt es 14 zu beachtende Nutzungsarten, die in der Tabelle 2 dargestellt werden. Darüber hinaus wurde mittels der Tabelle 2, die dazugehörigen Erklärungen und ein Beispiel angegeben. Ob die jeweiligen  Nutzungstypen sich für das Beispielprojekt eignen, wurde anhand der beschriebenen Szenarien im Kapitel 3.2. unterschieden. Die Nutzungstypen wurden in sieben verschiedene Kategorien unterteilt: Format (format), Abhängigkeit (dependency), Auslieferung (delivery), Einsatz (usage), Kommunikation (communication), Bündelung (bundling) und Artifakte (artifact).
 
-Je nach Nutzungsart müssen verschiedene und festgelegte Verpflichtungen innerhalb eines vorgeschriebenen Rahmens erfüllt werden oder können unter bestimmten Bedingungen ausgeschlossen werden. \cite{tldr_legal_software_2012}
+\subsubsection{Umfang und Ausprägung der Verpflichtungen}
 
-Aufgrund dessen kann der Umfang der Verplichtung sich um eine Last, die der Nutzer erfüllen muss handeln oder um eine bestimmte Nutzungsart beziehen, indem einzelne Verpflichtungen erfüllt werden müssen oder die gesamte Nutzung ausgeschlossen wird. 
+Je nach Nutzungsart müssen verschiedene und festgelegte Verpflichtungen innerhalb eines vorgeschriebenen Rahmens erfüllt werden oder können unter bestimmten Bedingungen ausgeschlossen werden. \cite{tldr_legal_software_2012}Aufgrund dessen kann der Umfang der Verplichtung sich um eine Last, die der Nutzer erfüllen muss handeln oder um eine bestimmte Nutzungsart beziehen, indem einzelne Verpflichtungen erfüllt werden müssen oder die gesamte Nutzung ausgeschlossen wird. 
 
-\subparagraph{Umfang der Verpflichtungsarten} $~$
-\\
+\paragraph{3.3.2.1. Umfang der Verpflichtungsarten} $~$
+Der Umfang der Verpflichtungen und deren genaue Erklärung und Zweck wurde in der Tabelle 3 festgehalten. \\
 
 \begin{tabular}[h]{|r|c|l|}
     \hline\hline
@@ -121,15 +75,10 @@ Aufgrund dessen kann der Umfang der Verplichtung sich um eine Last, die der Nutz
 
     \hline
 \end{tabular}
-\dwi{referenzen zu den tabellen im text!!}
 
-\subparagraph{Ausprägung einer zu erfüllenden Verpflichtung}
+\paragraph{3.3.2.2. Ausprägung einer zu erfüllenden Verpflichtung} $~$
 
-Im Hinblick auf die Verpflichtungen, die der Nutzer erfüllen muss, lassen sich mehrere Elemente definieren. 
-
-Diese geben an welche Bedingungen, innerhalb einer Verpflichtung erfüllt werden müssen. 
-
-Ziel ist es, mittels der unterschiedlichen Ausprägungen der Verpflichtung im Zusammenhang mit den jeweiligen Use Types, eine auf das Lizenzmodell abgestimmte Aufgabenliste zu erstellen, die die jeweiligen Entwickler berücksichtigen müssen. \\
+Im Hinblick auf die Verpflichtungen, die der Nutzer erfüllen muss, lassen sich mehrere Elemente definieren, wie anhand Tabelle 4 dargestellt. Diese geben an welche Bedingungen, innerhalb einer Verpflichtung erfüllt werden müssen. Ziel ist es, mittels der unterschiedlichen Ausprägungen der Verpflichtung im Zusammenhang mit den jeweiligen Use Types, eine auf das Lizenzmodell abgestimmte Aufgabenliste zu erstellen, die die jeweiligen Entwickler berücksichtigen müssen.
 
 \begin{tabular}[h]{|r|c|l|}
     \hline\hline
@@ -161,39 +110,27 @@ Ziel ist es, mittels der unterschiedlichen Ausprägungen der Verpflichtung im Zu
     \hline 
     \A \parbox{4cm}{Other Obligations} & OTHER & \parbox{6cm}{Die Lizenz enthält beliebige andere wichtige Bedingungen, die von uns nicht modelliert/abgedeckt werden (Fallback)} \C \\
     \hline 
-
 \end{tabular}
 
-\paragraph{Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}
+\subsubsection{Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}
 
-Die folgende Tabelle \dwi{öhm welche denn ;-)? referenzen zu den tabellen im text!!} beinhaltet die beschriebenen Informationen bezüglich der Nutzungstypen und der jeweiligen Verplfichtungselementen und zeigt diese innerhalb einer Matrix an und stellt die ausführliche manuelle Checkliste dar.
-
-Zunächst wurde die Checkliste anhand eines Lizenzmodells, in diesem Fall \textit{Apache License 2.0}, exemplarisch dargestellt, da dieses vermehrt innerhalb des internen msg-Projektes verwendet wird.  
-
-Leere Felder zeigen an, dass die Lizenz keine Aussage über die jeweilige Verpflichtung und die entsprechende Nutzungsart macht. 
-
-Gefüllte Felder enthalten die Kennzeichnung welche jeweilige Verpflichtung für die jewelige Nutzungsart  durchgeführt werden muss. 
-
-Die benötigten Informationen können implizit aus dem angegebenen Lizenzauszug des Lizenzmodells hervorgehen oder wurden explizit angegeben.
-
-Die verbleibenden Lizenzmodelle, die neben der Apache Lizenz verwendet wurde, wurden im Anhang aufgelistet.   
+Tabelle 5 beinhaltet die beschriebenen Informationen bezüglich der Nutzungstypen und der jeweiligen Verpflichtungselemente und zeigt diese innerhalb einer Matrix an. Zunächst wurde die manuelle Checkliste anhand eines Lizenzmodells, in diesem Fall \textit{Apache License 2.0}, exemplarisch dargestellt, da dieses vermehrt innerhalb des Beispielprojektes bei der msg systems ag verwendet wird. Leere Felder zeigen an, dass die Lizenz keine Aussage über die jeweilige Verpflichtung und die entsprechende Nutzungsart macht. Gefüllte Felder enthalten die Kennzeichnung welche jeweilige Verpflichtung für die jewelige Nutzungsart durchgeführt werden muss. Die benötigten Informationen können implizit aus dem angegebenen Lizenzauszug des Lizenzmodells hervorgehen oder wurden explizit angegeben. Die verbleibenden Lizenzmodelle, die neben der Apache Lizenz verwendet wurde, wurden im Anhang aufgelistet.   
 
 \begin{figure}[p]
     \centering
     \includegraphics[angle=90, scale=1.0]{Bilder/Manuelle Checkliste.png}
+    \caption{Umfassende manuelle Checkliste}
 \end{figure}
 
 \newpage
-\subparagraph{Komprimierung der manuellen Checkliste}
+\paragraph{3.3.3.1. Komprimierung der manuellen Checkliste}
 
-Um eine bessere Übersicht über die wesentlichen Elemente zu gewinnen, wurde in diesem Schritt die manuelle Checkliste komprimiert. 
-\dwi{nach welchen kriterien?}
-
-Damit wird das Ziel verfolgt, eine möglichst leicht verständliche Checkliste zu generieren, indem nur die wesentlichen Elemente eines Lizenzmodells angezeigt werden. 
+Um eine bessere Übersicht über die wesentlichen Elemente zu gewinnen, wurde in diesem Schritt die manuelle Checkliste komprimiert, indem Spalten mit den Ausprägungen die keine Verpflichtungen aufgewiesen haben, entfernt wurden. Damit wird das Ziel verfolgt, eine möglichst leicht verständliche und übersichtliche Checkliste zu generieren, indem nur die wesentlichen Elemente eines Lizenzmodells angezeigt werden. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.6]{Bilder/Manuelle Checkliste_komprimiert.png}
+    \caption{Komprimierte manuelle Checkliste basierend auf der Apache Licence 2.0}
 \end{figure}
 
 

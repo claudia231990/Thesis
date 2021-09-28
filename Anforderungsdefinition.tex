@@ -1,26 +1,9 @@
-%Hier das Plugin von Michael Haas erklären und warum es nicht geworden ist. 
-% hier der Vergleich von verschiedenen Open-Source-Scannern 
+Als ersten Schritt wurden in diesen Kapitel die Anforderungen an den Prototypen definiert und dienten hierbei als Grundlage für die Entwicklungsziele. In diesem Rahmen wurden neben den funktionalen Anforderungen, die technischen Spezifikationen, die die automatisierte Checkliste aufweisen muss, festgelegt.Anhand der Problembeschreibung wurden folgende Elemente als Nicht-funktionale Anforderung erarbeitet: 
 
-Als ersten Schritt wurde, basierend auf der Problembeschreibung, die darauf aufbauenden Anforderungen analysiert, die widerrum als Grundlage für die Entwicklung des Prototyps dienten. 
-\dwi{du erklärst immer wieder dein internes vorgehen um zu dem inhalt zu kommen - wenn du einen
-präzisen text formulieren willst, schreib sowas lieber
-als "In diesem Kapitel werden die Anforderungen an den Prototyp beschrieben".
-durch deinen textfluss ist dann schon klar, was wo nach kommt und warum.}
-
-In diesem Rahmen wurden neben den technischen Spezifikationen als funktionale Anforderungen, die Nicht-Funktionalen Anforderungen, die die automatisierte Checkliste aufweisen muss, festgelegt.
-\dwi{hier solltest du kurz den unterschied erläutern, oder einfach nur von 'Anforderungen' sprechen. das
-könnte sonst für verwirrung sorgen. ich finde die trennung im text nicht scharf genug.}
-
-Anhand der Problembeschreibung wurden folgende Elemente als Nicht-funktionale Anforderung erarbeitet: 
+Basierend auf den herausgearbeiteten Informationen wurden folgende Punkte als funktionale Anforderungen identifiziert: 
 
 \begin{itemize}
     \item Die automatisierte Checkliste, soll alle integrierten OSS-Komponenten auf Ihre Lizenzmodelle überprüfen und bei risikobehafteten Lizenzmodelle einen Abbruch des Build-Prozesses verursachen
-\end{itemize}
-\dwi{das ist für mich eine funktionale anforderung.}
-
-Basierend auf diesen Informationen wurden folgende Punkte als funktionale Anforderungen identifiziert: 
-
-\begin{itemize}
     \item Die Analyse der verwendeten OSS-Komponenten anhand ihrer Lizenzmodelle, soll möglichst automatisiert, also ohne menschliches Zutun, erfolgen
     \item Der Prototyp muss direkt in den Entwicklungsprozess  eingebunden werden 
     \item Der Prototyp muss die verwendeten OSS-Komponenten mit Daten aller Lizenzmodelle und ihrer 'Copyleft'-Bestimmungen vergleichen 
@@ -29,125 +12,38 @@ Basierend auf diesen Informationen wurden folgende Punkte als funktionale Anford
     \item Nach der Prüfung des Release sollen die verrwendeten Lizenzmodelle in einem Dokument zusammengefasst werden
 \end{itemize}
 
-Im Laufe des PoC wurden die Anforderungen weiter präzisiert.
-
-In diesem Zuge mussten mehrere Möglichkeiten im Rahmen dieser Thesis untersucht und anhand der Anforderungsdefinition analysiert werden.
+Im Laufe des PoC wurden die Anforderungen weiter präzisiert. In diesem Zuge mussten mehrere Möglichkeiten im Rahmen dieser Thesis untersucht und anhand der Anforderungsdefinition analysiert werden.
 
 \subsubsection{Internes Tool}
 
-Zunächst war bereits innerhalb des internen Projektes bei der msg systems ag, ein Plugin vorhanden, welches für den Anforderungszweck geeignet ist. 
-
-Dies baut auf der Entwicklung eines automatisierbaren, generischen Tools zum Auslesen, Bearbeiten und Schreiben von Tabellen in verschiedenen Formaten auf. 
-
-Ziel dieses Tool ist es, alle Licensing Quelldateien zu einer neuen Tabelle zu konsolidieren und mit einer bereits fertigen Tabelle, die den alten Zustand des Projektes darstellt, zu vergleichen. 
-
-Dabei werden gelöschte Einträge entfernt, veränderte Einträge aktualisiert und unveränderte Einträge beibehalten, bis eine neue Tabelle erstellt wird.
-
-Allerdings mussten einige Überlegungen bei der Verwendung beachtet werden. 
-
-Zunächst muss dieses Projekt stets manuell angestoßen werden. 
-\dwi{also die begründung ist hier etwas dünn. es sollte hier ein argument gebracht werden, welches z.b. die schwierige integrierbarkeit (warum?) in die projektumgebung oder die fehlenden funktionalitäten (liest keine lizenzinformationen aus) betont werden.
-in allen fällen war der aufwand der integration in deinem rahmen zu hoch, und nicht das manuelle anstoßen..}
-
-Dies birgt die Gefahr, dass dieses Tool innerhalb des täglichen Entwicklungsalltags nicht regelmäßig verwendet wird und folglich Entwicklungsaufwand für eine OSS-Komponente bereits miteinbezogen wird, die ein schwieriges Copyleft aufweist. 
-
-Infolgedessen ist eine zeitnahe Kenntnisnahme der Entwickler nicht möglich. 
-
-Aus diesem Grund wurde die Weiterentwicklung dieses Tools nicht weiterverfolgt. 
+Zunächst war bereits innerhalb des Bespielprojektes bei der msg systems ag, ein Plugin vorhanden, welches für den Anforderungszweck geeignet ist. Dies baut auf der Entwicklung eines automatisierbaren, generischen Tools zum Auslesen, Bearbeiten und Schreiben von Tabellen in verschiedenen Formaten auf. Ziel dieses Tool ist es, alle Licensing Quelldateien zu einer neuen Tabelle zu konsolidieren und mit einer bereits fertigen Tabelle, die den alten Zustand des Projektes darstellt, zu vergleichen. Dabei werden gelöschte Einträge entfernt, veränderte Einträge aktualisiert und unveränderte Einträge beibehalten, bis eine neue Tabelle erstellt wird. Allerdings mussten einige Überlegungen bei der Verwendung beachtet werden. Zunächst muss dieses Projekt stets manuell angestoßen werden. Dies birgt die Gefahr, dass dieses Tool innerhalb des täglichen Entwicklungsalltags nicht regelmäßig verwendet wird und folglich Entwicklungsaufwand für eine OSS-Komponente bereits miteinbezogen wird, die ein schwieriges Copyleft aufweist. Infolgedessen ist eine zeitnahe Kenntnisnahme der Entwickler nicht möglich. Darüber hinaus ist das interne Plugin für eine kontinuierliche Entwicklung schwierig zu integrieren, da benötigte Funktionalitäten wie die Auslesung und Bewertung der OS-Lizenzen an dieser Stelle fehlt. Aus den vorliegenden Gründen war der Aufwand einer Integration im Rahmen dieser Arbeit zu hoch, weshalb die Enntwicklung des Tools nicht weiter verfolgt wurde.  
 
 \subsubsection{Eignungsprüfung bekannter Open Source Scanner}
 
-Darüber hinaus gibt es bereits einige verwandte Projekte, die das Ziel haben, OSS nach ihren Lizenzmodellen zu scannen. 
+Darüber hinaus gibt es bereits einige verwandte Projekte, die das Ziel haben, OSS nach ihren Lizenzmodellen zu scannen. Obwohl einige der Scanner ebenfalls als OSS frei verfügbar sind, gibt es eine erhebliche Anzahl von Tools die lediglich als eine bezahlbare Version erhändlich sind. Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gemäß der Problembeschreibung und der Anforderungsanalyse verglichen und einzeln untersucht.
 
-Obwohl einige der Scanner ebenfalls als OSS frei verfügbar sind, gibt es eine erhebliche Anzahl von Tools die lediglich als eine bezahlbare Version erhändlich sind.  
+\paragraph{4.1.2.1. Black Duck Suite} $~$
 
-Im Rahmen des PoC wurden die folgenden Tools auf ihren Verwendungszweck und gemäß der Problembeschreibung und der Anforderungsanalyse verglichen und einzeln untersucht.
+Black Duck bietet eine umfassende Software Composition Analysis (SCA)-Lösung für das Management von Lizenz-Compliance-Risiken, die sich aus der Verwendung von Open-Source- und Drittanbieter-Code in Anwendungen und Containern ergeben. \cite{synopsys_black_2021} Dabei werden OSS-Komponenten durch Überwachung des Build-Prozesses identifiziert, Dateien gescannt und mit Codestücken abgeglichen. Dieses Tool wurde letztlich aufgrund der erheblichen Kosten nicht weiter verfolgt.
 
-\paragraph{Black Duck Suite}
+\paragraph{4.1.2.2. WhiteSource} $~$
 
-Black Duck bietet eine umfassende Software Composition Analysis (SCA)-Lösung für das Management von Sicherheits-, Qualitäts- und Lizenz-Compliance-Risiken, die sich aus der Verwendung von Open-Source- und Drittanbieter-Code in Anwendungen und Containern ergeben. \cite{synopsys_black_2021}
+WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{whitesource_software_whitesource_2021} So können Lizenzen durch eine festgelegte Liste abgelehnt, automatisch genehmigt oder dessen Genehmigung zunächst beantragt werden. Bei abgelehnten Lizenzen oder Abhängigkeiten erhält der Benutzer eine Warnung und der Build schlägt fehl. Auch dieses Tool wurde aufgrund erheblicher Kosten nicht weiter innerhalb des PoC in Betracht gezogen. 
 
-Dabei werden OSS-Komponenten durch Überwachung des Build-Prozesses identifiziert, Dateien gescannt und mit Code-Snippets abgeglichen. 
+\paragraph{4.1.2.3. FOSSology} $~$
 
-Ferner erkennt es Sicherheitsschwachstellen und benachrichtigt die Benutzer direkt. 
+FOSSology ist ein quelloffenes Softwaresystem und Toolkit zur Einhaltung von Lizenzbestimmungen, wobei ein Benutzer einzelne Dateien oder ganze Softwarepakete über eine Web-Benutzeroberfläche hochladen kann. \cite{fossology_workgroup_fossology_2017} Als Toolkit können Lizenz-, Copyright- und Exportkontroll-Scans über die Befehlszeile ausführt werden. Der Bearbeiter kann jede beliebige Analyseoperation an der Datei durchführen. Aufgrund der fehlenden Sicherheit über den Kenntnisstand des jeweiligen Bearbeiters wurde auch dieses Tool für die weitere Bearbeitung nicht mehr in Betracht gezogen. 
 
-Darüber hinaus bietet das Tool DevOps-Integrationen, um die Prozesse agiler Entwicklungsteams zu definieren und sicherzustellen, dass die Anwendungen den Lizenzbedingungen entsprechen.
+\paragraph{4.1.2.4. Nexus Vulnerability Scanner} $~$
 
-Dieses Tool wurde letztlich aufgrund der erheblichen Kosten nicht weiter verfolgt.
+Nexus Vulnerability Scanner ist ein Tool zum Scannen des Quellcodes eines Projekts, um risikoreiche Lizenzmodelle für Komponenten und transitive Abhängigkeiten zu entdecken. \cite{sonatype_nexus_2008} Hierbei werden Lizenzen in unterschiedlichen Kategorien aufgeteilt. Der Scanner prüft, ob im Quelltext Lizenzerklärungen vorhanden sind und bestimmt die Risikostufe. \cite{sonatype_guide_nodate} Nach der Bewertung wird eine Nachdokumentation mit den entsprechenden Informationen erstellt. Obwohl sich dieses Tool sich anhand der Anforderungsdefinition sehr gut für die weitere Bearbeitung eignet, wurde dieses Tool aufgrund der zeit- und entwicklungsintensiven Integration verworfen.
 
-\paragraph{WhiteSource}
+\paragraph{4.1.2.5. Eclipse SW360} $~$
 
-WhiteSource ist ein Tool, welches automatisch Komponenten und deren transitive Abhängigkeiten nach ihrer Lizenzkonformität überprüft und Sicherheitslücken identifiziert. \cite{whitesource_software_whitesource_2021}  
+SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{the_eclipse_foundation_sw360_2018} SW360 ermöglicht die Verfolgung von OSS-Komponenten, die innerhalb eines Projektes verwendet werden, die Einhaltung von Lizenzverpflichtungen und die Erstellung rechtlicher Dokumente. Auch dieses Tool wurde einige Tools zeitintensiven Gründen nicht weiterverfolgt.   
 
-Das Tool ist in den Build-Prozess integriert, wobei zusätzliche Richtlinien definiert werden, um die Kontrolle der Verwendung sicherzustellen. 
+\paragraph{4.1.2.6. Ayoy - Maven Licence Vertify Plugin} $~$
 
-So können Lizenzen durch eine festgelegte Blacklist abgelehnt werden, mittels einer White List, Lizenzen automatisch genehmigt werden oder mittels einer Liste von Lizenzen, dessen Genehmigung zunächst beantragt werden. 
-
-Wenn eine geprüfte Komponente oder Abhängigkeit unter einer Lizenz lizenziert wird, die auf der Blacklist steht, erhält der Benutzer eine Warnung und/oder der Build schlägt fehl.
-
-Auch dieses Tool wurde aufgrund erheblicher Kosten nicht weiter innerhalb des PoC in Betracht gezogen. 
-
-\paragraph{FOSSology}
-
-FOSSology ist ein quelloffenes Softwaresystem und Toolkit zur Einhaltung von Lizenzbestimmungen, wobei ein Benutzer einzelne Dateien oder ganze Softwarepakete über eine Web-Benutzeroberfläche hochladen kann. \cite{fossology_workgroup_fossology_2017} 
-
-Als Toolkit können Lizenz-, Copyright- und Exportkontroll-Scans über die Befehlszeile ausführt werden.
-
-FOSSology funktioniert ähnlich wie ein leistungsorientiertes, konsensbasiertes Gemeinschaftsprojekt, bei dem sich jeder anmelden und etwas beitragen kann. 
-
-Der Bearbeiter kann jede beliebige Analyseoperation an der Datei durchführen. 
-
-Aufgrund der fehlenden Sicherheit über den Kenntnisstand des jeweiligen Bearbeiters wurde auch dieses Tool für die weitere Bearbeitung nicht mehr in Betracht gezogen. 
-
-\paragraph{Nexus Vulnerability Scanner}
-
-Nexus Vulnerability Scanner ist ein Tool zum Scannen des Quellcodes eines Projekts, um risikoreiche Lizenzmodelle für Komponenten und transitive Abhängigkeiten zu entdecken. \cite{sonatype_nexus_2008} 
-
-Hierbei werden Lizenzen in den Kategorien Copyleft, Not Provided, Weak Copyleft und Liberal aufgeteilt. 
-
-Der Scanner prüft, ob im Quelltext Lizenzerklärungen vorhanden sind und bestimmt die Risikostufe. 
-
-Das Ergebnis dieser Auswertung liegt zwischen den Werten eins und zehn und wird in vier Kategorien eingeteilt: Keine Bedrohung, Mäßig, Schwerwiegend, Kritisch. \cite{sonatype_guide_nodate} \dwi{citation-details fehlen.}
-
-Ferner werden die Lizenzrisiken der aktuellen Version mit denen neuerer Versionen verglichen. 
-
-Nach der Bewertung wird eine Nachdokumentation mit den entsprechenden Informationen erstellt. 
-
-Obwohl sich dieses Tool sich anhand der Anforderungsdefinition sehr gut für die weitere Bearbeitung eignet, wurde dieses Tool aufgrund der zeit- und entwicklungsintensiven Integration verworfen.
-
-\paragraph{Eclipse SW360}
-
-SW360 ist ein Open-Source-Softwareprojekt, das unter der EPL-1.0 lizenziert ist und sowohl eine Webanwendung als auch ein Repository zum Sammeln, Organisieren und Verfügbarmachen von Informationen über Softwarekomponenten bietet. \cite{the_eclipse_foundation_sw360_2018} 
-
-SW360 ermöglicht einerseits die Verfolgung von OSS-Komponenten, die innerhalb eines Projektes verwendet werden, die Einhaltung von Lizenzverpflichtungen, die Durchsetzung von Richtlinien und die Erstellung rechtlicher Dokumente und die Integration mit anderen Tools wie FOSSology. 
-
-Darüber hinaus werden Berichte mit Informationen über die verwendeten Komponenten und deren Lizenzen bereitgestellt.\\
-
-Obwohl einige Tools gemäß der Anforderungsanalyse für den benötigten Verwendungszweck eine Möglichkeit zur Integration bieten, wurde aus kosten- und zeitintensiven Gründen keine der dargestellten Lösungen letztlich in Betracht gezogen.   
-
-\subsubsection{Ayoy - Maven Licence Vertify Plugin}
-\dwi{ich weiß noch wie wir darüber gesprochen haben, dass der ayoy scanner genauso ein tool der liste oben ist wie der rest - dort sollte es auch auftauchen. das 'thema', dass es dafür maven als ausführungsumgebung benötigt, kannst du dort kurz aufnehmen und abhaken, weil wir maven
-eh schon verwenden. ka-tsching!}
-Des Weiteren wurde untersucht, ob die Entwicklung des PoC mittels des Build Management Systems 'Maven' für den vorliegenden Verwendungszweck eignen würde.
-\dwi{ich würd die schleife hier maven irgendwie mehr als über eine referenz auszurollen lassen.}
-
-Maven eignet sich vorwiegend für Java-Projekte, welche zudem ausschließlich innerhalb des interne Projekt bei der msg systems ag verwendet werden.
-\dwi{ich finde ausschließlich zu stark formuliert - wir haben auch python an board, aber mit sehr geringem anteil.daher schreib besser 'mehrwiegend' oder 'größtenteils'} 
-
-Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. \cite[S. 28]{spiller_maven_2011} 
-
-Daher bietet Maven die Möglichkeit, eigene Plugins zu erstellen, womit Aufgaben und Arbeitsabläufe einfach in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden. \cite[S. 3]{varanasi_introducing_2019}
-
-Die entsprechenden Plugins können selbst entwickelt oder heruntergeladen und innerhalb des Projektes integriert werden.  
-
-Zudem bietet Maven den Vorteil, dass dieses Tool bereits in den Entwicklungsprozess des Projektes bei der msg systems ag eingebunden ist, sodass sich eine Integration von neuen Tools in den bestehenden Softwareentwicklungsprozesses erübrigt.
-\dwi{naja du integrierst ja ein neues tool - den scanner. das stimmt also so nicht. bitte klarer}
-
-Basierend auf dem Rahmen dieser Arbeit, OSS in den DevOps-Softwareentwicklungsprozesses zu integrieren, wurde das Ayoy - Maven Licence Vertify Plugin \cite{allberg_ayoyabayoy-maven-license-verifier-plugin_2021} als eine OSS innerhalb des PoCs auf GitHub, einer der bekanntesten Plattformen für Quellcode-Datenbanken und deren Versionverwaltung, heruntergeladen und für den entsprechenden Verwendungszweck angepasst.
-\dwi{wie kann ich das verstehen? habt ihr den quellcode heruntergeladen und daran änderungen gemacht? oder hat alex/luna das plugin irgendwo in einem pom-file deklariert und konfiguriert? das hier ist ein essentieller unterschied, den du hier sehr genau verstehen solltest!}
-
-Dieses Plugin überprüft und vergleicht die OSS-Abhängigkeiten anhand der Lizenzmodelle des aktuellen Projektes mit einer erstellten Datei und bricht den Build-Prozess ab, wenn die Anforderungen nicht erfüllt sind.
-
-Aufgrund der einfachen Handbarkeit, der bereits vorhandenen Integration von Maven in den Softwareentwicklungsprozesses und des java-basierten Projektes konzentriert sich die Entwicklung des PoC im Hinblick auf die Konzeption und Implementierung dieses Plugins. 
+Des Weiteren wurde untersucht, ob die Entwicklung des PoC mittels des Build Management Systems 'Maven' für den vorliegenden Verwendungszweck eignen würde, da dieses den Vorteil bietet, bereits in den Softwareentwicklungsprozesses des Beispielprojekts der msg systems ag eingebunden zu sein. Maven eignet sich vorwiegend für Java-Projekte, welche zudem überwiegend innerhalb des interne Projekt bei der msg systems ag verwendet werden. Darüber hinaus verfolgt Maven eine Plugin-basierte Architektur, um seine Funktionalität zu erweitern und anzupassen. \cite[S. 28]{spiller_maven_2011} Daher bietet Maven die Möglichkeit, eigene Plugins zu erstellen, womit Aufgaben und Arbeitsabläufe einfach in den Projektablauf integriert werden können, die spezifisch für das jewelige Unternehmen benötigt werden. \cite[S. 3]{varanasi_introducing_2019} Basierend auf dem Rahmen dieser Arbeit, OSS in den DevOps-Softwareentwicklungsprozesses zu integrieren, wurde das Ayoy - Maven Licence Vertify Plugin \cite{allberg_ayoyabayoy-maven-license-verifier-plugin_2021} als ein OSS-Projekt innerhalb des PoCs auf GitHub, einer der bekanntesten Plattformen für Quellcode-Datenbanken und deren Versionverwaltung, heruntergeladen und für den entsprechenden Verwendungszweck angepasst. Dieses Plugin überprüft und vergleicht die OSS-Abhängigkeiten anhand der Lizenzmodelle des aktuellen Projektes mit einer erstellten Datei und bricht den Build-Prozess ab, wenn die Anforderungen nicht erfüllt sind. Aufgrund der einfachen Handbarkeit, der bereits vorhandenen Integration von Maven in den Softwareentwicklungsprozesses und des java-basierten Projektes konzentriert sich die Entwicklung des PoC im Hinblick auf die Konzeption und Implementierung dieses Plugins. 
 
 
