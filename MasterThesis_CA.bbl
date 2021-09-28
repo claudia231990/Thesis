@@ -47,6 +47,15 @@ Bass, L., Weber, I.~M., and Zhu, L. (2015).
 \newblock The {SEI} series in software engineering. Addison-Wesley
   Professional, New York.
 
+\bibitem[Beck et~al., 2001]{beck_manifesto_2001}
+Beck, K., Grenning, J., and Martin, R.~C. (2001).
+\newblock Manifesto fo {Agile} {Softwre} {Development}.
+
+\bibitem[Bitkom, 2020]{bitkom_open_2020}
+Bitkom, e. (2020).
+\newblock Open source {Monitor}.
+\newblock Studienbericht 2019, Berlin.
+
 \bibitem[Bitzer and Schröder, 2007]{bitzer_entwicklung_2007}
 Bitzer, J. and Schröder, P.~J. (2007).
 \newblock Entwicklung von {Open}-{Source}-{Software}: {Kostenrelevante}
@@ -176,10 +185,6 @@ Humble, J. and Molesky, J. (2011).
   {Delivery}.
 \newblock {\em Cutter IT Journal}, 24(8):6--12.
 
-\bibitem[Jones, 2012]{jones_how_2012}
-Jones, R. (2012).
-\newblock How to {Hire} {DevOps}.
-
 \bibitem[Juner and Benlian, 2017]{juner_praxisbasierte_2017}
 Juner, C. and Benlian, A. (2017).
 \newblock Praxisbasierte {Capability}-{Modelle} für {DevOps}-{Einsätze} in
@@ -256,14 +261,16 @@ Meyer, M. (2014).
 \newblock Continuous {Integration} and {Its} {Tools}.
 \newblock {\em IEEE Software}, 31(3):14--16.
 
-\bibitem[Müller, 2010]{muller_whats_2010}
-Müller, E. (2010).
-\newblock What´s a "{DevOp}?".
-
 \bibitem[Nelson, 2016]{nelson_devops_2016}
 Nelson, J. (2016).
 \newblock {DevOps} as a {Lean} {Strategy}.
 \newblock In {\em Becoming a {Lean} {Library}}, pages 123--130. Elsevier.
+
+\bibitem[Poppendieck and Poppendieck, 2010]{poppendieck_lean_2010}
+Poppendieck, M. and Poppendieck, T. (2010).
+\newblock {\em Lean software development: an agile toolkit}.
+\newblock The agile software development series. Addison-Wesley, Boston,
+  nachdr. edition.
 
 \bibitem[Puppet, 2021]{puppet_inc_2020_2021}
 Puppet, I. (2021).
@@ -338,6 +345,12 @@ Sturm, R., Pollard, C., and Craig, J. (2017).
 \newblock {DevOps} and {Continuous} {Delivery}.
 \newblock In {\em Application {Performance} {Management} ({APM}) in the
   {Digital} {Enterprise}}, pages 121--135. Elsevier.
+
+\bibitem[Sujecki and {Makrolog}, 2005]{sujecki_vertrags-_2005}
+Sujecki, B. and {Makrolog} (2005).
+\newblock Vertrags- und urheberrechtliche {Aspekte} von {Open} {Source}
+  {Software} im deutschen {Recht}.
+\newblock {\em JurPC}, pages 13--13.
 
 \bibitem[Synopsys, 2021]{synopsys_black_2021}
 Synopsys (2021).

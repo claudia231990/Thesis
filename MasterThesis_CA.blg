@@ -1,56 +1,56 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: MasterThesis_CA.aux
-Reallocating 'name_of_file' (item size: 1) to 10 items.
+Reallocating 'name_of_file' (item size: 1) to 21 items.
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
-Database file #1: Literatur.bib
-Warning--I didn't find a database entry for "bitkom_ev_open_nodate"
-Warning--I didn't find a database entry for "sujecki__2005"
+Database file #1: Literaturverzeichnis.bib
+Warning--I didn't find a database entry for "hornby_devops_nodate"
 Warning--empty school in allmann_open_2019
+Warning--empty institution in bitkom_open_2020
 Warning--empty institution in bitkom_ev_open_2016
 Warning--empty booktitle in haffke_transformative_2017
 Warning--empty year in sonatype_guide_nodate
 Warning--empty publisher in varanasi_introducing_2019
-You've used 80 entries,
+You've used 82 entries,
             1935 wiz_defined-function locations,
-            884 strings with 15686 characters,
-and the built_in function-call counts, 27463 in all, are:
-= -- 2742
-> -- 1000
-< -- 70
-+ -- 336
-- -- 318
-* -- 2146
-:= -- 4917
-add.period$ -- 238
-call.type$ -- 80
-change.case$ -- 543
-chr.to.int$ -- 80
-cite$ -- 85
-duplicate$ -- 1126
-empty$ -- 1935
-format.name$ -- 430
-if$ -- 5362
+            894 strings with 16059 characters,
+and the built_in function-call counts, 28357 in all, are:
+= -- 2835
+> -- 1037
+< -- 72
++ -- 348
+- -- 330
+* -- 2219
+:= -- 5068
+add.period$ -- 246
+call.type$ -- 82
+change.case$ -- 560
+chr.to.int$ -- 82
+cite$ -- 88
+duplicate$ -- 1162
+empty$ -- 1993
+format.name$ -- 448
+if$ -- 5546
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 74
-newline$ -- 387
-num.names$ -- 246
-pop$ -- 475
+missing$ -- 77
+newline$ -- 398
+num.names$ -- 252
+pop$ -- 489
 preamble$ -- 1
-purify$ -- 557
+purify$ -- 573
 quote$ -- 0
-skip$ -- 855
+skip$ -- 884
 stack$ -- 0
-substring$ -- 1650
-swap$ -- 119
-text.length$ -- 11
+substring$ -- 1698
+swap$ -- 128
+text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 432
-warning$ -- 5
-while$ -- 226
+type$ -- 442
+warning$ -- 6
+while$ -- 233
 width$ -- 0
-write$ -- 1016
+write$ -- 1047
 (There were 7 warnings)

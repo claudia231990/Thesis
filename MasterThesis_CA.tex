@@ -10,6 +10,11 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \usepackage{lscape}
 \usepackage{longtable} 
 \usepackage{booktabs}
+\usepackage{amssymb}
+\usepackage{pifont}
+\usepackage{caption}
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
 \input{Makros}
 
 \begin{document}
@@ -19,7 +24,8 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
 \maketitle
 
 \begin{abstract}
-   Unter dem Begriff OSS bekannt, bietet die Open Source Software eine Reihe an Möglichkeiten im Bereich der Softwareentwicklung. Durch die sinkenden Nutzungesbescchränkungen im Vergleich zur konventioneller Software gilt OSS als ein Instrument zur schnellen Integration von Software in die eigene Entwicklung.  
+   Unter dem Begriff OSS bekannt, bietet die Open Source Software eine Reihe an Möglichkeiten im Bereich der Softwareentwicklung. Durch die sinkenden Nutzungesbescchränkungen im Vergleich zur konventioneller Software gilt OSS als ein Instrument zur schnellen Integration von Software in die eigene Entwicklung.
+   Das Ergebnis dieser Masterarbeit eigenet sich insbesondere für Unternehmen, dessen DevOps-Teams, aktiv OSS in den Softwareentwicklungsprozesses einsetzen.  
    \dwi{hier kommt noch mehr oder? könnte sich lohnen dies mal im gesamtscope der arbeit zu formulieren um sich den rahmen bewusst zu machen.}
 \end{abstract}
 
@@ -32,14 +38,11 @@ tmargin={2.5cm},bmargin = {2.5cm}]{geometry}
     \vspace*{\fill}
 \end{center}
 
+\newpage 
+\tableofcontents
+\addtocontents{toc}{\setcounter{tocdepth}{4}}
+
 \newpage
-\dwi{also es ist der knaller was du hier an wissen angehäuft hast, respekt. da hast du eine ordentliche recherche gemacht.
-die aufgabe ist allerdings jetzt, das wissen auf ein transportierbares maß zu reduzieren und zu fokussieren
-- hier gilt qualität vor quantität, und das ist auch ein wesentlicher teil deiner leistung. nicht alles was du 
-zum thema weißt muss notwendigerweise als text in deine arbeit, hier und da liest es sich als ob du in einem paper ein
-für dich wertvolles konzept gefunden hast du dann einen satz dazu irgendwo einfügst wo er am besten passt.
-hier sind gezielte referenzen und knackige sätze noch viel wertvoller. du weißt .. es muss immer einer arbeiten, der autor oder der leser.
-und je weniger der leser arbeiten muss desto besser ist deine arbeit. du schreibst ja auch (noch?) keine doktorarbeit :-)}
 \section{Einleitung}
 \input{Einleitung.tex}
 
@@ -52,6 +55,8 @@ und je weniger der leser arbeiten muss desto besser ist deine arbeit. du schreib
 \subsection{Aufbau dieser Arbeit}
 \input{AufbaudieserArbeit.tex}
 
+\subsection{Methodisches Vorgehen}
+\input{Methodik.tex}
 
 \section{Fachlicher Rahmen}
 \input{FachlicherRahmen}
@@ -91,7 +96,7 @@ und je weniger der leser arbeiten muss desto besser ist deine arbeit. du schreib
 \subsubsection{Differenzierung von Softwarevarianten}
 \input{DifferenzierungOSS.tex}
 
-\subsubsection{Begrifflichkeiten und Arten von OSS-Lizenzen}
+\subsubsection{Begrifflichkeiten im Rahmen des Umfangs und der Ausprägung von OSS-Lizensierung}
 \input{BegriffLizenzen.tex}
 
 \subsubsection{Klassifizierung von Lizenzen}
@@ -151,13 +156,15 @@ In diesem Rahmen wurde zunächst der derzeitige IST-Zustand mittels BPMN \dwi{is
 \section{Schlussfolgerung und Ausblick}
 \input{SchlussfolgerungUndAusblick.tex}
 
-
-
-
+\newpage
+\bibliography{Literaturverzeichnis}
+\bibliographystyle{apalike}
 
 \newpage
-\bibliography{Literatur}
-\bibliographystyle{apalike}
+\listoffigures{Abbildungsverzeichnis}% Abbildungsverzeichnis
+
+\newpage
+\listoftables{Tabellenverzeichnis}% Tabellenverzeichnis
 
 \end{document}
 

@@ -1,0 +1,24 @@
+\babel@toc {ngerman}{}
+\contentsline {figure}{\numberline {1}{\ignorespaces Wall of Conflict, angelehnt an \cite {hering_devops_2018}\relax }}{9}{}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Die Säulen von DevOps, basierend auf dem CALMS-Prinzip, angelehnt an \cite {hornby_devops_nodate}\relax }}{11}{}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Der erste Weg: Systemdenken \cite {kim_three_2012}\relax }}{13}{}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Der zweite Weg: Feedback-Schleifen verstärken \cite {kim_three_2012}\relax }}{13}{}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Der dritte Weg: Kultur des kontniuierlichen Experimentierens und Lernens \cite {kim_three_2012}\relax }}{14}{}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Entwicklungszyklus innerhalb einer DevOps-Umgebung, angelehnt an \cite [S. 16]{halstenberg_devops_2020}\relax }}{15}{}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Continuous-Methoden innerhalb des Devops-Lebenszykluses, angelehnt an \cite [S. 16]{halstenberg_devops_2020}\relax }}{17}{}%
+\contentsline {figure}{\numberline {8}{\ignorespaces CD-Pipeline, angelehnt an \cite {balajee_what_2020}, \cite [S. 17]{sharma_devops_2017}\relax }}{21}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Abgrenzung der unterschiedlichen Softwarevarianten, (Quelle)\relax }}{25}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces OS-Lizenzen nach dem Status der dazugehörigen Copyleft-Klauseln\relax }}{35}{}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Kompabilität der OS-Lizenzen\relax }}{40}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt\relax }}{46}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt\relax }}{47}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internene msg-Projekt\relax }}{49}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf dem internen msg-Projekt\relax }}{50}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Einbindung von OSS in den Softwareentwicklungsprozess basierend auf dem internen msg-Projekt\relax }}{51}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem HAF-Projekt\relax }}{52}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internene msg-Projekt\relax }}{52}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internen msg-Projekt\relax }}{53}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Funktionsweise von Maven, angelehnt an \cite {guntur_understanding_2020}\relax }}{69}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Zusammenspiel Plugin-Goals und Lifecycle, \cite [S. 59]{varanasi_introducing_2019}\relax }}{71}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Funktionsweise des Ayoy-Plugin\relax }}{72}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Genehmigte und nicht genehmigte Lizenzmodelle innerhalb der licence.xml\relax }}{73}{}%
