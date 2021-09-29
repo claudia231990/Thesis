@@ -43,12 +43,29 @@ Bass, L., Weber, I.~M., and Zhu, L. (2015).
 \newblock The {SEI} series in software engineering. Addison-Wesley
   Professional, New York.
 
+\bibitem[Batarseh et~al., 2020]{batarseh_history_2020}
+Batarseh, F.~A., Kumar, A., and Eisenberg, S. (2020).
+\newblock The history and future prospects of open data and open source
+  software.
+\newblock In {\em Data {Democracy}}, pages 29--43. Elsevier.
+
 \bibitem[Beck et~al., 2001]{beck_manifesto_2001}
 Beck, K., Grenning, J., and Martin, R.~C. (2001).
 \newblock Manifesto fo {Agile} {Softwre} {Development}.
 
+\bibitem[Bitkom, ]{bitkom_open_nodate}
+Bitkom, B.
+\newblock Open {Source} {Software} - {Rechtliche} {Grundlagen} und {Hinweise}
+  {Leitfaden}.
+\newblock Technical report, Berlin.
+
+\bibitem[Bitkom, 2016]{bitkom_open_2016}
+Bitkom, B. (2016).
+\newblock Open {Source} {Monitor} – {Leitfaden}.
+\newblock Technical report.
+
 \bibitem[Bitkom, 2020]{bitkom_open_2020}
-Bitkom, e. (2020).
+Bitkom, B. (2020).
 \newblock Open source {Monitor}.
 \newblock Studienbericht 2019, Berlin.
 
@@ -60,10 +77,19 @@ Bitzer, J. and Schröder, P.~J. (2007).
   und {Gesellschaftsmodell}}, pages 185 -- 194. Lehmanns Media, Berlin, 1.
   auflage edition.
 
+\bibitem[Buxmann et~al., 2015]{buxmann_softwareindustrie_2015}
+Buxmann, P., Diefenbach, H., and Hess, T. (2015).
+\newblock {\em Die {Softwareindustrie}}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
 \bibitem[Cohen et~al., 2004]{cohen_introduction_2004}
 Cohen, D., Lindvall, M., and Costa, P. (2004).
 \newblock An {Introduction} to {Agile} {Methods}.
 \newblock In {\em Advances in {Computers}}, volume~62, pages 1--66. Elsevier.
+
+\bibitem[Dreher, 2018]{dreher_prototyping_2018}
+Dreher, K. (2018).
+\newblock Prototyping - mehr als eine {Design} - {Methode}.
 
 \bibitem[Dyck et~al., 2015]{dyck_towards_2015}
 Dyck, A., Penners, R., and Lichter, H. (2015).
@@ -82,11 +108,6 @@ Erder, M. and Pureur, P. (2016).
   {Agile} {andCloud}-{Centric} {World}}.
 \newblock Elsevier, Waltham, MA, 1. auflage edition.
 
-\bibitem[e.V., 2016]{bitkom_ev_open_2016}
-e.V., B. (2016).
-\newblock Open {Source} {Monitor} – {Leitfaden}.
-\newblock Technical report.
-
 \bibitem[{Fitzgerald}, 2006]{fitzgerald_transformation_2006}
 {Fitzgerald} (2006).
 \newblock The {Transformation} of {Open} {Source} {Software}.
@@ -99,6 +120,10 @@ Fitzgerald, B. and Stol, K.-J. (2014).
   {Continuous} {Software} {Engineering} - {RCoSE} 2014}, pages 1--9, Hyderabad,
   India. ACM Press.
 
+\bibitem[Fondation, 2018]{linux_fondation_spdx_2018}
+Fondation, L. (2018).
+\newblock {SPDX} {Licence} {List}.
+
 \bibitem[Forsgren et~al., 2019]{forsgren_mindset_2019}
 Forsgren, N., Humble, J., and Kim, G. (2019).
 \newblock {\em Das {Mindset} von {DevOps}: {Accelerate}: 24
@@ -110,9 +135,32 @@ Forsgren, N., Humble, J., and Kim, G. (2019).
 Foundation, T. A.~S. (2002).
 \newblock Maven.
 
+\bibitem[Foundation, 2004]{the_apache_software_foundation_apache_2004}
+Foundation, T. A.~S. (2004).
+\newblock {APACHE} {LICENSE}, {VERSION} 2.0.
+
 \bibitem[Foundation, 2018]{the_eclipse_foundation_sw360_2018}
 Foundation, T.~E. (2018).
 \newblock {SW360}.
+
+\bibitem[Fröhling-Bleuer, 2007]{frohling-bleuer_urheber-_2007}
+Fröhling-Bleuer, G. (2007).
+\newblock Urheber- und vertragsrechtliche {Aspekte} der {Open} {Source}
+  {Software}.
+\newblock {\em IT-Verträge}, 10. Tagungsband(1. Ausgabe):179 -- 229.
+
+\bibitem[FSF, 2021]{fsf_copyleft_2021}
+FSF, F. S.~F. (2021).
+\newblock Copyleft. {Was} ist das?
+
+\bibitem[FSF, 3021]{fsf_freie_3021}
+FSF, F. S.~F. (3021).
+\newblock Freie {Software}. {Was} ist das?
+
+\bibitem[Gerlach, 2006]{gerlach_praxisprobleme_2006}
+Gerlach, C. (2006).
+\newblock Praxisprobleme der {Open}-{Source}-{Lizenzierung}.
+\newblock {\em Computer und Recht}, 22(10).
 
 \bibitem[Gotel and Leip, 2007]{concas_agile_2007}
 Gotel, O. and Leip, D. (2007).
@@ -122,6 +170,12 @@ Gotel, O. and Leip, D. (2007).
   Agile {Processes} in {Software} {Engineering} and {Extreme} {Programming}},
   volume 4536, pages 24--27. Springer Berlin Heidelberg, Berlin, Heidelberg.
 \newblock Series Title: Lecture Notes in Computer Science.
+
+\bibitem[Groll, 2021]{groll_1x1_2021}
+Groll, T. (2021).
+\newblock {\em 1x1 des {Lizenzmanagements}: {Praxisleitfaden} für das {IT}-
+  und {Software} {Asset} {Management}}.
+\newblock Hanser, München, 4., aktualisierte und erweiterte auflage edition.
 
 \bibitem[Guntur, 2020]{guntur_understanding_2020}
 Guntur, C. (2020).
@@ -147,6 +201,13 @@ Helmreich, M. and Riehle, D. (2012).
 Hemon, A., Lyonnet, B., Rowe, F., and Fitzgerald, B. (2020).
 \newblock From {Agile} to {DevOps}: {Smart} {Skills} and {Collaborations}.
 \newblock {\em Information Systems Frontiers}, 22(4):927--945.
+
+\bibitem[Henkel, 2010]{henkel_code_2010}
+Henkel, J. (2010).
+\newblock Code {Reuse} in {Open} {Source} {Software} {Development}:
+  {Quantitative} {Evidence}, {Drivers}, and {Impediments}.
+\newblock {\em Journal of the Association for Information Systems},
+  11(12):868--901.
 
 \bibitem[Hering, 2018]{hering_devops_2018}
 Hering, M. (2018).
@@ -180,6 +241,14 @@ Humble, J. and Molesky, J. (2011).
 \newblock Why {Enterprises} {Must} {Adopt} {Devops} to {Enable} {Continuous}
   {Delivery}.
 \newblock {\em Cutter IT Journal}, 24(8):6--12.
+
+\bibitem[Inititative, ]{open_source_inititative_open_nodate}
+Inititative, O.~S.
+\newblock Open source {Initiative}.
+
+\bibitem[Inititative, 2018]{open_source_inititative_open_2018}
+Inititative, O.~S. (2018).
+\newblock The {Open} {Source} {Definiton}.
 
 \bibitem[Juner and Benlian, 2017]{juner_praxisbasierte_2017}
 Juner, C. and Benlian, A. (2017).
@@ -236,6 +305,12 @@ König, G. and Kugel, R. (2019).
 \newblock {DevOps}—{Welcome} to the {Jungle}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 56(2):289--300.
 
+\bibitem[Lerner and Tirole, 2005]{lerner_economic_2005}
+Lerner, J. and Tirole, J. (2005).
+\newblock Economic {Perspectives} on {Open}-{Source} {Software}.
+\newblock In {\em Perspectives on free and open source software}, pages 47 --
+  78. MIT Press, Cambridge, Mass.
+
 \bibitem[Loukides and Inc, 2008]{loukides_maven_2008}
 Loukides, M. and Inc, S., editors (2008).
 \newblock {\em Maven: the definitive guide: everthing you need to know from
@@ -277,6 +352,18 @@ Ravichandran, A., Taylor, K., and Waterhouse, P. (2016).
 \newblock {\em {DevOps} for {Digital} {Leaders}}.
 \newblock Apress, Berkeley, CA.
 
+\bibitem[Raymond, 2001]{raymond_cathedral_2001}
+Raymond, E.~S. (2001).
+\newblock {\em The cathedral and the bazaar: musings on {Linux} and {Open}
+  {Source} by an accidental revolutionary}.
+\newblock O'Reilly, Beijing ; Cambridge, Mass, rev. ed edition.
+
+\bibitem[Renner and Business, 2006]{renner_open_2006}
+Renner, T. and Business, C. C.~E., editors (2006).
+\newblock {\em Open {Source} {Software}, {Einsatzpotenziale} und
+  {Wirtschaftlichkeit}: eine {Studie} der {Fraunhofer}-{Gesellschaft}}.
+\newblock Fraunhofer-IRB-Verl, Stuttgart.
+
 \bibitem[Roche, 2011]{roche_roche_2011}
 Roche, J. (2011).
 \newblock Roche, {J}. (2013). {Adopting} {DevOps} practices in quality
@@ -289,10 +376,20 @@ Samulat, P. (2017).
   {Der} {Weg} zur {Plattform} „{Lean} {IT}“.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):205--215.
 
+\bibitem[Schaaf, 2013]{schaaf_open-source-lizenzen_2013}
+Schaaf, A. (2013).
+\newblock {\em Open-{Source}-{Lizenzen}: {Untersuchung} der {GPL}, {LGPL},
+  {BSD} und {Artistic} {License}}.
+\newblock Diplomica Verl, Hamburg.
+
 \bibitem[Schaefer and Söllner, 2017]{schaefer_devops_2017}
 Schaefer, P. and Söllner, D. (2017).
 \newblock {DevOps} by {Scrumban}.
 \newblock {\em HMD Praxis der Wirtschaftsinformatik}, 54(2):251--260.
+
+\bibitem[Schumacher, 2016]{schumacher_microsoft_2016}
+Schumacher, M. (2016).
+\newblock Microsoft {\textless}3 {Linux} – und das schon lange.
 
 \bibitem[Sharma, 2017]{sharma_devops_2017}
 Sharma, S. (2017).
@@ -314,8 +411,12 @@ Smeds, J., Nybom, K., and Porres, I. (2015).
   {Programming}}, pages 166--177, Helsinki, Finnland. Springer International
   Publishing.
 
-\bibitem[Software, 2021]{whitesource_software_whitesource_2021}
-Software, W. (2021).
+\bibitem[Software, 2021a]{whitesource_software_open_2021}
+Software, W. (2021a).
+\newblock Open {Source} {Licenses} in 2021: {Trends} and {Predictions}.
+
+\bibitem[Software, 2021b]{whitesource_software_whitesource_2021}
+Software, W. (2021b).
 \newblock {WhiteSource}.
 
 \bibitem[Sonatype, ]{sonatype_guide_nodate}
@@ -355,6 +456,12 @@ Synopsys (2021).
 \bibitem[TheDev, 2019]{thedev_eight_2019}
 TheDev, J. (2019).
 \newblock The {Eight} {Phases} of a {DevOps} {Pipeline}.
+
+\bibitem[Thelen et~al., 2021]{thelen_beschleunigung_2021}
+Thelen, C., Apel, S., and Fritz, C. (2021).
+\newblock Beschleunigung der digitalen {Produktentwicklung} durch den {Einsatz}
+  von {Open} {Source} {Bausteinen}.
+\newblock {\em HMD Praxis der Wirtschaftsinformatik}, 58(2):288--302.
 
 \bibitem[Tiemeyer, 2021]{tiemeyer_handbuch_2021}
 Tiemeyer, E., editor (2021).
@@ -409,6 +516,14 @@ Wichmann, T. (2005).
 \newblock {\em Linux- und {Open}-{Source}-{Strategien}}.
 \newblock Xpert.press. Springer, Berlin.
 \newblock OCLC: 249630807.
+
+\bibitem[Widmer and Bähler, 2006]{widmer_open-source-lizenzen_2006}
+Widmer, U. and Bähler, K. (2006).
+\newblock Open-{Source}-{Lizenzen} - {Wesentliche} {Punkte} für {Nutzer},
+  {Entwickler} und {Vertreiber}.
+\newblock In {\em Open {Source} {Jahrbuch}: 2006 {Zwischen}
+  {Softwareentwicklung} und {Gesellschaftsmodell}}, pages 165 -- 181. Lehmanns
+  Media, Berlin, 1. auflage edition.
 
 \bibitem[Wiedemann et~al., 2019]{wiedemann_research_2019}
 Wiedemann, A., Forsgren, N., Wiesche, M., Gewald, H., and Krcmar, H. (2019).

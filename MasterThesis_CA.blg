@@ -6,51 +6,59 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 The style file: apalike.bst
 Database file #1: Literaturverzeichnis.bib
 Warning--I didn't find a database entry for "hornby_devops_nodate"
+Warning--I didn't find a database entry for "bitkom_ev_open_2016"
+Warning--I didn't find a database entry for "free_software_fondation_informationen_3021"
+Warning--I didn't find a database entry for "free_software_fondation_gnu-manifest_2016"
+Warning--I didn't find a database entry for "bitkom_ev_open_nodate"
+Warning--I didn't find a database entry for "fsf_gnu_3021"
 Warning--empty school in allmann_open_2019
+Warning--empty year in bitkom_open_nodate
+Warning--empty institution in bitkom_open_nodate
+Warning--empty institution in bitkom_open_2016
 Warning--empty institution in bitkom_open_2020
-Warning--empty institution in bitkom_ev_open_2016
 Warning--empty booktitle in haffke_transformative_2017
+Warning--empty year in open_source_inititative_open_nodate
 Warning--empty year in sonatype_guide_nodate
 Warning--empty publisher in varanasi_introducing_2019
-You've used 81 entries,
+You've used 103 entries,
             1935 wiz_defined-function locations,
-            890 strings with 15974 characters,
-and the built_in function-call counts, 28121 in all, are:
-= -- 2811
-> -- 1030
-< -- 71
-+ -- 346
-- -- 328
-* -- 2204
-:= -- 5021
-add.period$ -- 244
-call.type$ -- 81
-change.case$ -- 554
-chr.to.int$ -- 81
-cite$ -- 87
-duplicate$ -- 1152
-empty$ -- 1978
-format.name$ -- 445
-if$ -- 5503
-int.to.chr$ -- 1
+            989 strings with 19080 characters,
+and the built_in function-call counts, 35155 in all, are:
+= -- 3527
+> -- 1236
+< -- 93
++ -- 415
+- -- 390
+* -- 2707
+:= -- 6272
+add.period$ -- 304
+call.type$ -- 103
+change.case$ -- 694
+chr.to.int$ -- 102
+cite$ -- 112
+duplicate$ -- 1461
+empty$ -- 2495
+format.name$ -- 535
+if$ -- 6895
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 77
-newline$ -- 394
-num.names$ -- 249
-pop$ -- 485
+missing$ -- 93
+newline$ -- 495
+num.names$ -- 316
+pop$ -- 607
 preamble$ -- 1
-purify$ -- 567
+purify$ -- 708
 quote$ -- 0
-skip$ -- 875
+skip$ -- 1118
 stack$ -- 0
-substring$ -- 1686
-swap$ -- 128
-text.length$ -- 12
+substring$ -- 2133
+swap$ -- 167
+text.length$ -- 15
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 436
-warning$ -- 6
-while$ -- 231
+type$ -- 558
+warning$ -- 9
+while$ -- 290
 width$ -- 0
-write$ -- 1037
-(There were 7 warnings)
+write$ -- 1302
+(There were 15 warnings)

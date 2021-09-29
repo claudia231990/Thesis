@@ -7,35 +7,35 @@
 \contentsline {figure}{\numberline {6}{\ignorespaces Entwicklungszyklus innerhalb einer DevOps-Umgebung, angelehnt an \cite [S. 16]{halstenberg_devops_2020}}}{17}{}%
 \contentsline {figure}{\numberline {7}{\ignorespaces Continuous-Methoden innerhalb des Devops-Lebenszykluses, angelehnt an \cite [S. 16]{halstenberg_devops_2020}}}{19}{}%
 \contentsline {figure}{\numberline {8}{\ignorespaces CD-Pipeline, angelehnt an \cite {balajee_what_2020}, \cite [S. 17]{sharma_devops_2017}}}{23}{}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Abgrenzung der unterschiedlichen Softwarevarianten, (Quelle)}}{28}{}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Statistik über die Verwendung von OS-Lizenzen im Jahr 2020, (Quelle)}}{34}{}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Abgrenzung der unterschiedlichen Softwarevarianten, \cite [S. 7]{wichmann_linux-_2005}}}{28}{}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Statistik über die Verwendung von OS-Lizenzen im Jahr 2020, \cite {whitesource_software_open_2021}}}{35}{}%
 \contentsline {figure}{\numberline {11}{\ignorespaces OS-Lizenzen nach dem Status der dazugehörigen Copyleft-Klauseln}}{37}{}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Kompabilität der OS-Lizenzen, angelehnt an (Quelle)}}{41}{}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{46}{}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{47}{}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{49}{}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im IST-Zustandbasierend auf einem Beispielprojekt der msg systems ag}}{50}{}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Einbindung von OSS in den Softwareentwicklungsprozess basierend auf einem Beispielprojekt der msg systems ag}}{51}{}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{52}{}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{52}{}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internen msg-Projekt}}{54}{}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Umfassende manuelle Checkliste}}{62}{}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Komprimierte manuelle Checkliste basierend auf der Apache Licence 2.0}}{63}{}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Funktionsweise von Maven, angelehnt an \cite {guntur_understanding_2020}}}{67}{}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Zusammenspiel Plugin-Goals und Lifecycle, \cite [S. 59]{varanasi_introducing_2019}}}{68}{}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Funktionsweise des Ayoy-Plugin}}{69}{}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Genehmigte und nicht genehmigte Lizenzmodelle innerhalb der licence.xml}}{69}{}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Eingebunder Aufruf innerhalb der pom.xml}}{70}{}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Aufruf der pom.xml innerhalb der Kommandozeile}}{70}{}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Zu Testzwecken eingebettete Abhängigkeit innerhalb der allowedMissingLicence.xml}}{71}{}%
-\contentsline {figure}{\numberline {30}{\ignorespaces Erlaubte Lizenz des Programms}}{72}{}%
-\contentsline {figure}{\numberline {31}{\ignorespaces Erfolgreicher Build-Prozess aufgrund einer 'valid'-Lizenz}}{72}{}%
-\contentsline {figure}{\numberline {32}{\ignorespaces Verbotene Lizenz des Programms anhand der licence.xml}}{73}{}%
-\contentsline {figure}{\numberline {33}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'forbidden'-Lizenz}}{73}{}%
-\contentsline {figure}{\numberline {34}{\ignorespaces Unbekannte Lizenz des Programms}}{74}{}%
-\contentsline {figure}{\numberline {35}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown'-Lizenz}}{74}{}%
-\contentsline {figure}{\numberline {36}{\ignorespaces Unbekannte Abhängigkeit des Programms}}{75}{}%
-\contentsline {figure}{\numberline {37}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown'-Abhängigkeit}}{75}{}%
-\contentsline {figure}{\numberline {38}{\ignorespaces Abhängigkeit zu Testzwecken anhand der licence und allowedMissingLicence.xml}}{76}{}%
-\contentsline {figure}{\numberline {39}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown' und 'Forbidden'-Abhängigkeit}}{76}{}%
-\contentsline {figure}{\numberline {40}{\ignorespaces Hinzugefügte Abhängigkeit für Testzwecke innerhalb der licence und allowedMissingLicence.xml}}{77}{}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Kompatibilität der OS-Lizenzen, angelehnt an \cite [S. 65]{schaaf_open-source-lizenzen_2013}}}{42}{}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{47}{}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{48}{}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im IST-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{50}{}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im IST-Zustandbasierend auf einem Beispielprojekt der msg systems ag}}{51}{}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Einbindung von OSS in den Softwareentwicklungsprozess basierend auf einem Beispielprojekt der msg systems ag}}{52}{}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Erster Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{53}{}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Zweiter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf einem Beispielprojekt der msg systems ag}}{53}{}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Dritter Teil des Softwareentwicklungsprozess im SOLL-Zustand basierend auf dem internen msg-Projekt}}{55}{}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Umfassende manuelle Checkliste}}{63}{}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Komprimierte manuelle Checkliste basierend auf der Apache Licence 2.0}}{64}{}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Funktionsweise von Maven, angelehnt an \cite {guntur_understanding_2020}}}{68}{}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Zusammenspiel Plugin-Goals und Lifecycle, \cite [S. 59]{varanasi_introducing_2019}}}{69}{}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Funktionsweise des Ayoy-Plugin}}{70}{}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Genehmigte und nicht genehmigte Lizenzmodelle innerhalb der licence.xml}}{70}{}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Eingebunder Aufruf innerhalb der pom.xml}}{71}{}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Aufruf der pom.xml innerhalb der Kommandozeile}}{71}{}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Zu Testzwecken eingebettete Abhängigkeit innerhalb der allowedMissingLicence.xml}}{72}{}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Erlaubte Lizenz des Programms}}{73}{}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Erfolgreicher Build-Prozess aufgrund einer 'valid'-Lizenz}}{73}{}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Verbotene Lizenz des Programms anhand der licence.xml}}{74}{}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'forbidden'-Lizenz}}{74}{}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Unbekannte Lizenz des Programms}}{75}{}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown'-Lizenz}}{75}{}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Unbekannte Abhängigkeit des Programms}}{76}{}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown'-Abhängigkeit}}{76}{}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Abhängigkeit zu Testzwecken anhand der licence und allowedMissingLicence.xml}}{77}{}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown' und 'Forbidden'-Abhängigkeit}}{77}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Hinzugefügte Abhängigkeit für Testzwecke innerhalb der licence und allowedMissingLicence.xml}}{78}{}%
