@@ -87,8 +87,8 @@
 \contentsline {paragraph}{3.3.1.1. Auflistung der Nutzungsarten}{57}{}%
 \contentsline {subsubsection}{\numberline {3.3.2}Umfang und Ausprägung der Verpflichtungen}{60}{}%
 \contentsline {paragraph}{3.3.2.1. Umfang der Verpflichtungsarten}{60}{}%
-\contentsline {paragraph}{3.3.2.2. Ausprägung einer zu erfüllenden Verpflichtung}{60}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}{62}{}%
+\contentsline {paragraph}{3.3.2.2. Ausprägung einer zu erfüllenden Verpflichtung}{61}{}%
+\contentsline {subsubsection}{\numberline {3.3.3}Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}{61}{}%
 \contentsline {paragraph}{3.3.3.1. Komprimierung der manuellen Checkliste}{64}{}%
 \contentsline {section}{\numberline {4}Proof of Concept}{64}{}%
 \contentsline {subsection}{\numberline {4.1}Anforderungsdefinition}{65}{}%
