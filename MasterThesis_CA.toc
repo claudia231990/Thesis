@@ -113,5 +113,5 @@
 \contentsline {subsubsection}{\numberline {4.3.3}Fall 3: Verwendung von unbekannten Lizenzen}{73}{}%
 \contentsline {subsubsection}{\numberline {4.3.4}Fall 4: Verwendung von unbekannten Abhängigkeiten}{74}{}%
 \contentsline {subsubsection}{\numberline {4.3.5}Fall 5: Verwendung von Abhängigkeiten zu Testzwecken}{75}{}%
-\contentsline {subsection}{\numberline {4.4}Evaluation}{76}{}%
+\contentsline {subsection}{\numberline {4.4}Evaluation}{77}{}%
 \contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{77}{}%

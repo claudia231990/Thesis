@@ -38,3 +38,4 @@
 \contentsline {figure}{\numberline {37}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown'-Abhängigkeit}}{75}{}%
 \contentsline {figure}{\numberline {38}{\ignorespaces Abhängigkeit zu Testzwecken anhand der licence und allowedMissingLicence.xml}}{76}{}%
 \contentsline {figure}{\numberline {39}{\ignorespaces Fehlgeschlagener Build-Prozess aufgrund einer 'Unknown' und 'Forbidden'-Abhängigkeit}}{76}{}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Hinzugefügte Abhängigkeit für Testzwecke innerhalb der licence und allowedMissingLicence.xml}}{77}{}%
