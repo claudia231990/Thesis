@@ -1,117 +1,248 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}
-\global \c@tocdepth 4\relax 
-\contentsline {section}{\numberline {1}Einleitung}{5}{}%
-\contentsline {subsection}{\numberline {1.1}Problemstellung}{6}{}%
-\contentsline {subsection}{\numberline {1.2}Ziel und Fragestellung}{8}{}%
-\contentsline {subsection}{\numberline {1.3}Aufbau dieser Arbeit}{9}{}%
-\contentsline {subsection}{\numberline {1.4}Methodisches Vorgehen}{9}{}%
-\contentsline {section}{\numberline {2}Fachlicher Rahmen}{9}{}%
-\contentsline {subsection}{\numberline {2.1}DevOps}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.1}Hintergrund}{10}{}%
-\contentsline {subsubsection}{\numberline {2.1.2}Der Begriff 'DevOps'}{12}{}%
-\contentsline {subsubsection}{\numberline {2.1.3}Grundlagen}{13}{}%
+\defcounter {refsection}{0}\relax 
+\global \c@tocdepth 2\relax 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract (Deutsch)}{IV}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abstract (Englisch)}{V}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Einleitung}{1}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Problemstellung}{3}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Ziel und Fragestellung}{5}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Aufbau dieser Arbeit}{6}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Methodisches Vorgehen}{6}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Fachlicher Rahmen}{8}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}DevOps}{8}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.1}Hintergrund}{8}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.2}Der Begriff 'DevOps'}{11}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.3}Grundlagen}{12}{}%
+\defcounter {refsection}{0}\relax 
 \contentsline {paragraph}{2.1.3.1 CALMS}{13}{}%
-\contentsline {subsubsection}{\numberline {2.1.4}DevOps-Kultur}{15}{}%
-\contentsline {subsubsection}{\numberline {2.1.5}Entwicklungszyklus innerhalb DevOps}{17}{}%
-\contentsline {paragraph}{2.1.5.1. Plan}{17}{}%
-\contentsline {paragraph}{2.1.5.2. Code und Build}{18}{}%
-\contentsline {paragraph}{2.1.5.3. Test}{18}{}%
-\contentsline {paragraph}{2.1.5.4. Release und Deploy}{18}{}%
-\contentsline {paragraph}{2.1.5.5. Operate}{19}{}%
-\contentsline {subsubsection}{\numberline {2.1.6}Continuous Everything als DevOps-Methoden}{19}{}%
-\contentsline {paragraph}{2.1.6.1. Agile Entwicklung}{20}{}%
-\contentsline {paragraph}{2.1.6.2. Continuous Integration}{20}{}%
-\contentsline {paragraph}{2.1.6.3. Continuous Delivery}{20}{}%
-\contentsline {paragraph}{2.1.6.4. Continuous Deployment}{21}{}%
-\contentsline {paragraph}{2.1.6.5. Continuous Monitoring}{22}{}%
-\contentsline {paragraph}{2.1.6.6. Infrastructur-as-a-Code}{22}{}%
-\contentsline {subsubsection}{\numberline {2.1.7}Integrierte Infrastruktur (Toolchain)}{23}{}%
-\contentsline {paragraph}{2.1.7.1. Integration Pipeline}{23}{}%
-\contentsline {paragraph}{2.1.7.2. Delivery Pipeline}{24}{}%
-\contentsline {subsection}{\numberline {2.2}OSS}{25}{}%
-\contentsline {subsubsection}{\numberline {2.2.1}Geschichtlicher Hintergrund}{27}{}%
-\contentsline {subsubsection}{\numberline {2.2.2}Differenzierung von Softwarevarianten}{28}{}%
-\contentsline {paragraph}{2.2.2.1. Software}{28}{}%
-\contentsline {paragraph}{2.2.2.2. Freie Software}{28}{}%
-\contentsline {paragraph}{2.2.2.3. Open Source}{29}{}%
-\contentsline {paragraph}{2.2.2.4. Proprietäre Software}{30}{}%
-\contentsline {paragraph}{2.2.2.5. Kommerzielle Software}{31}{}%
-\contentsline {paragraph}{2.2.2.6. Public Domain}{31}{}%
-\contentsline {paragraph}{2.2.2.7. Shareware}{31}{}%
-\contentsline {paragraph}{2.2.2.8. Freeware}{31}{}%
-\contentsline {subsubsection}{\numberline {2.2.3}Begrifflichkeiten im Rahmen des Umfangs und der Ausprägung von OSS-Lizensierung}{32}{}%
-\contentsline {paragraph}{2.2.3.1. Umfang im Bereich der Lizensierung}{32}{}%
-\contentsline {subparagraph}{Copyright}{32}{}%
-\contentsline {subparagraph}{Copyleft}{33}{}%
-\contentsline {subparagraph}{Nutzungsrecht}{33}{}%
-\contentsline {paragraph}{2.2.3.2. Grundlagen der Lizensierung}{34}{}%
-\contentsline {subparagraph}{Lizenzvertrag}{34}{}%
-\contentsline {subparagraph}{Duale Lizensierung}{34}{}%
-\contentsline {subsubsection}{\numberline {2.2.4}Klassifizierung von Lizenzen}{34}{}%
-\contentsline {paragraph}{2.2.4.1. Arten der OSS-Lizenzen}{35}{}%
-\contentsline {paragraph}{2.2.4.2. Klassifizierung anhand des Copyleft-Statuses}{36}{}%
-\contentsline {subparagraph}{OSS-Lizenzen ohne Copyleft}{36}{}%
-\contentsline {subparagraph}{OSS-Lizenzen mit beschränktem Copyleft}{36}{}%
-\contentsline {subparagraph}{OSS-Lizenzen mit starkem Copyleft}{37}{}%
-\contentsline {paragraph}{2.2.4.3. Rechte und Pflichten des Lizenznehmers basierend auf dem Copyleft-Status}{37}{}%
-\contentsline {subparagraph}{Rechte des Lizenznehmers bei einer Lizenz mit keinem Copyleft}{38}{}%
-\contentsline {subparagraph}{Rechte des Lizenznehmers bei einer Lizenz mit beschränktem Copyleft}{38}{}%
-\contentsline {subparagraph}{Rechte des Lizenznehmers bei einer Lizenz mit starker Copyleft}{38}{}%
-\contentsline {subparagraph}{Pflichten des Lizenznehmers bei einer Lizenz mit keinem Copyleft}{38}{}%
-\contentsline {subparagraph}{Pflichten des Lizenznehmers bei einer Lizenz mit beschränktem Copyleft}{39}{}%
-\contentsline {subparagraph}{Pflichten des Lizenznehmers bei einer Lizenz mit starker Copyleft}{39}{}%
-\contentsline {paragraph}{2.2.4.4. Kompatibilität der OSS-Lizenzen}{40}{}%
-\contentsline {subsubsection}{\numberline {2.2.5}Rechtliche Implikationen innerhalb der OSS-Lizensierung}{42}{}%
-\contentsline {paragraph}{2.2.5.1. Begrifflichkeiten innerhalb der rechlichen Untersuchung}{42}{}%
-\contentsline {subparagraph}{Urheber und Urheberrecht}{42}{}%
-\contentsline {subparagraph}{Patent}{42}{}%
-\contentsline {subparagraph}{Haftung}{43}{}%
-\contentsline {subparagraph}{Gewährleistung}{43}{}%
-\contentsline {paragraph}{2.2.5.2. Folgen einer Lizenzverletzung}{43}{}%
-\contentsline {subparagraph}{Rechtsfolgen aus Lizenzvertrag}{43}{}%
-\contentsline {subparagraph}{Rechtsfolgen aus dem Urheberrecht}{43}{}%
-\contentsline {paragraph}{2.2.5.3. Haftungs- und Gewährleistungsausschluss}{44}{}%
-\contentsline {subparagraph}{AGB-Recht}{44}{}%
-\contentsline {subparagraph}{Wirksamkeit von Gewährleistungsrechten}{44}{}%
-\contentsline {subparagraph}{Wirksamkeit von Haftungsregelungen}{45}{}%
-\contentsline {section}{\numberline {3}OSS meets DevOps}{45}{}%
-\contentsline {subsection}{\numberline {3.1}Integration von OSS in die DevOps-Produktentwicklung}{46}{}%
-\contentsline {subsubsection}{\numberline {3.1.1}Betrachtung des IST-Zustandes des Softwareentwicklungsprozesses}{46}{}%
-\contentsline {subsubsection}{\numberline {3.1.2}Anpassungen des IST-Zustandes durch die Verwendung von OSS}{51}{}%
-\contentsline {subsection}{\numberline {3.2}Umfang der Integration anhand festgelegter Szenarien}{55}{}%
-\contentsline {subsubsection}{\numberline {3.2.1}Szenario 1: Verwendung von OSS zur Testzwecken}{56}{}%
-\contentsline {subsubsection}{\numberline {3.2.2}Szenario 2: Verwendung von OSS-Bibliotheken als Referenz}{56}{}%
-\contentsline {subsubsection}{\numberline {3.2.3}Szenario 3: Verwendung von OSS als modifizierter Quellcode}{56}{}%
-\contentsline {subsection}{\numberline {3.3}Manuelle Überprüfung basierend auf einer Checkliste}{56}{}%
-\contentsline {subsubsection}{\numberline {3.3.1}Use Types}{57}{}%
-\contentsline {paragraph}{3.3.1.1. Auflistung der Nutzungsarten}{57}{}%
-\contentsline {subsubsection}{\numberline {3.3.2}Umfang und Ausprägung der Verpflichtungen}{60}{}%
-\contentsline {paragraph}{3.3.2.1. Umfang der Verpflichtungsarten}{60}{}%
-\contentsline {paragraph}{3.3.2.2. Ausprägung einer zu erfüllenden Verpflichtung}{61}{}%
-\contentsline {subsubsection}{\numberline {3.3.3}Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}{61}{}%
-\contentsline {paragraph}{3.3.3.1. Komprimierung der manuellen Checkliste}{64}{}%
-\contentsline {section}{\numberline {4}Proof of Concept}{64}{}%
-\contentsline {subsection}{\numberline {4.1}Anforderungsdefinition}{65}{}%
-\contentsline {subsubsection}{\numberline {4.1.1}Internes Tool}{65}{}%
-\contentsline {subsubsection}{\numberline {4.1.2}Eignungsprüfung bekannter Open Source Scanner}{66}{}%
-\contentsline {paragraph}{4.1.2.1. Black Duck Suite}{66}{}%
-\contentsline {paragraph}{4.1.2.2. WhiteSource}{66}{}%
-\contentsline {paragraph}{4.1.2.3. FOSSology}{66}{}%
-\contentsline {paragraph}{4.1.2.4. Nexus Vulnerability Scanner}{67}{}%
-\contentsline {paragraph}{4.1.2.5. Eclipse SW360}{67}{}%
-\contentsline {paragraph}{4.1.2.6. Ayoy - Maven Licence Vertify Plugin}{67}{}%
-\contentsline {subsection}{\numberline {4.2}Konzeption}{68}{}%
-\contentsline {subsubsection}{\numberline {4.2.1}Workflow Maven}{68}{}%
-\contentsline {paragraph}{4.2.1.1. POM}{68}{}%
-\contentsline {paragraph}{4.2.1.2.Repository}{68}{}%
-\contentsline {paragraph}{4.2.1.3. Build-Lifecycle}{69}{}%
-\contentsline {paragraph}{4.2.1.4. Plugins in Maven}{69}{}%
-\contentsline {subsubsection}{\numberline {4.2.2}Entwurf des PoC basierend auf dem Ayoy - Maven Licence Vertify Plugin}{69}{}%
-\contentsline {subsection}{\numberline {4.3}Implementierung}{72}{}%
-\contentsline {subsubsection}{\numberline {4.3.1}Fall 1: Keine Auffälligkeiten innerhalb der Lizenzen}{72}{}%
-\contentsline {subsubsection}{\numberline {4.3.2}Fall 2: Verwendung von Lizenzen mit starker Copyleft}{73}{}%
-\contentsline {subsubsection}{\numberline {4.3.3}Fall 3: Verwendung von unbekannten Lizenzen}{74}{}%
-\contentsline {subsubsection}{\numberline {4.3.4}Fall 4: Verwendung von unbekannten Abhängigkeiten}{75}{}%
-\contentsline {subsubsection}{\numberline {4.3.5}Fall 5: Verwendung von Abhängigkeiten zu Testzwecken}{76}{}%
-\contentsline {subsection}{\numberline {4.4}Evaluation}{78}{}%
-\contentsline {section}{\numberline {5}Schlussfolgerung und Ausblick}{79}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.4}DevOps-Kultur}{15}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.5}Entwicklungszyklus innerhalb DevOps}{17}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.5.1. Plan}{18}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.5.2. Code und Build}{18}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.5.3. Test}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.5.4. Release und Deploy}{19}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.5.5. Operate}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.6}Continuous Everything als DevOps-Methoden}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.1. Agile Entwicklung}{20}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.2. Continuous Integration}{21}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.3. Continuous Delivery}{22}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.4. Continuous Deployment}{23}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.5. Continuous Monitoring}{24}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.6.6. Infrastructur-as-a-Code}{24}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.1.7}Integrierte Infrastruktur (Toolchain)}{25}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.7.1. Integration Pipeline}{26}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.1.7.2. Delivery Pipeline}{27}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}OSS}{29}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.1}Geschichtlicher Hintergrund}{31}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.2}Differenzierung von Softwarevarianten}{32}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.1. Software}{32}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.2. Freie Software}{33}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.3. Open Source}{34}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.4. Proprietäre Software}{35}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.5. Kommerzielle Software}{36}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.6. Public Domain}{36}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.7. Shareware}{37}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.2.8. Freeware}{37}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.3}Begrifflichkeiten im Rahmen des Umfangs und der Ausprägung von OSS-Lizensierung}{38}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.3.1. Umfang im Bereich der Lizensierung}{39}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Copyright}{39}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Copyleft}{39}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Nutzungsrecht}{40}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.3.2. Grundlagen der Lizensierung}{41}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Lizenzvertrag}{41}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Duale Lizensierung}{41}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.4}Klassifizierung von Lizenzen}{42}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.4.1. Arten der OSS-Lizenzen}{42}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.4.2. Klassifizierung anhand des Copyleft-Statuses}{43}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{OSS-Lizenzen ohne Copyleft}{43}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{OSS-Lizenzen mit beschränktem Copyleft}{44}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{OSS-Lizenzen mit starkem Copyleft}{44}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.4.3. Rechte und Pflichten des Lizenznehmers basierend auf dem Copyleft-Status}{45}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rechte des Lizenznehmers bei einer Lizenz mit keinem Copyleft}{46}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rechte des Lizenznehmers bei einer Lizenz mit beschränktem Copyleft}{46}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rechte des Lizenznehmers bei einer Lizenz mit starker Copyleft}{46}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pflichten des Lizenznehmers bei einer Lizenz mit keinem Copyleft}{46}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pflichten des Lizenznehmers bei einer Lizenz mit beschränktem Copyleft}{47}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Pflichten des Lizenznehmers bei einer Lizenz mit starker Copyleft}{47}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.4.4. Kompatibilität der OSS-Lizenzen}{49}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.2.5}Rechtliche Implikationen innerhalb der OSS-Lizensierung}{51}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.5.1. Begrifflichkeiten innerhalb der rechlichen Untersuchung}{51}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Urheber und Urheberrecht}{51}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Haftung}{52}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Gewährleistung}{52}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.5.2. Folgen einer Lizenzverletzung}{52}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rechtsfolgen aus Lizenzvertrag}{52}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Rechtsfolgen aus dem Urheberrecht}{53}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{2.2.5.3. Haftungs- und Gewährleistungsausschluss}{53}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{AGB-Recht}{54}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Wirksamkeit von Gewährleistungsrechten}{54}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{Wirksamkeit von Haftungsregelungen}{54}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}OSS meets DevOps}{56}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Integration von OSS in die DevOps-Produktentwicklung}{57}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Betrachtung des IST-Zustandes des Softwareentwicklungsprozesses}{57}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.2}Anpassungen des IST-Zustandes durch die Verwendung von OSS}{63}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Integrationsumfang anhand Szenarien}{68}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Szenario 1: Verwendung von OSS zur Testzwecken}{68}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Szenario 2: Verwendung von OSS-Bibliotheken als Referenz}{69}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Szenario 3: Verwendung von OSS als modifizierter Quellcode}{69}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Manuelle Überprüfung basierend auf einer Checkliste}{70}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Use Types}{71}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{3.3.1.1. Auflistung der Nutzungsarten}{71}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.2}Umfang und Ausprägung der Verpflichtungen}{74}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{3.3.2.1. Umfang der Verpflichtungsarten}{74}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{3.3.2.2. Ausprägung einer zu erfüllenden Verpflichtung}{74}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.3}Überprüfung von Apache 2.0 mittels erweiterer manueller Checkliste}{77}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {paragraph}{3.3.3.1. Komprimierung der manuellen Checkliste}{79}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Proof of Concept}{80}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Anforderungsdefinition}{81}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.1}Internes Tool}{82}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.1.2}Eignungsprüfung bekannter Open Source Scanner}{82}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.1. Black Duck Suite}{82}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.2. WhiteSource}{83}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.3. FOSSology}{83}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.4. Nexus Vulnerability Scanner}{83}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.5. Eclipse SW360}{84}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.1.2.6. Ayoy - Maven Licence Vertify Plugin}{84}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Konzeption}{85}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.1}Workflow Maven}{85}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.2.1.1. POM}{85}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.2.1.2.Repository}{86}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.2.1.3. Build-Lifecycle}{86}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{4.2.1.4. Plugins in Maven}{86}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.2.2}Entwurf des PoC basierend auf dem Ayoy - Maven Licence Vertify Plugin}{87}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Implementierung}{90}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.1}Fall 1: Keine Auffälligkeiten innerhalb der Lizenzen}{91}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.2}Fall 2: Verwendung von Lizenzen mit starker Copyleft}{91}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.3}Fall 3: Verwendung von unbekannten Lizenzen}{93}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.4}Fall 4: Verwendung von unbekannten Abhängigkeiten}{94}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.3.5}Fall 5: Verwendung von Abhängigkeiten zu Testzwecken}{95}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Evaluation}{96}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Schlussfolgerung und Ausblick}{98}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{100}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{102}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Quellenverzeichnis}{103}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Anhang A}{116}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Anhang B}{120}{}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Erklärung}{126}{}%

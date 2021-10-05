@@ -1,64 +1,26 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: MasterThesis_CA.aux
-Reallocating 'name_of_file' (item size: 1) to 21 items.
-Reallocating 'name_of_file' (item size: 1) to 8 items.
-The style file: apalike.bst
-Database file #1: Literaturverzeichnis.bib
-Warning--I didn't find a database entry for "hornby_devops_nodate"
-Warning--I didn't find a database entry for "bitkom_ev_open_2016"
-Warning--I didn't find a database entry for "free_software_fondation_informationen_3021"
-Warning--I didn't find a database entry for "free_software_fondation_gnu-manifest_2016"
-Warning--I didn't find a database entry for "bitkom_ev_open_nodate"
-Warning--I didn't find a database entry for "fsf_gnu_3021"
-Warning--empty school in allmann_open_2019
-Warning--empty year in bitkom_open_nodate
-Warning--empty institution in bitkom_open_nodate
-Warning--empty institution in bitkom_open_2016
-Warning--empty institution in bitkom_open_2020
-Warning--empty booktitle in haffke_transformative_2017
-Warning--empty year in open_source_inititative_open_nodate
-Warning--empty year in sonatype_guide_nodate
-Warning--empty publisher in varanasi_introducing_2019
-You've used 103 entries,
-            1935 wiz_defined-function locations,
-            989 strings with 19080 characters,
-and the built_in function-call counts, 35155 in all, are:
-= -- 3527
-> -- 1236
-< -- 93
-+ -- 415
-- -- 390
-* -- 2707
-:= -- 6272
-add.period$ -- 304
-call.type$ -- 103
-change.case$ -- 694
-chr.to.int$ -- 102
-cite$ -- 112
-duplicate$ -- 1461
-empty$ -- 2495
-format.name$ -- 535
-if$ -- 6895
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 93
-newline$ -- 495
-num.names$ -- 316
-pop$ -- 607
-preamble$ -- 1
-purify$ -- 708
-quote$ -- 0
-skip$ -- 1118
-stack$ -- 0
-substring$ -- 2133
-swap$ -- 167
-text.length$ -- 15
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 558
-warning$ -- 9
-while$ -- 290
-width$ -- 0
-write$ -- 1302
-(There were 15 warnings)
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'MasterThesis_CA.blg'
+[168] biber-MSWIN64:340> INFO - === 
+[232] Biber.pm:415> INFO - Reading 'MasterThesis_CA.bcf'
+[510] Biber.pm:952> INFO - Found 107 citekeys in bib section 0
+[531] Biber.pm:4340> INFO - Processing section 0
+[547] Biber.pm:4531> INFO - Looking for bibtex format file 'Literaturverzeichnis.bib' for section 0
+[633] bibtex.pm:1689> INFO - LaTeX decoding ...
+[986] bibtex.pm:1494> INFO - Found BibTeX data source 'Literaturverzeichnis.bib'
+[1031] Utils.pm:395> WARN - ISBN '978-3-658-18704-0 978-3-658-18703-3' in entry 'alt_innovationsorientiertes_2017' is invalid - run biber with '--validate_datamodel' for details.
+[1099] Utils.pm:395> WARN - ISBN '978-1-4842-1841-9 978-1-4842-1842-6' in entry 'ravichandran_devops_2016' is invalid - run biber with '--validate_datamodel' for details.
+[1119] Utils.pm:395> WARN - ISBN '978-3-658-01954-9 978-3-658-01955-6' in entry 'kesler_anpassung_2013' is invalid - run biber with '--validate_datamodel' for details.
+[1174] Utils.pm:395> WARN - ISBN '978-3-96009-047-2 978-3-96010-123-9 978-3-96010-124-6 978-3-96010-125-3' in entry 'kim_devops-handbuch_2017' is invalid - run biber with '--validate_datamodel' for details.
+[1202] Utils.pm:395> WARN - ISBN '978-1-4302-4569-8 978-1-4302-4570-4' in entry 'huttermann_devops_2012' is invalid - run biber with '--validate_datamodel' for details.
+[1341] Utils.pm:395> WARN - ISBN '978-3-658-31404-0 978-3-658-31405-7' in entry 'halstenberg_devops_2020' is invalid - run biber with '--validate_datamodel' for details.
+[1356] Utils.pm:395> WARN - ISBN '978-3-319-49093-9 978-3-319-49094-6' in entry 'abrahamsson_product-focused_2016' is invalid - run biber with '--validate_datamodel' for details.
+[1463] Utils.pm:395> WARN - ISBN '978-3-658-18245-8 978-3-658-18246-5' in entry 'tokarski_strategische_2018' is invalid - run biber with '--validate_datamodel' for details.
+[1626] Utils.pm:395> WARN - ISBN '978-3-662-45588-3 978-3-662-45589-0' in entry 'buxmann_softwareindustrie_2015' is invalid - run biber with '--validate_datamodel' for details.
+[1634] Utils.pm:395> WARN - ISBN '978-0-596-00131-5 978-0-596-00108-7' in entry 'raymond_cathedral_2001' is invalid - run biber with '--validate_datamodel' for details.
+[2005] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[2005] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[2005] Biber.pm:4168> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'de-DE'
+[2005] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[2180] bbl.pm:654> INFO - Writing 'MasterThesis_CA.bbl' with encoding 'UTF-8'
+[2262] bbl.pm:757> INFO - Output to MasterThesis_CA.bbl
+[2263] Biber.pm:128> INFO - WARNINGS: 10
